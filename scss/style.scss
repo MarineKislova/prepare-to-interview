@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
+
+@import "./defaultnullstyle";
+// @import "./accordion";
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(42, 47, 51, 0.8);
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1024px;
+  margin: 0px auto;
+  background: $backgroundColor;
+}
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100px;
+    text-align: left;
+    padding: 15px;
+    background: rgba(58, 65, 70, 1);
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+.habrOne {
+  position: relative;
+  margin-top: 100px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tittle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 20px 0px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    // background-color: #c3c5c7;
+    cursor: pointer;
+  }
+}
+.accordion {
+}
+.accordion-flush {
+}
+.accordion-item {
+}
+.accordion-header {
+}
+.accordion-button {
+  &:not(.collapsed) {
+    background-color: #42474b;
+    color: #fff;
+    // border: 0px solid #42474b;
+  }
+  &:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.collapsed {
+}
+.accordion-collapse {
+}
+.collapse {
+}
+.accordion-body {
+  background-color: rgb(222, 222, 230);
+  :nth-child(n) {
+    padding: 10px;
+  }
+}
