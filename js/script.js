@@ -1,16 +1,27 @@
-import questionsJavaScript from "./modules/question_JS_Data.js";
+import { questionsJSHabr } from "./modules/question_JS_Data.js";
+import { questionsJSProglib } from "./modules/question_JS_Data.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  const questionHabr = document.querySelector(".habrOne__container");
-  const accordionContainer = document.querySelector("#accordionFlushExample");
+  // const accordionContainer = document.createElement("div");
+  // accordionContainer.classList.add("accordion", "accordion-flush");
+  // accordionContainer.setAttribute("id", `accordionFlushExample`);
 
-  function accordionCard(question) {
+  // const accordionContainer = document.querySelector("#accordionFlushExample");
+
+  function accordionCard(question, container) {
+    //  add accordionContainer
+    const accordionContainer = document.createElement("div");
+    accordionContainer.classList.add("accordion", "accordion-flush");
+    accordionContainer.setAttribute("id", `accordionFlushExample`);
+    container.appendChild(accordionContainer);
+
     // add accordion-item
     const accordionCard = document.createElement("div");
     accordionCard.classList.add("accordion-item");
     accordionContainer.appendChild(accordionCard);
+    
 
     // add h2 class accordion-header
     const accordionCardHeader = document.createElement("h2");
@@ -43,8 +54,6 @@ window.addEventListener("DOMContentLoaded", () => {
     );
     accordionCardButton.innerHTML = `${question.id}. ${question.question}`;
     accordionCardHeader.appendChild(accordionCardButton);
-
-    
 
     // add accordion-collapse collapse
     const accordionCardCollapse = document.createElement("div");
@@ -91,13 +100,42 @@ window.addEventListener("DOMContentLoaded", () => {
     link2.style.color = "blue";
     link2.style.fontWeight = "bold";
 
-    if(question.answer.answer2 == "") {
-        accordionCardBody.removeChild(answerItem2);
+    if (question.answer.answer2 == "" || question.answer.answer2 == null) {
+      accordionCardBody.removeChild(answerItem2);
+    }
+
+    // add answer3
+    const answerItem3 = document.createElement("div");
+    const answerItemText3 = document.createElement("p");
+    answerItemText3.textContent = question.answer.answer3;
+    const link3 = document.createElement("a");
+    link3.target = "_blank";
+    link3.href = question.answer.href3;
+    link3.textContent = question.answer.linkName3;
+    answerItem3.appendChild(link3);
+    answerItem3.appendChild(answerItemText3);
+    accordionCardBody.appendChild(answerItem3);
+    // add underline and bold style to answer3
+    link3.style.textDecoration = "underline";
+    link3.style.color = "green";
+    link3.style.fontWeight = "bold";
+
+    if (question.answer.answer3 == "" || question.answer.answer3 == null) {
+      accordionCardBody.removeChild(answerItem3);
     }
   }
 
+  const questionHabr = document.querySelector(".habrOne__container");
+  const questionProglib = document.querySelector(".proglib__container");
+
   // Render questions to the page
-  questionsJavaScript.forEach((question) => {
-    accordionCard(question);
+  questionsJSHabr.forEach((question) => {
+    // questionHabr.append(accordionContainer);
+    accordionCard(question, questionHabr);
+  });
+
+  questionsJSProglib.forEach((question) => {
+    // questionProglib.append(accordionContainer);
+    accordionCard(question, questionProglib);
   });
 });

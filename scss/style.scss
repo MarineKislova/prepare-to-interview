@@ -26,27 +26,35 @@
 .header {
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 2;
-    height: 100px;
-    text-align: left;
-    padding: 15px;
+    padding: 30px 0px;
     background: rgba(58, 65, 70, 1);
-    color: #fff;
+    text-align: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .h1 {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     font-weight: bold;
+    color: #ffff;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 10px;
+
+    list-style: none;
+    color: #fff;
   }
 }
 
 .habrOne {
-  position: relative;
-  margin-top: 100px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -57,16 +65,25 @@
     font-size: 24px;
     font-weight: 900;
     padding: 20px 0px;
-  }
-
-  button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    // background-color: #c3c5c7;
-    cursor: pointer;
+    background-color: #a79797;
   }
 }
+
+.proglib {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tittle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 20px 0px;
+    background-color: #a79797;
+  }
+}
+
 .accordion {
 }
 .accordion-flush {
@@ -74,13 +91,16 @@
 .accordion-item {
 }
 .accordion-header {
+  border: 1px solid rgba(104, 111, 117, 0.3);
 }
 .accordion-button {
   &:not(.collapsed) {
-    background-color: #42474b;
+    background-color: rgba(104, 111, 117, 0.85);
     color: #fff;
-    // border: 0px solid #42474b;
+    border: none;
+    cursor: pointer;
   }
+
   &:focus {
     z-index: 3;
     outline: 0;
