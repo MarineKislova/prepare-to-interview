@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
 * {
@@ -90,6 +91,147 @@ h6 {
   font-size: inherit;
 }
 
+.navbar {
+  padding: 0;
+}
+
+.container-fluid {
+  background: rgb(58, 65, 70);
+}
+
+.navbar-brand {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #face88;
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(111, 78, 72);
+}
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+.navbar-toggler:hover:hover {
+  text-decoration: none;
+  color: #15e7b3;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  border: 1px solid rgb(50, 16, 10);
+  border: none;
+}
+
+.navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #82661a;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: #efb20b;
+}
+
+.disabled {
+  display: none;
+}
+
+.tittle__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+  text-align: center;
+}
+.tittle__text {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.modal-window {
+  /* ------- подложка модального окна ------- */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-window__container {
+  max-width: 640px;
+  margin: 40px auto;
+}
+.modal-window__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(255, 228, 196);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-window__close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -113,45 +255,6 @@ h6 {
   max-width: 1024px;
   margin: 0px auto;
   background: rgb(218, 220, 225);
-}
-
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 2;
-  padding: 30px 0px;
-  background: rgb(58, 65, 70);
-  text-align: center;
-}
-@media (max-width: 700px) {
-  .header__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
-  }
-}
-.header .h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: white;
-}
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  color: #fff;
 }
 
 .habrOne__container {

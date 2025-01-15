@@ -3,7 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
 
 @import "./defaultnullstyle";
-// @import "./accordion";
+@import "./blocks/nav";
+@import "./blocks/tests";
+@import "./blocks/popUp";
+
 
 .wrapper {
   min-height: 100%;
@@ -23,36 +26,50 @@
   background: $backgroundColor;
 }
 
-.header {
-  &__container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 2;
-    padding: 30px 0px;
-    background: rgba(58, 65, 70, 1);
-    text-align: center;
-    @media (max-width: 700px) {
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
+// .header {
+//   &__container {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     z-index: 2;
+//     padding: 30px 0px;
+//     background: rgba(58, 65, 70, 1);
+//     text-align: center;
+//     @media (max-width: 700px) {
+//       flex-direction: column;
+//       gap: 20px;
+//     }
+//   }
 
-  .h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffff;
-  }
+//   .h1 {
+//     font-family: "Josefin Sans", sans-serif;
+//     font-size: 36px;
+//     font-weight: bold;
+//     color: #face88;
+//   }
 
-  &__nav {
-    display: flex;
-    gap: 10px;
+//   &__nav {
+//     display: flex;
+//     // align-items: center;
+//     gap: 10px;
+//     list-style: none;
+//     color: rgb(236, 101, 78);
 
-    list-style: none;
-    color: #fff;
-  }
-}
+//     ul.li {
+//       display: flex;
+//       align-items: center;
+//       gap: 10px;
+//       font-size: 18px;
+//       font-weight: 600;
+//     }
+//     a {
+//       &:hover {
+//         color: #eb9484;
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+// }
 
 .habrOne {
   &__container {

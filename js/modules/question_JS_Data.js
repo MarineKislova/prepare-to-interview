@@ -406,7 +406,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#26",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "IIFE или Immediately Invoked Function Expression — это функция, которая вызывается или выполняется сразу же после создания или объявления. Для создания IIFE необходимо обернуть функцию в круглые скобки (оператор группировки), превратив ее в выражение, и затем вызвать ее с помощью еще одних круглых скобок. Это выглядит так: (function( ) { }( )), (function( ) { })( ) ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -420,7 +421,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#27",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Apply используется для привязки определенного объекта к значению this вызываемой функции. const details = { message: 'Hello World!'} function getMessage() {return this.message} getMessage.apply(details) // Hello World!  Этот метод похож на Function.prototype.call. Единственное отличие состоит в том, что в apply аргументы передаются в виде массива. const person = { name: 'Marko Polo' function greeting(greetingMessage) {    return `${greetingMessage} ${this.name}` //greeting.apply(person, ['Hello']) // Hello Marko Polo",
       image1: "",
       href2: "",
       linkName2: "",
@@ -434,7 +436,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#28",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Call используется для привязки определенного объекта к значению this вызываемой функции. Этот метод похож на Function.prototype.apply. Отличие состоит в том, что в call аргументы передаются через запятую. greeting.call(person, 'Hello'); // Hello Marko Polo ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -448,7 +451,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#29",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Отличие между call и apply состоит в том, как мы передаем аргументы в вызываемой функции. В apply аргументы передаются в виде массива, в call — через запятую. reduceAdd.apply(obj1, [1, 2, 3, 4, 5]) // 15 reduceAdd.call(obj2, 1, 2, 3, 4, 5) // 15 ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -462,11 +466,12 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#30",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Bind возвращает новую функцию, значением this которой является объект, указанный в к0честве первого параметра. В отличие от bind, call и apply сразу же вызывают функцию. ",
       image1: "",
       href2: "",
       linkName2: "",
-      answer2: "",
+      answer2: "REACT?",
       image2: "",
     },
   },
@@ -477,11 +482,12 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#31",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Функциональное программирование — это декларативная концепция программирования или образец (паттерн) того, как строятся приложения, как используются функции, содержащие выражения, которые вычисляют значения без изменения аргументов, которые им передаются. Объект Array содержит методы map, filter и reduce, которые являются самыми известными функциями в мире функционального программирования из-за их полезности, а также потому, что они не изменяют массив, что делает эти функции «чистыми». Также в JS имеются замыкание и функции высшего порядка, которые являются характеристиками функционального языка программирования. Метод map возвращает новый массив с результатами вызова callback для каждого элемента массива: const words = ['Functional', 'Procedural', 'Object-Oriented'] const wordsLength = words.map(word => word.length). Метод filter создает новый массив со всеми элементами, которые удовлетворяют условию, указанному в callback: const data = { { name: 'Mark', isRegistered: true } { name: 'Mary', isRegistered: false } { name: 'Mae', isRegistered: true}}. Метод reduce выполняет callback один раз для каждого элемента массива, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего callback), значение текущего элемента, текущий индекс и итерируемый массив: const strs = ['I', ' ', 'am', ' ', 'Iron', ' ', 'Man'] const result = strs.reduce((acc, currentStr) => acc + str, '')",
       image1: "",
       href2: "",
       linkName2: "",
-      answer2: "",
+      answer2: "REACT?",
       image2: "",
     },
   },
@@ -491,7 +497,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#32",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Функция высшего порядка — это функция, возвращающая другую функцию или принимающая другую функцию в качестве аргумента. function higherOrderFunction(param, callback) { return callback(param) }",
       image1: "",
       href2: "",
       linkName2: "",
@@ -506,7 +513,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#33",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Функции называют объектами первого класса, потому что они обрабатываются также, как и любое другое значение в JS. Они могут присваиваться переменным, быть свойством объекта (методом), элементом массива, аргументом другой функции, значением, возвращаемым функцией. Единственным отличием функции от любого другого значения в JS является то, что функция может быть выполнена или вызвана.",
       image1: "",
       href2: "",
       linkName2: "",
@@ -520,7 +528,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#34",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Метод map создает новый массив с результатом вызова указанной функции для каждого элемента массива",
       image1: "",
       href2: "",
       linkName2: "",
@@ -535,7 +544,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#35",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Метод filter создает новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.",
       image1: "",
       href2: "",
       linkName2: "",
@@ -549,7 +559,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#36",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Метод reduce применяет функцию reducer к каждому элементу массива (слева-направо), возвращая одно результирующее значение.",
       image1: "",
       href2: "",
       linkName2: "",
@@ -563,7 +574,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#37",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Arguments — это коллекция аргументов, передаваемых функции. Это объект, подобный массиву, у него есть свойство length, мы можем получить доступ к определенному значению с помощью arguments[i], но у него отсутствуют методы forEach, reduce, filter и map. Он позволяет узнать количество параметров функции. Преобразовать arguments в массив можно с помощью Array.prototype.slice: Array.prototype.slice.call(arguments). Запомните: в стрелочных функциях объект arguments не работает. function one() {     return arguments };  const two = function() {     return arguments }; const three = function three({  return arguments }); const four = () => arguments four() // arguments is not defined. Вызов функции four приводит к ошибке ReferenceError: arguments is not defined. Эту проблему можно решить с помощью оператора rest: const four = (...args) => args; Это автоматически поместит все параметры в массив.",
       image1: "",
       href2: "",
       linkName2: "",
@@ -577,7 +589,7 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#38",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1: "Это можно сделать с помощью Object.create",
       image1: "",
       href2: "",
       linkName2: "",
@@ -606,7 +618,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#40",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "ECMAScript — это спецификация, стандарт скриптовых языков программирования, он является основой JS, поэтому любые изменения ECMAScript отражаются на JS.Последний вариант спецификации ECMA-262",
       image1: "",
       href2: "",
       linkName2: "",
@@ -620,7 +633,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#41",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Стрелочные функции (Arrow Functions). Классы (Classes). Шаблонные строки (Template Strings). Расширенные объектные литералы (Enhanced Object literals). Деструктуризация (Object Destructuring). Промисы (Promises). Генераторы (Generators). Модули (Modules). Symbol. Прокси (Proxies). Множества (Sets). Параметры по умолчанию. Операторы rest и spread. Блочная область видимости (ключевые слова «let» и «const»).",
       image1: "",
       href2: "",
       linkName2: "",
@@ -634,7 +648,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#42",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1:
+        "Переменные, объявленные с помощью ключевого слова «var», являются глобальными. Это означает, что они доступны из любого места в коде. Переменные, объявленные с помощью ключевых слов «let» и «const» имеют блочную область видимости. Это означает, что они доступны только внутри блока ({ }). Разница между «let» и «const» состоит в том, что в первом случае мы может менять значение переменной, а во втором — нет (константа). При этом, мы можем менять значение свойства объекта, объявленного с помощью const, но не само свойство (переменную).",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1041,21 +1056,24 @@ const questionsJSHabr = [
 
   /* ----------------------------- */
 
-  {
-    id: 1,
-    question: "",
-    answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
-      image1: "",
-      href2: "",
-      linkName2: "",
-      answer2: "",
-      image2: "",
-    },
-  },
+  // {
+  //   id: 1,
+  //   question: "",
+  //   answer: {
+  //     href: "",
+  //     linkName: "",
+  //     answer1: "",
+  //     image1: "",
+  //     href2: "",
+  //     linkName2: "",
+  //     answer2: "",
+  //     image2: "",
+  //   },
+  // },
 ];
+
+
+
 
 const questionsJSProglib = [
   {

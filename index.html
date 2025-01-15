@@ -16,18 +16,106 @@
   <body>
     <div class="wrapper">
       <div class="content">
-        <header class="header">
-          <div class="header__container">
-            <h1 class="h1">Prepare to interview JavaScript</h1>
-            <ul class="header__nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="javascript.html">JavaScript</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">HTML</a></li>
-              <li><a href="#"></a></li>
-            </ul>
+        <!-- navbar -->
+        <div class="navbar__container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Prepare to interview</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Переключатель навигации"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="index.html#test"
+                      >Tests</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript.html">JavaScript</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="css.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html.html">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="articles.html">Articles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >Отключенная</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- end navbar -->
+
+        <!-- title -->
+        <div class="title">
+          <div class="tittle__container">
+            <h1 class="tittle__text">Подготовка к интервью</h1>
+            <p class="tittle__description">
+              В этом разделе представлены интересные вопросы для подготовки к
+              интервью по различным темам, таким как JavaScript, CSS, HTML, и
+              другие.
+            </p>
           </div>
-        </header>
+        </div>
+        <!-- end title -->
+
+        <!-- tests -->
+         <div class="tests" id="test">
+          <div class="tests__container">
+            <h2 class="tests__tittle">Тесты</h2>
+            <div class="tests__items">
+              <div class="tests__item">
+                <h3 class="tests__item-tittle">Тест по JavaScript</h3>
+                <p class="tests__item-description">
+                  Задайте себе несколько вопросов по JavaScript и проверьте свои
+                  знания.
+                </p>
+                <a
+                  class="btn btn-primary tests__item-btn"
+                  href="javascript.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Пройти тест
+                </a>
+                <button data-openmodal class="btn btn-primary tests__item-btn"  id="random-question-button">Показать случайный вопрос по JavaScript</button>
+                <button data-openmodal class="btn btn-primary tests__item-btn" id="quiz-button">Пройти викторину по JavaScript</button>
+              </div>
+        <!-- end tests -->
+
+        <!-- popUp -->
+        <div class="modal-window">
+          <div class="modal-window__container">
+            <div class="modal-window__body">
+              <div class="modal-window__close">
+                <p data-closemodal class="modal-window__close">&times;</p>
+              </div>
+              <div class="modal-window__test">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end popUp -->
+
+        <!-- end content -->
       </div>
     </div>
 
@@ -37,5 +125,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
