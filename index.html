@@ -35,15 +35,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link"  href="index.html#test"
-                      >Tests</a
-                    >
+                    <a class="nav-link" href="tests.html">Tests</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="javascript.html">JavaScript</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="css.html">CSS</a>
+                    <a class="nav-link" href="css.html">CSS/Sass</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="html.html">HTML</a>
@@ -64,56 +62,124 @@
         <!-- end navbar -->
 
         <!-- title -->
-        <div class="title">
+        <div class="tittle">
           <div class="tittle__container">
-            <h1 class="tittle__text">Подготовка к интервью</h1>
+            <h1 class="tittle__text">
+              Добро пожаловать на сайт подготовки к собеседованию Front-End
+              разработчика!
+            </h1>
             <p class="tittle__description">
-              В этом разделе представлены интересные вопросы для подготовки к
-              интервью по различным темам, таким как JavaScript, CSS, HTML, и
-              другие.
+              Собеседование на позицию Front-End разработчика — это не просто
+              проверка ваших знаний, а целый процесс, который требует
+              подготовки, уверенности в своих силах и понимания ключевых
+              принципов профессии. Наш сайт создан, чтобы помочь вам на каждом
+              этапе этого пути. <br />
+              <span
+                >Сайт находится в стадии разработки и наполнения
+                содержимого</span
+              >
+              <br />
+              <span
+                >На этом сайте представлены только основные темы и вопросы для
+                подготовки к собеседованию.</span
+              >
             </p>
+            <div class="tittle__important">
+              <h4>Почему это важно?</h4>
+              <p>
+                Сфера фронтенд-разработки развивается стремительно. Работодатели
+                ожидают от кандидатов не только базовых знаний, но и умения:
+              </p>
+              <ul class="tittle__list">
+                <li>Писать чистый, оптимизированный и поддерживаемый код.</li>
+                <li>Использовать современные технологии и инструменты.</li>
+                <li>Понимать архитектуру приложений и основы UI/UX-дизайна.</li>
+                <li>Эффективно решать алгоритмические задачи.</li>
+              </ul>
+            </div>
+            <div class="tittle__discover">
+              <h4>Что вы найдете на нашем сайте:</h4>
+              <ul class="tittle__list">
+                <li>
+                  <span>Теоретические материалы:</span> статьи и шпаргалки по
+                  HTML, CSS, JavaScript, фреймворкам и библиотекам.
+                </li>
+                <li>
+                  <span>Практические задания:</span> задачи для отработки
+                  навыков работы с кодом, от простых до сложных.
+                </li>
+                <li>
+                  <span>Советы по прохождению собеседований:</span> как отвечать
+                  на технические вопросы, демонстрировать свои проекты и
+                  взаимодействовать с рекрутерами.
+                </li>
+                <li>
+                  <span>Реальные кейсы:</span> примеры заданий и тестов, которые
+                  встречаются на собеседованиях в IT-компаниях.
+                </li>
+              </ul>
+            </div>
+            <div class="tittle__for-whom">
+              <h4>Кому это подойдет:</h4>
+              <p>
+                Этот сайт полезен как для новичков, только начинающих свой путь
+                в разработке, так и для опытных специалистов, желающих
+                систематизировать знания и подготовиться к новым карьерным
+                вызовам.
+              </p>
+              <p>
+                Не важно, готовитесь ли вы к первому собеседованию или хотите
+                освежить знания перед важной встречей — мы собрали все
+                необходимое для вашего успеха.
+              </p>
+              <p>
+                Начните изучение уже сегодня и сделайте уверенный шаг к своей
+                мечте стать Front-End разработчиком!
+              </p>
+            </div>
           </div>
         </div>
         <!-- end title -->
 
         <!-- tests -->
-         <div class="tests" id="test">
-          <div class="tests__container">
-            <h2 class="tests__tittle">Тесты</h2>
-            <div class="tests__items">
-              <div class="tests__item">
-                <h3 class="tests__item-tittle">Тест по JavaScript</h3>
-                <p class="tests__item-description">
-                  Задайте себе несколько вопросов по JavaScript и проверьте свои
-                  знания.
-                </p>
+        <div class="take-test">
+          <div class="take-test__container">
+            <h2 class="take-test__tittle">Пройти тест</h2>
+            <div class="take-test__items">
+              <div class="take-test__item">
                 <a
-                  class="btn btn-primary tests__item-btn"
-                  href="javascript.html"
+                  class="btn btn-primary take-test__item-btn"
+                  href="tests.html#testJavascript"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Пройти тест
+                  Перейти к тестам по JavaScript
                 </a>
-                <button data-openmodal class="btn btn-primary tests__item-btn"  id="random-question-button">Показать случайный вопрос по JavaScript</button>
-                <button data-openmodal class="btn btn-primary tests__item-btn" id="quiz-button">Пройти викторину по JavaScript</button>
               </div>
-        <!-- end tests -->
-
-        <!-- popUp -->
-        <div class="modal-window">
-          <div class="modal-window__container">
-            <div class="modal-window__body">
-              <div class="modal-window__close">
-                <p data-closemodal class="modal-window__close">&times;</p>
+              <div class="take-test__item">
+                <a
+                  class="btn btn-primary take-test__item-btn"
+                  href="tests.html#testCSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Перейти к тестам по CSS, Sass
+                </a>
               </div>
-              <div class="modal-window__test">
-                
+              <div class="take-test__item">
+                <a
+                  class="btn btn-primary take-test__item-btn"
+                  href="tests.html#testHTML"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Перейти к тестам по HTML
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- end popUp -->
+        <!-- end tests -->
 
         <!-- end content -->
       </div>

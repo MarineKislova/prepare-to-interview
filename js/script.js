@@ -1,5 +1,6 @@
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
 import { questionsJSProglib } from "./modules/question_JS_Data.js";
+import { questionJavaScript } from "./modules/question_JS_Data.js";
 
 import accordionCard from "./modules/accordionCard.js";
 import popUpWindow from "./modules/popUp.js";
@@ -28,16 +29,16 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // // Remove accordion-item with empty answer
-  // const accordionItems = document.querySelectorAll(".accordion-item");
-  // accordionItems.forEach((item) => {
-  //   const answer = item.querySelector(
-  //     ".accordion-collapse.show + .accordion-body"
-  //   );
-  //   if (!answer.textContent.trim()) {
-  //     item.parentNode.removeChild(item);
-  //   }
-  // });
+  // Remove accordion-item with empty answer
+  const accordionItems = document.querySelectorAll(".accordion-item");
+  accordionItems.forEach((item) => {
+    const answer = item.querySelector(
+      ".accordion-collapse.show + .accordion-body"
+    );
+    if (!answer.textContent.trim()) {
+      item.parentNode.removeChild(item);
+    }
+  });
 
   // Render questions to the page
   const questionHabr = document.querySelector(".habrOne__container");
@@ -53,33 +54,26 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // randon question test
+  // random question test
 
-  const randomQuestionButton = document.querySelector(
-    "#random-question-button"
+  const randomQuestionBtn = document.querySelector(
+    "#random-question-javascript"
   );
-  if (document.querySelector("#random-question-button")) {
-    randomQuestionButton.addEventListener("click", () => {
-      const randomQuestionIndex = Math.floor(
-        Math.random() * (questionsJSHabr.length + questionsJSProglib.length)
-      );
-      const randomQuestion =
-        questionsJSHabr[randomQuestionIndex] ||
-        questionsJSProglib[randomQuestionIndex];
 
-      // // render question to the page
-      // accordionCard(
-      //   randomQuestion,
-      //   document.querySelector(".modal-window__test")
-      // );
+  randomQuestionBtn.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * questionsJSProglib.length);
+    const randomQuestion = questionJavaScript[randomIndex].question;
+    const randomAnswer1 = questionJavaScript[randomIndex].answer.answer1;
+    const randomAnswer2 = questionJavaScript[randomIndex].answer.answer2;
+    const randomAnswer3 = questionJavaScript[randomIndex].answer.answer3;
+    const modalQuestion = document.querySelector("#question");
+    const modalAnswer = document.querySelector("#answer");
 
-      document.querySelector(".modal-window__test").textContent = randomQuestion.question.answer;
-    });
-  }
-
-  popUpWindow({
-    openSelector: "[data-openmodal]",
-    closeSelector: "[data-closemodal]",
-    parentSelector: ".modal-window",
+    modalQuestion.textContent = randomQuestion;
+    modalAnswer.innerHTML = `<p class="answer-text" data-answer="${randomAnswer1}"> <span> Ответ 1: </span> ${randomAnswer1} </p> 
+    <p class="answer-text" data-answer="${randomAnswer2}"> <span> Ответ 2: </span> ${randomAnswer2}</p>
+    <p class="answer-text" data-answer="${randomAnswer3}"> <span> Ответ 3: </span> ${randomAnswer2}</p>`;
   });
+
+  
 });

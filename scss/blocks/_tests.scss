@@ -1,20 +1,92 @@
-.tittle {
+.tests {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0px;
-        text-align: center;
-    }
+  &__tittle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    // padding: 20px 0px;
+  }
 
-    &__text {
-        font-size: 24px;
-        font-weight: 700;
-        padding-bottom: 20px;
-    }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-top: 20px;
+  }
 
-    &__description {
-    }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    padding-top: 55px;
+  }
+
+  &__item-tittle {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__item-description {
+    font-size: 16px;
+    text-align: center;
+    // margin-top: 10px;
+  }
+}
+
+.answer-text {
+  span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
+.modal {
+}
+.fade {
+}
+.modal-dialog {
+}
+.modal-dialog-centered {
+}
+.modal-content {
+}
+.modal-header {
+}
+.modal-title {
+}
+.fs-5 {
+}
+.btn-close {
+}
+.modal-body {
+}
+.modal-footer {
+}
+.btn {
+  padding: 12px 20px;
+
+  border-radius: 5px;
+  // margin-top: 10px;
+}
+.btn-primary {
+  max-width: 300px;
+  background-color: #fb7878;
+  color: #5b443d;
+  border: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #fa6060;
+    color: #613d31;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.09);
+    transition: all 0.3s ease;
+  }
 }
