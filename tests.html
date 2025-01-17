@@ -87,86 +87,102 @@
                   Задайте себе несколько вопросов по JavaScript и проверьте свои
                   знания.
                 </p>
-                <div
-          class="modal fade"
-          id="exampleModalToggle"
-          aria-hidden="true"
-          aria-labelledby="exampleModalToggleLabel"
-          tabindex="-1"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
-                 Вопрос
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"
-                ></button>
-              </div>
-              <div id="question" class="modal-body">
-                Покажите второе модальное окно и скройте его с помощью кнопки
-                ниже.
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn btn-primary"
-                  data-bs-target="#exampleModalToggle2"
-                  data-bs-toggle="modal"
-                >
-                  Открыть ответ
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="modal fade"
-          id="exampleModalToggle2"
-          aria-hidden="true"
-          aria-labelledby="exampleModalToggleLabel2"
-          tabindex="-1"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
-                  Ответ
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"
-                ></button>
-              </div>
-              <div id="answer" class="modal-body">
-                Скройте это модальное окно и покажите первое с помощью кнопки
-                ниже.
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn btn-primary"
-                  data-bs-target="#exampleModalToggle"
-                  data-bs-toggle="modal"
-                >
-                  Вернуться к вопросу
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="btn btn-primary"
-          data-bs-target="#exampleModalToggle"
-          data-bs-toggle="modal"
-          id="random-question-javascript"
-        >
-          Рандомный вопрос по Javascript
-        </button>
+                <div class="tests__modal">
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalToggleLabel"
+                          >
+                            Модалка 1
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                          ></button>
+                        </div>
+                        <div id="question" class="modal-body">
+                          Покажите второе модальное окно и скройте его с помощью
+                          кнопки ниже.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-primary"
+                            data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal"
+                          >
+                            Открыть второе модальное окно
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle2"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalToggleLabel2"
+                          >
+                            Модалка 2
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                          ></button>
+                        </div>
+                        <div id="answer" class="modal-body">
+                          Скройте это модальное окно и покажите первое с помощью
+                          кнопки ниже.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-primary"
+                            data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal"
+                          >
+                            Вернуться
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                    id="randomJavascript"
+                  >
+                    Открыть первое модальное окно
+                  </button>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                    id="javascript"
+                  >
+                    Открыть первое модальное окно
+                  </button>
+                </div>
               </div>
               <div class="tests__item">
                 <h3 id="testCss" class="tests__item-tittle">
@@ -176,87 +192,96 @@
                   Задайте себе несколько вопросов по CSS/Sass и проверьте свои
                   знания.
                 </p>
-                <div
-          class="modal fade"
-          id="exampleModalToggle"
-          aria-hidden="true"
-          aria-labelledby="exampleModalToggleLabel"
-          tabindex="-1"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
-                 Вопрос
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"
-                ></button>
+                <div class="tests__modal">
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalToggleLabel"
+                          >
+                            Модалка 1
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                          ></button>
+                        </div>
+                        <div id="question" class="modal-body">
+                          Покажите второе модальное окно и скройте его с помощью
+                          кнопки ниже.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-primary"
+                            data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal"
+                          >
+                            Открыть второе модальное окно
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle2"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalToggleLabel2"
+                          >
+                            Модалка 2
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                          ></button>
+                        </div>
+                        <div id="answer" class="modal-body">
+                          Скройте это модальное окно и покажите первое с помощью
+                          кнопки ниже.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-primary"
+                            data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal"
+                          >
+                            Вернуться
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                    id="randomCSS"
+                  >
+                    Открыть первое модальное окно
+                  </button>
+                </div>
               </div>
-              <div id="questionCSS" class="modal-body">
-                Покажите второе модальное окно и скройте его с помощью кнопки
-                ниже.
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn btn-primary"
-                  data-bs-target="#exampleModalToggle2"
-                  data-bs-toggle="modal"
-                >
-                  Открыть ответ
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="modal fade"
-          id="exampleModalToggle2"
-          aria-hidden="true"
-          aria-labelledby="exampleModalToggleLabel2"
-          tabindex="-1"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
-                  Ответ
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"
-                ></button>
-              </div>
-              <div id="answerCSS" class="modal-body">
-                Скройте это модальное окно и покажите первое с помощью кнопки
-                ниже.
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn btn-primary"
-                  data-bs-target="#exampleModalToggle"
-                  data-bs-toggle="modal"
-                >
-                  Вернуться к вопросу
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="btn btn-primary"
-          data-bs-target="#exampleModalToggle"
-          data-bs-toggle="modal"
-          id="random-question-CSS"
-        >
-          Рандомный вопрос по CSS/Sass
-        </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -276,8 +301,6 @@
           </div>
         </div> -->
         <!-- end popUp -->
-
-        
 
         <!-- end content -->
       </div>

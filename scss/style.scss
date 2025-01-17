@@ -176,6 +176,65 @@
     padding: 20px 0px;
     background-color: #a79797;
   }
+
+  &__link {
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    color: rgb(238, 113, 3);
+    font-weight: 700;
+
+    a {
+      color: #9660ec;
+      font-weight: bold;
+
+      &:hover {
+        color: #630cee;
+        transform: scale(1.025);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
+
+.habr35 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tittle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 20px 0px;
+    background-color: #a79797;
+  }
+
+  &__link {
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    color: rgb(238, 113, 3);
+    font-weight: 700;
+
+    a {
+      color: #9660ec;
+      font-weight: bold;
+
+      &:hover {
+        color: #630cee;
+        transform: scale(1.025);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
 }
 
 .accordion {

@@ -1,8 +1,12 @@
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
 import { questionsJSProglib } from "./modules/question_JS_Data.js";
 import { questionJavaScript } from "./modules/question_JS_Data.js";
+import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
+
+import { questionCSS } from "./modules/questions_CSS_Data.js";
 
 import accordionCard from "./modules/accordionCard.js";
+import displayQuestion from "./modules/displayQuestions.js";
 import popUpWindow from "./modules/popUp.js";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -29,51 +33,50 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Remove accordion-item with empty answer
-  const accordionItems = document.querySelectorAll(".accordion-item");
-  accordionItems.forEach((item) => {
-    const answer = item.querySelector(
-      ".accordion-collapse.show + .accordion-body"
-    );
-    if (!answer.textContent.trim()) {
-      item.parentNode.removeChild(item);
-    }
-  });
-
   // Render questions to the page
-  const questionHabr = document.querySelector(".habrOne__container");
-  if (document.querySelector(".habrOne__container")) {
-    questionsJSHabr.forEach((question) => {
-      accordionCard(question, questionHabr);
-    });
-  }
+  // const questionHabr = document.querySelector(".habrOne__container");
+  // if (document.querySelector(".habrOne__container")) {
+  //   questionsJSHabr.forEach((question) => {
+  //     accordionCard(question, questionHabr);
+  //   });
+  // }
   const questionProglib = document.querySelector(".proglib__container");
   if (document.querySelector(".proglib__container")) {
     questionsJSProglib.forEach((question) => {
       accordionCard(question, questionProglib);
     });
   }
+  const questionHabr35 = document.querySelector(".habr35__container");
+  if (document.querySelector(".habr35__container")) {
+    questionsJSHabr35.forEach((question) => {
+      accordionCard(question, questionHabr35);
+    });
+  }
 
   // random question test
+  if (document.querySelector(".tests__modal")) {
+    document.querySelector("#exampleModalToggleLabel").textContent = "Вопрос";
+    document.querySelector(".btn-primary").textContent = "Показать ответ";
+    document.querySelector("#exampleModalToggleLabel2").textContent = "Ответ";
 
-  const randomQuestionBtn = document.querySelector(
-    "#random-question-javascript"
-  );
+    // add btn name
+    document.querySelector("#randomJavascript").textContent =
+      "Случайный вопрос по JavaScript";
+    document.querySelector("#javascript").textContent =
+      "Случайная задача по JavaScript";
+    document.querySelector("#randomCSS").textContent =
+      "Случайный вопрос по CSS";
 
-  randomQuestionBtn.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * questionsJSProglib.length);
-    const randomQuestion = questionJavaScript[randomIndex].question;
-    const randomAnswer1 = questionJavaScript[randomIndex].answer.answer1;
-    const randomAnswer2 = questionJavaScript[randomIndex].answer.answer2;
-    const randomAnswer3 = questionJavaScript[randomIndex].answer.answer3;
-    const modalQuestion = document.querySelector("#question");
-    const modalAnswer = document.querySelector("#answer");
+    // random javascript question
+    document
+      .querySelector("#randomJavascript")
+      .addEventListener("click", () => {
+        displayQuestion(questionJavaScript, "question", "answer");
+      });
 
-    modalQuestion.textContent = randomQuestion;
-    modalAnswer.innerHTML = `<p class="answer-text" data-answer="${randomAnswer1}"> <span> Ответ 1: </span> ${randomAnswer1} </p> 
-    <p class="answer-text" data-answer="${randomAnswer2}"> <span> Ответ 2: </span> ${randomAnswer2}</p>
-    <p class="answer-text" data-answer="${randomAnswer3}"> <span> Ответ 3: </span> ${randomAnswer2}</p>`;
-  });
-
-  
+    // random css question
+    document.querySelector("#randomCSS").addEventListener("click", () => {
+      displayQuestion(questionCSS, "question", "answer");
+    });
+  }
 });

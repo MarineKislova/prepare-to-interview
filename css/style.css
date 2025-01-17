@@ -476,6 +476,73 @@ h6 {
   padding: 20px 0px;
   background-color: #a79797;
 }
+.proglib__link {
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-align: center;
+  color: rgb(238, 113, 3);
+  font-weight: 700;
+}
+.proglib__link a {
+  color: #9660ec;
+  font-weight: bold;
+}
+.proglib__link a:hover {
+  color: #630cee;
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.habr35__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.habr35__tittle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 20px 0px;
+  background-color: #a79797;
+}
+.habr35__link {
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-align: center;
+  color: rgb(238, 113, 3);
+  font-weight: 700;
+}
+.habr35__link a {
+  color: #9660ec;
+  font-weight: bold;
+}
+.habr35__link a:hover {
+  color: #630cee;
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
 
 .accordion-header {
   border: 1px solid rgba(104, 111, 117, 0.3);
