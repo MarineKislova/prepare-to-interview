@@ -6,6 +6,7 @@
 @import "./blocks/nav";
 @import "./blocks/tests";
 @import "./blocks/popUp";
+@import "./blocks/articles";
 
 .wrapper {
   min-height: 100%;
@@ -21,7 +22,7 @@
 }
 
 [class*="__container"] {
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0px auto;
   background: $backgroundColor;
   padding: 10px 15px;

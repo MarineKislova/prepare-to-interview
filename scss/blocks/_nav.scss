@@ -17,7 +17,11 @@
   font-family: "Josefin Sans", sans-serif;
   font-size: 36px;
   font-weight: bold;
-  color: #face88;
+  color: rgb(251, 131, 83);
+
+  &:hover {
+    color: lightsalmon;
+  }
 }
 .navbar-toggler {
   border: 1px solid rgb(111, 78, 72);
@@ -55,14 +59,14 @@
   font-weight: 600;
 }
 .nav-link {
-  color: #82661a;
+  color: #af6464;
   &:hover {
-    text-decoration: underline;
-
+    // text-decoration: underline;
     color: #efb20b;
   }
 }
 .active {
+  // color: #efb20b;
 }
 .disabled {
   display: none;

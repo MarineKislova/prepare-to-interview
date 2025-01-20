@@ -1,13 +1,22 @@
+// import questions JS
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
-import { questionsJSProglib } from "./modules/question_JS_Data.js";
+import { questionsJSProglibPart1 } from "./modules/question_JS_Data.js";
+import { questionsJSProglibPart2 } from "./modules/question_JS_Data.js";
 import { questionJavaScript } from "./modules/question_JS_Data.js";
 import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
 
+// import questions css
 import { questionCSS } from "./modules/questions_CSS_Data.js";
 
+// import questions html
+
+// import questions articles
+import { articlesFromWeb } from "./modules/articles_Data.js";
+
+// import functions for displaying questions and articles
 import accordionCard from "./modules/accordionCard.js";
 import displayQuestion from "./modules/displayQuestions.js";
-import popUpWindow from "./modules/popUp.js";
+import addArticles from "./modules/addArticles.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -28,7 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
       // Добавляем класс active к текущей
       link.classList.add("active");
       if (link.classList.contains("active")) {
-        link.style.color = "#15e7b3";
+        link.style.color = "#fa6060";
+        link.style.borderBottom = "2px solid #fa6060";
       }
     }
   });
@@ -40,10 +50,10 @@ window.addEventListener("DOMContentLoaded", () => {
   //     accordionCard(question, questionHabr);
   //   });
   // }
-  const questionProglib = document.querySelector(".proglib__container");
+  const questionProglibPart1 = document.querySelector(".proglib__container");
   if (document.querySelector(".proglib__container")) {
-    questionsJSProglib.forEach((question) => {
-      accordionCard(question, questionProglib);
+    questionsJSProglibPart1.forEach((question) => {
+      accordionCard(question, questionProglibPart1);
     });
   }
   const questionHabr35 = document.querySelector(".habr35__container");
@@ -79,4 +89,37 @@ window.addEventListener("DOMContentLoaded", () => {
       displayQuestion(questionCSS, "question", "answer");
     });
   }
+
+  // add articles to the page
+  if (document.querySelector(".article__items")) {
+    articlesFromWeb.forEach((article) => {
+      addArticles(article);
+      // console.log(articlesFromWeb);
+    });
+  }
+
+  // Filter articles by category
+  const filterButtons = document.querySelectorAll(".filter-btn");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+      const articles = document.querySelectorAll(".col-md-4");
+
+      articles.forEach((article) => {
+        if (
+          filter === "all" ||
+          article.getAttribute("data-category") === filter
+        ) {
+          article.style.display = "flex";
+        } else {
+          article.style.display = "none";
+        }
+      });
+
+      // Highlight active button
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
 });
