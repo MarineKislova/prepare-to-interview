@@ -17,7 +17,7 @@ function addArticles(articles) {
           }
             <p class="card-text text-center">${articles.content}</p>
             <a href="${
-              articles.link
+              articles.href
             }" target="_blank" class="btn btn-primary text-center" style="max-width:200px;" >Подробнее</a>
           </div>
         </div>

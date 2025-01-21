@@ -51,6 +51,7 @@
   padding:5px 5px;
   margin: 5px;
   color: #fff;
+  color: lemonchiffon;
   border-radius: 10px;
   border: 1px solid lemonchiffon;
   backdrop-filter: blur(1px) saturate(80%);
@@ -65,7 +66,7 @@
 
   &.active {
     background-color: rgba(247, 124, 76, 0.75);
-    border: 1px solid rgb(18, 22, 19);
+    border: 2px solid rgb(130, 80, 80);;
     color: rgb(130, 80, 80);
     font-weight: bold;
   }
