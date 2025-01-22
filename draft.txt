@@ -4,19 +4,27 @@
 <p></p>
 <p></p>
 <p></p>
+
 <p></p>
-<p></p>
 <span></span>
 <span></span>
 <span></span>
 <span></span>
 <span></span>
+
+<blockquote></blockquote>
+<br>
 
 <ol> <li></li> <li></li> <li></li> <li></li> <li></li> </ol>
 
 <ul> <li></li> <li></li> <li></li> <li></li> <li></li> </ul>
 
+<p><img class='question__img' src='' alt=''></p>
+<img class='question__img' src='' alt=''>
+
 <a href='http://' target='_blank' rel='noopener noreferrer'></a>
+
+<a class='question__link' href='http://' target='_blank' rel='noopener noreferrer'></a>
 
 Понравился такой формат? Держите ещё 15 интересных вопросов к собеседованию фронтенд. Проверьте себя: пишите свои ответы в комментариях.
 

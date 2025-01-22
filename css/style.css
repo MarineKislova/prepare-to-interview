@@ -666,15 +666,29 @@ h6 {
   background-color: rgb(222, 222, 230);
 }
 .accordion-body :nth-child(n) {
-  padding: 10px;
+  padding: 5px;
 }
 .accordion-body p {
   line-height: 1.5;
   padding-bottom: 2px;
+  text-align: justify;
+  text-wrap: pretty;
 }
 .accordion-body span {
   font-weight: 700;
   color: #333;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+.accordion-body .question__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+}
+.accordion-body img {
+  width: 70%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

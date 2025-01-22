@@ -102,7 +102,7 @@ function accordionCard(question, container) {
   link3.target = "_blank";
   link3.href = question.answer.href3;
   link3.textContent = question.answer.linkName3;
-  
+
   answerItem3.appendChild(answerItemText3);
   answerItem3.appendChild(link3);
   accordionCardBody.appendChild(answerItem3);
@@ -115,7 +115,14 @@ function accordionCard(question, container) {
     accordionCardBody.removeChild(answerItem3);
   }
 
-  // document.querySelector("span").style.fontWeight = "bold";
+  document.querySelectorAll("img").forEach((image) => {
+    image.addEventListener("click", () => {
+      image.style.transform = "scale(2, 2)";
+    });
+    image.addEventListener("dblclick", () => {
+      image.style.transform = "scale(1, 1)";
+    });
+  });
 }
 
 export default accordionCard;
