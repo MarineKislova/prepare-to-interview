@@ -21,7 +21,7 @@ import addArticles from "./modules/addArticles.js";
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  //active nav-item
+    //active nav-item
   // Текущий URL с учетом хэша
   const currentPage = window.location.href;
 
@@ -62,6 +62,24 @@ window.addEventListener("DOMContentLoaded", () => {
       accordionCard(question, questionHabr35);
     });
   }
+
+  // increase image size on hover and reset on click
+  document.querySelectorAll(".question__img").forEach((image) => {
+    image.addEventListener("mouseenter", () => {
+      image.style.cursor = "zoom-in";
+    });
+    image.addEventListener("click", () => {
+      if (!image.classList.contains("zoomed")) {
+        image.classList.add("zoomed");
+        image.style.cursor = "zoom-out";
+        console.log("img");
+      } else {
+        image.classList.remove("zoomed");
+        image.style.cursor = "zoom-in";
+        image.style.transition = "transform 0.3s ease-in-out";
+      }
+    });
+  });
 
   // random question test
   if (document.querySelector(".tests__modal")) {

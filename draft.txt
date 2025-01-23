@@ -4,9 +4,10 @@
 <p></p>
 <p></p>
 <p></p>
-
 <p></p>
-<span></span>
+<p></p>
+<p></p>
+
 <span></span>
 <span></span>
 <span></span>
@@ -23,6 +24,8 @@
 <img class='question__img' src='' alt=''>
 
 <a href='http://' target='_blank' rel='noopener noreferrer'></a>
+
+<p><a class='question__link' href='http://' target='_blank' rel='noopener noreferrer'></a></p>
 
 <a class='question__link' href='http://' target='_blank' rel='noopener noreferrer'></a>
 

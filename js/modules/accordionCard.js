@@ -115,14 +115,7 @@ function accordionCard(question, container) {
     accordionCardBody.removeChild(answerItem3);
   }
 
-  document.querySelectorAll("img").forEach((image) => {
-    image.addEventListener("click", () => {
-      image.style.transform = "scale(2, 2)";
-    });
-    image.addEventListener("dblclick", () => {
-      image.style.transform = "scale(1, 1)";
-    });
-  });
+  
 }
 
 export default accordionCard;
