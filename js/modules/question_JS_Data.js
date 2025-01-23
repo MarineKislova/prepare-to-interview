@@ -1084,6 +1084,7 @@ const questionsJSHabr = [
 
 /* Вопросы для подготовки к собеседованию по JavaScript. Часть 1 */
 /* https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18 */
+/* разметка сделана */
 const questionsJSProglibPart1 = [
   {
     id: 1,
@@ -3398,10 +3399,16 @@ const questionsJSHabr35 = [
   },
 ];
 
-let questionJavaScript = questionsJSHabr.concat(...questionsJSProglibPart1);
+let questionJavaScript = questionsJSProglibPart1.concat(
+  ...questionsJSProglibPart1
+);
 
 export { questionsJSHabr };
 export { questionsJSProglibPart1 };
 export { questionsJSProglibPart2 };
+export { questionsJSProglib10 };
+export { questionsJSTproger30 };
+export { questionsJSHabrPart1 };
+export { questionsJSHabrPart2 }; //не заполнено
 export { questionsJSHabr35 };
 export { questionJavaScript };
