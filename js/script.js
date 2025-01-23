@@ -24,6 +24,7 @@ import displayQuestion from "./modules/displayQuestions.js";
 import addArticles from "./modules/addArticles.js";
 import zoomImage from "./modules/zoomImage.js";
 
+
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
@@ -49,12 +50,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // increase image size on hover and reset on click
-  // zoomImage({
-  //   imageSelector: ".question__img",
-  // });
+  
 
- 
   // Render questions to the page
   // const questionHabr = document.querySelector(".habrOne__container");
   // if (document.querySelector(".habrOne__container")) {
@@ -74,6 +71,8 @@ window.addEventListener("DOMContentLoaded", () => {
       accordionCard(question, questionHabr35);
     });
   }
+
+ 
 
   // random question test
   if (document.querySelector(".tests__modal")) {
@@ -101,6 +100,28 @@ window.addEventListener("DOMContentLoaded", () => {
       displayQuestion(questionCSS, "question", "answer");
     });
   }
+
+   // increase image size on hover and reset on click
+  zoomImage({
+    imageSelector: ".question__img",
+  });
+
+  // document.querySelectorAll(".question__img").forEach((image) => {
+  //   image.addEventListener("mouseenter", () => {
+  //     image.style.cursor = "zoom-in";
+  //   });
+  //   image.addEventListener("click", () => {
+  //     if (!image.classList.contains("zoomed")) {
+  //       image.classList.add("zoomed");
+  //       image.style.cursor = "zoom-out";
+  //       console.log("img");
+  //     } else {
+  //       image.classList.remove("zoomed");
+  //       image.style.cursor = "zoom-in";
+  //       image.style.transition = "transform 0.3s ease-in-out";
+  //     }
+  //   });
+  // });
 
   // add articles to the page
   if (document.querySelector(".article__items")) {

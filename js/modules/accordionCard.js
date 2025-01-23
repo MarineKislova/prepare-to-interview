@@ -1,5 +1,3 @@
-import zoomImage from "./zoomImage.js";
-
 function accordionCard(question, container) {
   //  add accordionContainer
   const accordionContainer = document.createElement("div");
@@ -117,10 +115,7 @@ function accordionCard(question, container) {
     accordionCardBody.removeChild(answerItem3);
   }
 
-  // increase image size on hover and reset on click
-  zoomImage({
-    imageSelector: ".question__img",
-  });
+  
 }
 
 export default accordionCard;

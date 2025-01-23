@@ -462,6 +462,9 @@ h6 {
 }
 
 .zoomed {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2); /* Масштабирование */
   z-index: 1000;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
