@@ -24,7 +24,6 @@ import displayQuestion from "./modules/displayQuestions.js";
 import addArticles from "./modules/addArticles.js";
 import zoomImage from "./modules/zoomImage.js";
 
-
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
@@ -50,29 +49,85 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
+  //add button toUp
+  const accordionItem = document.querySelectorAll(".accordion-item");
+  const accordionButton = document.querySelectorAll(".accordion-button");
+
+  function runUp({ containerSelector, tittleSelector, buttonSelector }) {
+    const container = document.querySelector(containerSelector);
+    const tittle = document.querySelector(tittleSelector);
+    const button = document.querySelector(buttonSelector);
+
+    const upButton = document.createElement("button");
+    upButton.textContent = "Up";
+    upButton.classList.add("btn", "btn-outline-secondary", "up-button");
+    container.appendChild(upButton);
+
+    upButton.addEventListener("click", () => {
+      container.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  accordionButton.forEach((button) => {
+    button.addEventListener("click", () => {
+      runUp({
+        containerSelector: ".accordion-item",
+        tittleSelector: ".questions__container",
+        buttonSelector: ".accordion-button ",
+      });
+    });
+  });
 
   // Render questions to the page
-  // const questionHabr = document.querySelector(".habrOne__container");
-  // if (document.querySelector(".habrOne__container")) {
-  //   questionsJSHabr.forEach((question) => {
-  //     accordionCard(question, questionHabr);
-  //   });
-  // }
-  const questionProglibPart1 = document.querySelector(".proglib__container");
-  if (document.querySelector(".proglib__container")) {
+
+  const questionProglibPart1 = document.querySelector(".proglib-P1-container");
+  if (document.querySelector(".proglib-P1-container")) {
     questionsJSProglibPart1.forEach((question) => {
       accordionCard(question, questionProglibPart1);
     });
   }
-  const questionHabr35 = document.querySelector(".habr35__container");
-  if (document.querySelector(".habr35__container")) {
+
+  const questionProglibPart2 = document.querySelector(".proglib-P2-container");
+  if (document.querySelector(".proglib-P2-container")) {
+    questionsJSProglibPart2.forEach((question) => {
+      accordionCard(question, questionProglibPart2);
+    });
+  }
+
+  const questionProglib10 = document.querySelector(".proglib-10-container");
+  if (document.querySelector(".proglib-10-container")) {
+    questionsJSProglib10.forEach((question) => {
+      accordionCard(question, questionProglib10);
+    });
+  }
+
+  const questionTproger30 = document.querySelector(".tproger-30-container");
+  if (document.querySelector(".tproger-30-container")) {
+    questionsJSTproger30.forEach((question) => {
+      accordionCard(question, questionTproger30);
+    });
+  }
+
+  const questionHabrPart1 = document.querySelector(".habr-P1-container");
+  if (document.querySelector(".habr-P1-container")) {
+    questionsJSHabrPart1.forEach((question) => {
+      accordionCard(question, questionHabrPart1);
+    });
+  }
+
+  const questionHabrPart2 = document.querySelector(".habr-P2-container");
+  if (document.querySelector(".habr-P2-container")) {
+    questionsJSHabrPart2.forEach((question) => {
+      accordionCard(question, questionHabrPart2);
+    });
+  }
+
+  const questionHabr35 = document.querySelector(".habr-30-container");
+  if (document.querySelector(".habr-30-container")) {
     questionsJSHabr35.forEach((question) => {
       accordionCard(question, questionHabr35);
     });
   }
-
- 
 
   // random question test
   if (document.querySelector(".tests__modal")) {
@@ -101,7 +156,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-   // increase image size on hover and reset on click
+  // increase image size on hover and reset on click
   zoomImage({
     imageSelector: ".question__img",
   });

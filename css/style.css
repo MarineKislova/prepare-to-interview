@@ -163,6 +163,160 @@ h6 {
   display: none;
 }
 
+.questions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.questions__tittle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 20px 0px;
+}
+
+.active:not(.active) {
+  display: none;
+}
+
+.btn-outline-secondary {
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 100px;
+  background-color: #d1c2c2;
+  color: #4a86a7;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.51);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.51);
+  border: none;
+  border-radius: 0px;
+  padding: 10px 20px;
+  font-weight: 900;
+  margin-top: 10px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.btn-outline-secondary:hover {
+  background-color: #c1b5b5;
+  color: #4a86a7;
+  -webkit-box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.51);
+          box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.51);
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.accordion-header {
+  border: 1px solid rgba(104, 111, 117, 0.3);
+}
+
+.accordion-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(242, 241, 236);
+  padding: 0px;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+.accordion-button a {
+  color: #4a86a7;
+  font-weight: 900;
+  text-decoration: none;
+}
+.accordion-button a span {
+  color: #cb4343;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(145, 148, 151, 0);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-body {
+  background-color: rgb(144, 144, 213);
+}
+.accordion-body :nth-child(n) {
+  padding: 5px;
+}
+.accordion-body p {
+  line-height: 1.5;
+  padding-bottom: 2px;
+  text-align: justify;
+  text-wrap: pretty;
+}
+.accordion-body span {
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.accordion-body .question__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.accordion-body img {
+  width: 30%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .accordion-body img {
+    width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .accordion-body img {
+    width: 60%;
+  }
+}
+@media (max-width: 425px) {
+  .accordion-body img {
+    width: 100%;
+  }
+}
+.accordion-body .question__link {
+  color: #ed8346;
+  font-weight: 700;
+}
+.accordion-body .question__link:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .tests__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,12 +616,33 @@ h6 {
 }
 
 .zoomed {
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2); /* Масштабирование */
+  -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+          transform: scale(3); /* Масштабирование */
   z-index: 1000;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+}
+@media (max-width: 768px) {
+  .zoomed {
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+  }
+}
+@media (max-width: 768px) {
+  .zoomed {
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
+  }
+}
+@media (max-width: 425px) {
+  .zoomed {
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
+  }
 }
 
 /* index.html */
@@ -701,6 +876,17 @@ h6 {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+.accordion-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
 .accordion-header {
   border: 1px solid rgba(104, 111, 117, 0.3);
 }
@@ -716,61 +902,4 @@ h6 {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.accordion-body {
-  background-color: rgb(222, 222, 230);
-}
-.accordion-body :nth-child(n) {
-  padding: 5px;
-}
-.accordion-body p {
-  line-height: 1.5;
-  padding-bottom: 2px;
-  text-align: justify;
-  text-wrap: pretty;
-}
-.accordion-body span {
-  font-weight: 700;
-  color: #333;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-.accordion-body .question__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px auto;
-}
-.accordion-body img {
-  width: 30%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-@media (max-width: 768px) {
-  .accordion-body img {
-    width: 55%;
-  }
-}
-@media (max-width: 768px) {
-  .accordion-body img {
-    width: 60%;
-  }
-}
-@media (max-width: 425px) {
-  .accordion-body img {
-    width: 100%;
-  }
-}
-.accordion-body .question__link {
-  color: #ed8346;
-  font-weight: 700;
-}
-.accordion-body .question__link:hover {
-  -webkit-transform: scale(1.02);
-      -ms-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

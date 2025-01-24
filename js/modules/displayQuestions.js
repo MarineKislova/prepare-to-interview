@@ -1,3 +1,5 @@
+import zoomImage from "./zoomImage.js";
+
 function displayQuestion(data, questionContainer, answerContainer) {
   const randomIndex = Math.floor(Math.random() * data.length);
   const randomQuestion = data[randomIndex].question;
@@ -11,6 +13,11 @@ function displayQuestion(data, questionContainer, answerContainer) {
   modalAnswer.innerHTML = `<p class="answer-text" data-answer="${randomAnswer1}"> <span> Ответ 1: </span> ${randomAnswer1} </p>
     <p class="answer-text" data-answer="${randomAnswer2}"> <span> Ответ 2: </span> ${randomAnswer2}</p>
     <p class="answer-text" data-answer="${randomAnswer3}"> <span> Ответ 3: </span> ${randomAnswer2}</p>`;
+
+  // increase image size on hover and reset on click
+  zoomImage({
+    imageSelector: ".question__img",
+  });
 }
 
 export default displayQuestion;
