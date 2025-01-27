@@ -179,14 +179,14 @@ h6 {
   padding: 20px 0px;
 }
 
-.active:not(.active) {
+.btnUp {
   display: none;
 }
 
 .btn-outline-secondary {
   -ms-flex-item-align: center;
       align-self: center;
-  max-width: 100px;
+  max-width: 220px;
   background-color: #d1c2c2;
   color: #4a86a7;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.51);
@@ -240,6 +240,9 @@ h6 {
   color: #4a86a7;
   font-weight: 900;
   text-decoration: none;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 0px 30px;
 }
 .accordion-button a span {
   color: #cb4343;

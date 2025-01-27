@@ -1,5 +1,4 @@
 // import questions JS
-import { questionsJSHabr } from "./modules/question_JS_Data.js";
 import { questionsJSProglibPart1 } from "./modules/question_JS_Data.js";
 import { questionsJSProglibPart2 } from "./modules/question_JS_Data.js";
 import { questionsJSProglib10 } from "./modules/question_JS_Data.js";
@@ -7,6 +6,7 @@ import { questionsJSTproger30 } from "./modules/question_JS_Data.js";
 import { questionsJSHabrPart1 } from "./modules/question_JS_Data.js";
 import { questionsJSHabrPart2 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
+import { questionsJSHabr } from "./modules/question_JS_Data.js";
 
 import { questionJavaScript } from "./modules/question_JS_Data.js";
 
@@ -50,31 +50,47 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //add button toUp
-  const accordionItem = document.querySelectorAll(".accordion-item");
-  const accordionButton = document.querySelectorAll(".accordion-button");
+  const questionContainers = document.querySelectorAll(".accordion-item");
 
-  function runUp({ containerSelector, tittleSelector, buttonSelector }) {
-    const container = document.querySelector(containerSelector);
-    const tittle = document.querySelector(tittleSelector);
-    const button = document.querySelector(buttonSelector);
+  function addUpBtn(container) {
+    const upBtn = document.createElement("button");
+    upBtn.classList.add("btn", "btn-outline-secondary", "btnUp");
+    upBtn.textContent = "Наверх к разделу";
+    // upBtn.style.maxWidth = 220 + "px";
+    // upBtn.style.alignSelf = "center"
+    container.appendChild(upBtn);
 
-    const upButton = document.createElement("button");
-    upButton.textContent = "Up";
-    upButton.classList.add("btn", "btn-outline-secondary", "up-button");
-    container.appendChild(upButton);
-
-    upButton.addEventListener("click", () => {
-      container.scrollTo({ top: 0, behavior: "smooth" });
+    upBtn.addEventListener("click", () => {
+      const title = container.querySelector(".questions__tittle");
+      if (title) {
+        title.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
     });
   }
 
-  accordionButton.forEach((button) => {
-    button.addEventListener("click", () => {
-      runUp({
-        containerSelector: ".accordion-item",
-        tittleSelector: ".questions__container",
-        buttonSelector: ".accordion-button ",
-      });
+  // Добавляем кнопки "Наверх к разделу" для каждого контейнера
+  questionContainers.forEach((container) => {
+    addUpBtn(container);
+  });
+
+  const accordionButtons = document.querySelectorAll(".accordion-button");
+  accordionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const container = btn.closest(".accordion-item");
+      const upButton = container ? container.querySelector(".btnUp") : null;
+
+      // Проверяем, есть ли кнопка
+      if (btn.classList.contains("collapsed")) {
+        // Если кнопка аккордеона "закрыта"
+        if (upButton) {
+          upButton.style.display = "none";
+        }
+      } else {
+        // Если кнопка аккордеона "открыта"
+        if (upButton) {
+          upButton.style.display = "block";
+        }
+      }
     });
   });
 
@@ -129,6 +145,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  questionsJSHabr
+  const questionHabr70 = document.querySelector(".habr-70-container");
+  if (document.querySelector(".habr-70-container")) {
+    questionsJSHabr.forEach((question) => {
+      accordionCard(question, questionHabr70);
+    });
+  }
+
   // random question test
   if (document.querySelector(".tests__modal")) {
     document.querySelector("#exampleModalToggleLabel").textContent = "Вопрос";
@@ -160,23 +184,6 @@ window.addEventListener("DOMContentLoaded", () => {
   zoomImage({
     imageSelector: ".question__img",
   });
-
-  // document.querySelectorAll(".question__img").forEach((image) => {
-  //   image.addEventListener("mouseenter", () => {
-  //     image.style.cursor = "zoom-in";
-  //   });
-  //   image.addEventListener("click", () => {
-  //     if (!image.classList.contains("zoomed")) {
-  //       image.classList.add("zoomed");
-  //       image.style.cursor = "zoom-out";
-  //       console.log("img");
-  //     } else {
-  //       image.classList.remove("zoomed");
-  //       image.style.cursor = "zoom-in";
-  //       image.style.transition = "transform 0.3s ease-in-out";
-  //     }
-  //   });
-  // });
 
   // add articles to the page
   if (document.querySelector(".article__items")) {
