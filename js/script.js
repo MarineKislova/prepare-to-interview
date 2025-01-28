@@ -217,4 +217,50 @@ window.addEventListener("DOMContentLoaded", () => {
       button.classList.add("active");
     });
   });
+
+  //add clock
+  const clock = document.querySelector(".time__clock");
+  if (clock) {
+    function showTime() {
+      let date = new Date();
+      let h = date.getHours();
+      let m = date.getMinutes();
+      let s = date.getSeconds();
+
+
+      if (h === 0) {
+        h = 24;
+      }
+
+      
+
+      h = h < 10 ? `0${h}` : h;
+      m = m < 10 ? `0${m}` : m;
+      s = s < 10 ? `0${s}` : s;
+
+      const time = `${h}:${m}:${s}`;
+      clock.textContent = time;
+      clock.innerText = time;
+
+      setTimeout(showTime, 1000);
+    }
+
+    showTime();
+  }
+
+  //add date
+  const date = document.querySelector(".time__date");
+  if (date) {
+    const options = { weekday: "long", month: "long", day: "numeric" };
+    const today = new Date();
+    date.textContent = today.toLocaleDateString("ru", options);
+  }
+
+  //add year
+  const year = document.querySelector(".time__year");
+  if (year) {
+    year.textContent = new Date().getFullYear() + " год";
+  }
+
+
 });

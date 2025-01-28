@@ -6,7 +6,7 @@
 @import "./blocks/nav";
 @import "./blocks/questions";
 @import "./blocks/tests";
-@import "./blocks/popUp";
+// @import "./blocks/popUp";
 @import "./blocks/articles";
 
 .wrapper {
@@ -43,6 +43,30 @@
 
   @media (max-width: 425px) {
     transform: scale(3);
+  }
+}
+
+.time {
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-weight: 500;
+  }
+
+  &__tittle {
+    font-weight: 700;
+  }
+
+  &__clock {
+    color: #630cee;
+  }
+
+  &__date {
+  }
+
+  &__year {
   }
 }
 
@@ -291,5 +315,3 @@
 }
 .accordion-body {
 }
-
-
