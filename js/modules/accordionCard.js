@@ -5,15 +5,10 @@ function accordionCard(question, container) {
   accordionContainer.setAttribute("id", `accordionFlushExample`);
   container.appendChild(accordionContainer);
 
- 
-
   // add accordion-item
   const accordionCard = document.createElement("div");
   accordionCard.classList.add("accordion-item");
   accordionContainer.appendChild(accordionCard);
-  
-
-  
 
   // add h2 class accordion-header
   const accordionCardHeader = document.createElement("h2");
@@ -25,8 +20,6 @@ function accordionCard(question, container) {
   );
 
   accordionCard.appendChild(accordionCardHeader);
-
-  
 
   // add button class accordion-button collapsed
   const accordionCardButton = document.createElement("button");
@@ -49,16 +42,11 @@ function accordionCard(question, container) {
   accordionCardButton.innerHTML = `${question.id}. ${question.question}`;
   accordionCardHeader.appendChild(accordionCardButton);
 
-
-
-
   // add accordion-collapse collapse
   const accordionCardCollapse = document.createElement("div");
   accordionCardCollapse.id = `flush-collapse${question.id}`;
   accordionCardCollapse.classList.add("accordion-collapse", "collapse");
   accordionCard.appendChild(accordionCardCollapse);
-
- 
 
   // add card-body
   const accordionCardBody = document.createElement("div");

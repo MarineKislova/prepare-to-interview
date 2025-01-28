@@ -12,7 +12,7 @@
   }
 }
 
-.btnUp{
+.btnUp {
   display: none;
 }
 
@@ -21,7 +21,7 @@
   max-width: 220px;
   background-color: #d1c2c2;
   color: #4a86a7;
-  
+
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.51);
   border: none;
   border-radius: 0px;
@@ -29,13 +29,13 @@
   font-weight: 900;
   margin-top: 10px;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  
 
   &:hover {
     background-color: #c1b5b5;
     color: #4a86a7;
     box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.51);
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      box-shadow 0.3s ease;
   }
 }
 
@@ -65,9 +65,15 @@
     text-decoration: none;
     align-self: start;
     padding: 0px 30px;
+    cursor: alias;
 
     span {
       color: #cb4343;
+    }
+
+    &:hover {
+      transform: skewX(-10deg) scaleX(1.09);
+      transition: all 0.1s ease;
     }
   }
 
@@ -76,9 +82,19 @@
     color: #fff;
     border: none;
     cursor: pointer;
-  }
 
- 
+    a {
+      color: #bce0f3;
+      font-weight: 900;
+      text-decoration: none;
+      align-self: start;
+      padding: 0px 30px;
+
+      span {
+        color: #f79292;
+      }
+    }
+  }
 
   &:focus {
     z-index: 3;
@@ -147,6 +163,8 @@
       transition: all 0.3s ease-in-out;
     }
   }
+
+  
 }
 .proglib-P1-container {
 }
@@ -186,3 +204,4 @@
 }
 .habr-30-container {
 }
+

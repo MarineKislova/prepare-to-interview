@@ -145,7 +145,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  questionsJSHabr
+  questionsJSHabr;
   const questionHabr70 = document.querySelector(".habr-70-container");
   if (document.querySelector(".habr-70-container")) {
     questionsJSHabr.forEach((question) => {

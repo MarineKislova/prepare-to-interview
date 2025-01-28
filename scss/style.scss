@@ -34,11 +34,11 @@
   transition: 0.3s all ease-in-out;
 
   @media (max-width: 768px) {
-  transform: scale(2);
+    transform: scale(2);
   }
 
   @media (max-width: 768px) {
-  transform: scale(3);
+    transform: scale(3);
   }
 
   @media (max-width: 425px) {
@@ -162,12 +162,9 @@
   }
 }
 .btn {
-  
 }
 .btn-primary {
 }
-
-
 
 /* javascript.html */
 .habrOne {
@@ -260,13 +257,8 @@
 }
 
 .accordion {
- 
-  
-
 }
 .accordion-flush {
-  
-  
 }
 .accordion-item {
   display: flex;
@@ -298,5 +290,6 @@
 .collapse {
 }
 .accordion-body {
- 
 }
+
+

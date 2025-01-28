@@ -243,15 +243,34 @@ h6 {
   -ms-flex-item-align: start;
       align-self: start;
   padding: 0px 30px;
+  cursor: alias;
 }
 .accordion-button a span {
   color: #cb4343;
+}
+.accordion-button a:hover {
+  -webkit-transform: skewX(-10deg) scaleX(1.09);
+      -ms-transform: skewX(-10deg) scaleX(1.09);
+          transform: skewX(-10deg) scaleX(1.09);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 .accordion-button:not(.collapsed) {
   background-color: rgba(145, 148, 151, 0);
   color: #fff;
   border: none;
   cursor: pointer;
+}
+.accordion-button:not(.collapsed) a {
+  color: #bce0f3;
+  font-weight: 900;
+  text-decoration: none;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 0px 30px;
+}
+.accordion-button:not(.collapsed) a span {
+  color: #f79292;
 }
 .accordion-button:focus {
   z-index: 3;
@@ -905,4 +924,9 @@ h6 {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.accordion-body p {
+  padding: 0px;
+  padding-top: 100px;
 }/*# sourceMappingURL=style.css.map */
