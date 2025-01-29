@@ -27,7 +27,7 @@ import zoomImage from "./modules/zoomImage.js";
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  //active nav-item
+    //active nav-item
   // Текущий URL с учетом хэша
   const currentPage = window.location.href;
 
@@ -227,12 +227,9 @@ window.addEventListener("DOMContentLoaded", () => {
       let m = date.getMinutes();
       let s = date.getSeconds();
 
-
       if (h === 0) {
         h = 24;
       }
-
-      
 
       h = h < 10 ? `0${h}` : h;
       m = m < 10 ? `0${m}` : m;
@@ -261,6 +258,4 @@ window.addEventListener("DOMContentLoaded", () => {
   if (year) {
     year.textContent = new Date().getFullYear() + " год";
   }
-
-
 });

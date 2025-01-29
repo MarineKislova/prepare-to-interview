@@ -44,7 +44,7 @@ const articlesFromWeb = [
     content:
       "Доброго времени суток, друзья! Надеюсь, эта статья будет полезна как начинающим разработчикам, так и опытным. <br> В вопросах, которые показались мне сложнее прочих, приведены ссылки на дополнительную литературу. Буду признателен за развернутые комментарии. Все замечания будут учтены при редактировании статьи. Итак, поехали.",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на habr.com",
     href: "https://habr.com/ru/articles/486820/",
     image: "./img/questions_640.jpg",
@@ -54,7 +54,7 @@ const articlesFromWeb = [
     content:
       "Стрелочные функции, замыкания, промисы и async/await, методы работы с массивами и объектами, шаблонные литералы, особенности Map и Set, оператор расширения и клонирование объектов.",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на proglib.io",
     href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
     image: "./img/questions_640.jpg",
@@ -64,7 +64,7 @@ const articlesFromWeb = [
     content:
       "Продолжаем разбирать вопросы для джунов: рассказываем о прототипном наследовании, цикле событий, методах сохранения данных в браузере, конструкторах, генераторах, функциональных выражениях, микро- и макрозадачах.",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на proglib.io",
     href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
     image: "./img/questions_640.jpg",
@@ -74,7 +74,7 @@ const articlesFromWeb = [
     content:
       "В этой статье мы рассмотрим 10 вопросов с собеседований по JavaScript и примеры ответов на них, которые помогут вам подготовиться к интервью.",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на proglib.io",
     href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
     image: "./img/questions_640.jpg",
@@ -84,7 +84,7 @@ const articlesFromWeb = [
     content:
       "Казалось бы, вопросы на собеседовании frontend разработчика Junior не должны отличаться от стандартных задачек с IT-сайтов. Но складывается впечатление, что работодатели с каждым годом придумывают больше заковыристых вопросов, чтобы поставить кандидата в тупик. ",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на tproger.ru",
     href: "https://tproger.ru/articles/20-voprosov-na-sobesedovanii-frontend-razrabotchika",
     image: "./img/questions_640.jpg",
@@ -95,7 +95,7 @@ const articlesFromWeb = [
     content:
       "В этой статье собраны вопросы именно по JavaScript. В дальнейшем планирую рассмотреть TypeScript отдельно, а также React и связанные с ним технологии.",
     category: "interview_questions",
-    hashTag: "",
+    hashTag: "javascript",
     linkTittle: "Ссылка на habr.com",
     href: "https://habr.com/ru/articles/784548/",
     image:
@@ -117,9 +117,9 @@ const articlesFromWeb = [
     title: "Учебник по JavaScript: ООП на простых примерах",
     content:
       "Познакомимся с наследованием, инкапсуляцией, абстракцией и полиморфизмом. А также научимся создавать объекты и использовать синтаксический сахар class.",
-    category: "javascript",
-    hashTag: "",
-    linkTittle: "",
+    category: "textbook",
+    hashTag: "javascript",
+    linkTittle: "Ссылка на proglib.io",
     href: "https://proglib.io/p/uchebnik-po-javascript-oop-na-prostyh-primerah-2022-06-26",
     image:
       "https://media.proglib.io/posts/2022/06/26/ca4010feb45ff3ce2147350f5e27ace5.webp",
@@ -128,10 +128,74 @@ const articlesFromWeb = [
     title: "35 вопросов с собеседования JavaScript-разработчика",
     content: "Автор оригинала: Abdo Amin",
     category: "interview_questions",
-    hashTag: "",
-    linkTittle: "",
+    hashTag: "javascript",
+    linkTittle: "Ссылка на habr.com",
     href: "https://habr.com/ru/articles/578370/",
     image: "./img/questions_640.jpg",
+  },
+  {
+    title: "Мои любимые вопросы о CSS с ответами",
+    content:
+      "Я проходил множество интервью, и когда дело доходило до вопросов о CSS, то они сводились к: 'Перечислите все известные способы центрирования элемента'. После 5 ответов, откровенно, это надоело. Поэтому я хочу поделиться своими любимыми вопросами о CSS, которые я задаю на интервью.",
+    category: "interview_questions",
+    hashTag: "css",
+    linkTittle: "",
+    href: "https://habr.com/ru/articles/499370/",
+    image: "./img/questions_640.jpg",
+  },
+    {
+    title: "Вопросы на собеседование Git",
+    content:
+      "<p>Список этих вопросов поможет вам подготовиться к собеседованию по Git. На этой странице вы найдете список вопросов с краткими ответами и ссылками на материалы для более глубокого изучения. Проверьте свои знания о системе контроля версий Git, включая основные команды, ветвление, слияния и решение конфликтов, чтобы успешно пройти интервью и быть готовым к работе с Git в реальном проекте.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
+    category: "interview_questions",
+    hashTag: "css",
+    linkTittle: "Ссылка на chm.org.ua",
+    href: "https://chm.org.ua/ru/voprosy-na-sobesedovanie-git/",
+    image:
+      "https://chm.org.ua/wp-content/uploads/2024/02/voprosy-na-sobesedovanie-po-git.png",
+  },
+  {
+    title: "Вопросы на собеседование JavaScript",
+    content:
+      "<p>Подготовьтесь к собеседованию по JavaScript, изучив вопросы, которые часто задают на технических интервью для позиций junior frontend и junior javascript разработчик. Эта страница содержит краткие ответы на важные вопросы, а также ссылки на ресурсы для дополнительного изучения. Проверьте свои знания основ языка, работы с переменными, функциями, объектами, массивами и другими ключевыми концепциями JavaScript, чтобы быть готовым к любым вопросам на собеседовании.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
+    category: "interview_questions",
+    hashTag: "css",
+    linkTittle: "Ссылка на chm.org.ua",
+    href: "https://chm.org.ua/ru/voprosy-na-sobesedovanie-javascript/",
+    image:
+      "https://chm.org.ua/wp-content/uploads/2024/02/voprosy-na-sobesedovanie-po-js.png",
+  },
+  {
+    title: "Вопросы на собеседование CSS",
+    content:
+      "<p>Эта статья поможет вам подготовиться к собеседованию по CSS, предоставляя список часто встречающихся вопросов с краткими ответами и ссылками на материалы для дополнительного изучения. Проверьте свои знания стилизации веб-страниц, а именно: основные концепции CSS, селекторы, свойства и техники, необходимые для успешного прохождения собеседования.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
+    category: "interview_questions",
+    hashTag: "css",
+    linkTittle: "Ссылка на chm.org.ua",
+    href: "https://chm.org.ua/ru/voprosy-na-sobesedovanie-css/",
+    image:
+      "https://chm.org.ua/wp-content/uploads/2024/02/voprosy-na-sobesedovanie-po-css.png",
+  },
+  {
+    title: "Вопросы на собеседование HTML",
+    content:
+      "<p>Подготовьтесь к прохождению собеседования по HTML с помощью этой статьи. Здесь вы найдете актуальные вопросы, которые могут быть заданы на собеседовании фронтенд разработчика, а также краткие ответы и ссылки на полезные учебные материалы. Проверьте свои знания ключевых концепций, правильного использования тегов, атрибутов и семантики HTML, чтобы быть уверенным в своих знаниях перед важным интервью.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
+    category: "interview_questions",
+    hashTag: "css",
+    linkTittle: "Ссылка на chm.org.ua",
+    href: "https://chm.org.ua/ru/voprosy-na-sobesedovanie-html/",
+    image:
+      "https://chm.org.ua/wp-content/uploads/2024/02/voprosy-na-sobesedovanie-po-html-768x768.png",
+  },
+  {
+    title: "Тесты по программированию",
+    content:
+      "<p>Перед тем как приступать к глубокому изучению любой темы из области программирования, важно убедится в отсутствии пробелов в базовых знаниях. На этой странице нашей платформы вы найдете серию тестов, предназначенных для оценки ваших базовых знаний по <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> и <span>Git</span>. Эти тесты помогут вам выявить пробелы в вашем понимании ключевых концепций и технологий. Если вы допустите ошибку при прохождении теста, не переживайте – к каждому вопросу прилагаются ссылки на учебные материалы, которые помогут вам заполнить пробелы в знаниях. Мы постоянно работаем над расширением нашего арсенала тестов, чтобы предложить вам возможность проверить свои знания по различным технологиям программирования. Следите за обновлениями на странице, чтобы получать доступ к новым тестам и продолжать совершенствовать свои знания и навыки.</p>",
+    category: "tests_online",
+    hashTag: "",
+    linkTittle: "Ссылка на chm.org.ua",
+    href: "https://chm.org.ua/ru/testy-po-programmirovaniiu/",
+    image: "./img/test_640.jpg",
   },
   // {
   //   title: "Article 1",
@@ -158,7 +222,7 @@ const articlesFromWeb = [
   // hashTag: "",
   //   linkTittle: "",
   //   href: "",
-  //   image: "./img/test_640.png",
+  //   image: "./img/test_640.jpg",
   // },
   // {
   //   title: "Article 1",
@@ -172,6 +236,3 @@ const articlesFromWeb = [
 ];
 
 export { articlesFromWeb };
-
-
-
