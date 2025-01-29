@@ -111,6 +111,7 @@ h6 {
 
 .navbar-toggler {
   border: 1px solid rgb(111, 78, 72);
+  background-color: rgb(251, 131, 83);
 }
 .navbar-toggler:hover {
   text-decoration: none;

@@ -736,7 +736,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#48",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Объект Set</span> позволяет хранить уникальные значения, примитивы и ссылки на объекты. Еще раз: в <span>Set</span> можно добавлять только уникальные значения. Он проверяет хранящиеся в нем значения с помощью алгоритма <span>SameZeroValue</span>.</p> <p><span>Экземпляр Set</span> создается с помощью <span>конструктора Set</span>. Мы также можем передать ему некоторые значения при создании:</p> <p><span>const set1 = new Set()<br>const set2 = new Set(['a','b','c','d','d','e']) // вторая 'd' не добавится</span></p> <p>Его основные методы это:</p> <ul> <li>- new Set(iterable) – создаёт Set, и если в качестве аргумента был предоставлен итерируемый объект (обычно это массив), то копирует его значения в новый Set.</li> <li>- set.add(value) – добавляет значение (если оно уже есть, то ничего не делает), возвращает тот же объект set.</li> <li>- set.delete(value) – удаляет значение, возвращает true, если value было в множестве на момент вызова, иначе false.</li> <li>- set.has(value) – возвращает true, если значение присутствует в множестве, иначе false.</li> <li>- set.clear() – удаляет все имеющиеся значения.</li> <li>- set.size – возвращает количество элементов в множестве.</li> </ul> <p>Подробнее смотри<a class='question__link' href='https://learn.javascript.ru/map-set' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
+      answer1:
+        "<p><span>Объект Set</span> позволяет хранить уникальные значения, примитивы и ссылки на объекты. Еще раз: в <span>Set</span> можно добавлять только уникальные значения. Он проверяет хранящиеся в нем значения с помощью алгоритма <span>SameZeroValue</span>.</p> <p><span>Экземпляр Set</span> создается с помощью <span>конструктора Set</span>. Мы также можем передать ему некоторые значения при создании:</p> <p><span>const set1 = new Set()<br>const set2 = new Set(['a','b','c','d','d','e']) // вторая 'd' не добавится</span></p> <p>Его основные методы это:</p> <ul> <li>- new Set(iterable) – создаёт Set, и если в качестве аргумента был предоставлен итерируемый объект (обычно это массив), то копирует его значения в новый Set.</li> <li>- set.add(value) – добавляет значение (если оно уже есть, то ничего не делает), возвращает тот же объект set.</li> <li>- set.delete(value) – удаляет значение, возвращает true, если value было в множестве на момент вызова, иначе false.</li> <li>- set.has(value) – возвращает true, если значение присутствует в множестве, иначе false.</li> <li>- set.clear() – удаляет все имеющиеся значения.</li> <li>- set.size – возвращает количество элементов в множестве.</li> </ul> <p>Подробнее смотри<a class='question__link' href='https://learn.javascript.ru/map-set' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -765,7 +766,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#50",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Promise (промис)</span> - это объект, представляющий результат успешного или неудачного завершения асинхронной операции.</p> <p>В сущности, <span>промис</span> - это возвращаемый объект, в который вы записываете два колбэка вместо того, чтобы передать их функции.</p> <p><img class='question__img' src='img/habr70/50.1habr70.png' alt=''></p> <ul> У промиса есть четыре состояния: <li><span>Ожидание (pending)</span> — начальное состояние промиса, не исполнен и не отклонён.. Результата промиса неизвестен, поскольку операция не завершена.</li> <li><span>Выполнено (fulfilled)</span> — асинхронная операция выполнена, имеется результат. Операция завершена успешно.</li> <li><span>Отклонено (rejected)</span> — асинхронная операция не выполнена, имеется причина. Операция завершена с ошибкой.</li> <li><span>Завершено</span> — выполнено или отклонено.</li>  </ul> <p>При создании промис находится в <span>ожидании (pending)</span>, а затем может стать <span>исполненным (fulfilled)</span>, вернув полученный <span>результат (значение)</span>, или <span>отклонённым (rejected)</span>, вернув причину отказа. В любом из этих случаев вызывается обработчик, прикреплённый к промису <span>методом then</span>. (Если в момент назначения обработчика промис уже исполнен или отклонён, обработчик всё равно будет вызван, т.е. асинхронное исполнение промиса и назначение обработчика не будет происходить в «состоянии гонки», как, например, в случае с событиями в DOM.)</p> <p>В качестве параметров конструктор промиса принимает <span>resolve </span>и <span>reject</span>. В <span>resolve</span> записывается результат выполнения операции, в <span>reject</span> — причина невыполнения операции. Результат может быть обработан в методе <span>.then</span>, ошибка — в методе <span>.catch</span>. Метод <span>.then</span> также возвращает <span>промис</span>, поэтому мы можем использовать цепочку, состоящую из нескольких <span>.then</span>.</p> <p><img class='question__img' src='img/habr70/50.2habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://learn.javascript.ru/promise-basics' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
+      answer1:
+        "<p><span>Promise (промис)</span> - это объект, представляющий результат успешного или неудачного завершения асинхронной операции.</p> <p>В сущности, <span>промис</span> - это возвращаемый объект, в который вы записываете два колбэка вместо того, чтобы передать их функции.</p> <p><img class='question__img' src='img/habr70/50.1habr70.png' alt=''></p> <ul> У промиса есть четыре состояния: <li><span>Ожидание (pending)</span> — начальное состояние промиса, не исполнен и не отклонён.. Результата промиса неизвестен, поскольку операция не завершена.</li> <li><span>Выполнено (fulfilled)</span> — асинхронная операция выполнена, имеется результат. Операция завершена успешно.</li> <li><span>Отклонено (rejected)</span> — асинхронная операция не выполнена, имеется причина. Операция завершена с ошибкой.</li> <li><span>Завершено</span> — выполнено или отклонено.</li>  </ul> <p>При создании промис находится в <span>ожидании (pending)</span>, а затем может стать <span>исполненным (fulfilled)</span>, вернув полученный <span>результат (значение)</span>, или <span>отклонённым (rejected)</span>, вернув причину отказа. В любом из этих случаев вызывается обработчик, прикреплённый к промису <span>методом then</span>. (Если в момент назначения обработчика промис уже исполнен или отклонён, обработчик всё равно будет вызван, т.е. асинхронное исполнение промиса и назначение обработчика не будет происходить в «состоянии гонки», как, например, в случае с событиями в DOM.)</p> <p>В качестве параметров конструктор промиса принимает <span>resolve </span>и <span>reject</span>. В <span>resolve</span> записывается результат выполнения операции, в <span>reject</span> — причина невыполнения операции. Результат может быть обработан в методе <span>.then</span>, ошибка — в методе <span>.catch</span>. Метод <span>.then</span> также возвращает <span>промис</span>, поэтому мы можем использовать цепочку, состоящую из нескольких <span>.then</span>.</p> <p><img class='question__img' src='img/habr70/50.2habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://learn.javascript.ru/promise-basics' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -779,7 +781,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#51",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Async/await</span> — относительно новый способ написания асинхронного (неблокирующего) кода в JS. Им оборачивают промис. Он делает код более читаемым и чистым, чем промисы и функции обратного вызова. Однако для использования async/await необходимо хорошо знать промисы.</p> <p><img class='question__img' src='img/habr70/51.1habr70.png' alt=''></p> <p><span>Запомните</span>: использование ключевого слова <span>«async»</span> перед функцией заставляет ее возвращать <span>промис</span>:</p> <p><img class='question__img' src='img/habr70/51.2habr70.png' alt=''></p> <p>Ключевое слово «await» можно использовать только внутри асинхронной функции. Использование «await» внутри другой функции приведет к ошибке. Await ожидает завершения выражения справа, чтобы вернуть его значение перед выполнением следующей строчки кода.</p> <p><img class='question__img' src='img/habr70/51.3habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://learn.javascript.ru/async-await' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
+      answer1:
+        "<p><span>Async/await</span> — относительно новый способ написания асинхронного (неблокирующего) кода в JS. Им оборачивают промис. Он делает код более читаемым и чистым, чем промисы и функции обратного вызова. Однако для использования async/await необходимо хорошо знать промисы.</p> <p><img class='question__img' src='img/habr70/51.1habr70.png' alt=''></p> <p><span>Запомните</span>: использование ключевого слова <span>«async»</span> перед функцией заставляет ее возвращать <span>промис</span>:</p> <p><img class='question__img' src='img/habr70/51.2habr70.png' alt=''></p> <p>Ключевое слово «await» можно использовать только внутри асинхронной функции. Использование «await» внутри другой функции приведет к ошибке. Await ожидает завершения выражения справа, чтобы вернуть его значение перед выполнением следующей строчки кода.</p> <p><img class='question__img' src='img/habr70/51.3habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://learn.javascript.ru/async-await' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -797,7 +800,8 @@ const questionsJSHabr = [
       image1: "",
       href2: "",
       linkName2: "",
-      answer2: "<p>Операторы <span>spread</span> и <span>rest</span> имеют одинаковый синтаксис <span>('...')</span>. Разница состоит в том, что с помощью <span>spread</span> мы передаем или распространяем данные массива на другие данные, а с помощью <span>rest</span> — получаем все параметры функции и помещаем их в массив (или извлекаем часть параметров).</p> <p><span>Оператор spread</span> — это конструкция в JavaScript, которая позволяет передавать элементы массива или свойства объекта в виде отдельных аргументов.</p> <p><span>Spread syntax</span>позволяет расширить доступные для итерации элементы (например, массивы или строки) в местах</p> <ul> <li>для функций: где ожидаемое количество аргументов для вызовов функций равно нулю или больше нуля;</li> <li>для элементов (литералов массива);</li> <li>для выражений объектов: в местах, где количество пар 'ключ-значение' должно быть равно нулю или больше (для объектных литералов);</li> </ul> <p><img class='question__img' src='img/habr70/52.1habr70.png' alt=''></p> <p><span>Оператор rest</span> — это синтаксическая конструкция в JavaScript, которая позволяет собирать оставшиеся элементы массива в другой массив или собирать оставшиеся свойства объекта в другой объект. Он всегда идёт последним и может использоваться только раз при одной операции «распаковки» массива или объекта.</p> <p><img class='question__img' src='img/habr70/52.2habr70.png' alt=''></p>",
+      answer2:
+        "<p>Операторы <span>spread</span> и <span>rest</span> имеют одинаковый синтаксис <span>('...')</span>. Разница состоит в том, что с помощью <span>spread</span> мы передаем или распространяем данные массива на другие данные, а с помощью <span>rest</span> — получаем все параметры функции и помещаем их в массив (или извлекаем часть параметров).</p> <p><span>Оператор spread</span> — это конструкция в JavaScript, которая позволяет передавать элементы массива или свойства объекта в виде отдельных аргументов.</p> <p><span>Spread syntax</span>позволяет расширить доступные для итерации элементы (например, массивы или строки) в местах</p> <ul> <li>для функций: где ожидаемое количество аргументов для вызовов функций равно нулю или больше нуля;</li> <li>для элементов (литералов массива);</li> <li>для выражений объектов: в местах, где количество пар 'ключ-значение' должно быть равно нулю или больше (для объектных литералов);</li> </ul> <p><img class='question__img' src='img/habr70/52.1habr70.png' alt=''></p> <p><span>Оператор rest</span> — это синтаксическая конструкция в JavaScript, которая позволяет собирать оставшиеся элементы массива в другой массив или собирать оставшиеся свойства объекта в другой объект. Он всегда идёт последним и может использоваться только раз при одной операции «распаковки» массива или объекта.</p> <p><img class='question__img' src='img/habr70/52.2habr70.png' alt=''></p>",
       image2: "",
     },
   },
@@ -807,7 +811,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#53",
       linkName: "answer on habr.com",
-      answer1: "<p>Это относительно новый способ определения значений переменных по умолчанию.</p> <p>В приведённом ниже примере, в случае если при вызове функции значение для параметра <span>b</span> не передавалось, его значением становилось <span>undefined</span>, и результатом вычисления <span>a * b</span> в функции <span></span> получалось значение <span>NaN</span>.</p> <p><img class='question__img' src='img/habr70/53.1habr70.png' alt=''></p> <p>Чтобы такого не происходило, в теле функции использовался код подобный тому, что находится во второй строчке, где в случае, если функция <span>multiply</span> вызывалась только c одним аргументом, параметру <span>b</span> присваивалось значение <span>1</span>:</p> <p><img class='question__img' src='img/habr70/53.2habr70.png' alt=''></p> <p>С появлением в ES2015 параметров по умолчанию стало возможным обходиться без проверки параметров в теле функции. Так, в приведённом выше примере достаточно в заголовке функции указать <span>1</span> в качестве значения по умолчанию для параметра <span>b</span>:</p> <p><img class='question__img' src='img/habr70/53.3habr70.png' alt=''></p>",
+      answer1:
+        "<p>Это относительно новый способ определения значений переменных по умолчанию.</p> <p>В приведённом ниже примере, в случае если при вызове функции значение для параметра <span>b</span> не передавалось, его значением становилось <span>undefined</span>, и результатом вычисления <span>a * b</span> в функции <span></span> получалось значение <span>NaN</span>.</p> <p><img class='question__img' src='img/habr70/53.1habr70.png' alt=''></p> <p>Чтобы такого не происходило, в теле функции использовался код подобный тому, что находится во второй строчке, где в случае, если функция <span>multiply</span> вызывалась только c одним аргументом, параметру <span>b</span> присваивалось значение <span>1</span>:</p> <p><img class='question__img' src='img/habr70/53.2habr70.png' alt=''></p> <p>С появлением в ES2015 параметров по умолчанию стало возможным обходиться без проверки параметров в теле функции. Так, в приведённом выше примере достаточно в заголовке функции указать <span>1</span> в качестве значения по умолчанию для параметра <span>b</span>:</p> <p><img class='question__img' src='img/habr70/53.3habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -850,7 +855,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#56",
       linkName: "answer on habr.com",
-      answer1: "<p><span>NaN</span> или <span>Not A Number (не число)</span> — это значение, получаемое в результате выполнения числовой операции над нечисловым значением</p> <p>В JS есть <span>встроенный метод isNaN</span>, позволяющий проверять, является ли значение <span>NaN</span></p>",
+      answer1:
+        "<p><span>NaN</span> или <span>Not A Number (не число)</span> — это значение, получаемое в результате выполнения числовой операции над нечисловым значением</p> <p>В JS есть <span>встроенный метод isNaN</span>, позволяющий проверять, является ли значение <span>NaN</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -864,7 +870,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#57",
       linkName: "answer on habr.com",
-      answer1: "<p>Для этого следует использовать метод <span>Array.isArray</span></p>",
+      answer1:
+        "<p>Для этого следует использовать метод <span>Array.isArray</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -879,7 +886,9 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#58",
       linkName: "answer on habr.com",
-      answer1: "<p>Для решения данной задачи можно использовать оператор <span>'&' (бинарное и)</span>. <span>Оператор '&'</span> сравнивает операнды как бинарные значения.</p> <p><img class='question__img' src='img/habr70/58.1habr70.png' alt=''></p> <p>0 в бинарной системе счисления это 000, 1 - 001, 2 - 010, 3 - 011, 4 - 100, 5 - 101 и т.д.</p> <p>Console.log(5 & 1) вернет 1. Сначала оператор "&" конвертирует оба числа в бинарные значения, 5 превращается в 101, 1 — в 001. Затем производится побитовое сравнение:</p> <p><img class='question__img' src='https://habrastorage.org/r/w1560/webt/vy/4k/em/vy4kemefvzxgjlwdp3dmsh64ae8.png' alt=''></p> <p>Сравниваем 1 и 0, получаем 0.</p> <p>Сравниваем 0 и 0, получаем 0</p> <p>Сравниваем 1 и 1, получаем 1.</p> <p>Преобразуем бинарное значение в целое число, получаем 1.</p> <p>Если эта информация кажется Вам слишком сложной, мы можем решить поставленную задачу с помощью рекурсивной функции:</p> <p><img class='question__img' src='img/habr70/58.2habr70.png' alt=''></p>",
+      answer1:
+        "<p>Для решения данной задачи можно использовать оператор <span>'&' (бинарное и)</span>. <span>Оператор '&'</span> сравнивает операнды как бинарные значения.</p> <p><img class='question__img' src='img/habr70/58.1habr70.png' alt=''></p> <p>0 в бинарной системе счисления это 000, 1 - 001, 2 - 010, 3 - 011, 4 - 100, 5 - 101 и т.д.</p> <p>Console.log(5 & 1) вернет 1. Сначала оператор " &
+        " конвертирует оба числа в бинарные значения, 5 превращается в 101, 1 — в 001. Затем производится побитовое сравнение:</p> <p><img class='question__img' src='https://habrastorage.org/r/w1560/webt/vy/4k/em/vy4kemefvzxgjlwdp3dmsh64ae8.png' alt=''></p> <p>Сравниваем 1 и 0, получаем 0.</p> <p>Сравниваем 0 и 0, получаем 0</p> <p>Сравниваем 1 и 1, получаем 1.</p> <p>Преобразуем бинарное значение в целое число, получаем 1.</p> <p>Если эта информация кажется Вам слишком сложной, мы можем решить поставленную задачу с помощью рекурсивной функции:</p> <p><img class='question__img' src='img/habr70/58.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -893,7 +902,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#59",
       linkName: "answer on habr.com",
-      answer1: "<p>Существует три способа это сделать.</p> <p><img class='question__img' src='img/habr70/59.1habr70.png' alt=''></p> <p>Первый способ состоит в использовании <span>оператора «in»</span>:</p> <p><img class='question__img' src='img/habr70/59.2habr70.png' alt=''></p> <p>Второй — использовать <span>метод hasOwnProperty</span>:</p> <p>Третий — <span>индексная нотация массива</span>:</p> <p><img class='question__img' src='img/habr70/59.3habr70.png' alt=''></p>",
+      answer1:
+        "<p>Существует три способа это сделать.</p> <p><img class='question__img' src='img/habr70/59.1habr70.png' alt=''></p> <p>Первый способ состоит в использовании <span>оператора «in»</span>:</p> <p><img class='question__img' src='img/habr70/59.2habr70.png' alt=''></p> <p>Второй — использовать <span>метод hasOwnProperty</span>:</p> <p>Третий — <span>индексная нотация массива</span>:</p> <p><img class='question__img' src='img/habr70/59.3habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -922,7 +932,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#61",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Объектный литерал:</span></p> <p><img class='question__img' src='img/habr70/61.1habr70.png' alt=''></p> <p><span>Функция-конструктор:</span></p> <p><img class='question__img' src='img/habr70/61.2habr70.png' alt=''></p> <p><span>Метод Object.create:</span></p> <p><img class='question__img' src='img/habr70/61.3habr70.png' alt=''></p>",
+      answer1:
+        "<p><span>Объектный литерал:</span></p> <p><img class='question__img' src='img/habr70/61.1habr70.png' alt=''></p> <p><span>Функция-конструктор:</span></p> <p><img class='question__img' src='img/habr70/61.2habr70.png' alt=''></p> <p><span>Метод Object.create:</span></p> <p><img class='question__img' src='img/habr70/61.3habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -936,7 +947,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#62",
       linkName: "answer on habr.com",
-      answer1: "<p>Разница заключается в том, что при использовании метода <span>Object.freeze</span> мы не можем менять или редактировать свойства объекта, а при использовании <span>Object.seal</span> у нас такая возможность имеется.</p>",
+      answer1:
+        "<p>Разница заключается в том, что при использовании метода <span>Object.freeze</span> мы не можем менять или редактировать свойства объекта, а при использовании <span>Object.seal</span> у нас такая возможность имеется.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -950,7 +962,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#63",
       linkName: "answer on habr.com",
-      answer1: "<p>Отличие состоит в том, что <span>оператор «in»</span> проверяет наличие свойства не только в самом объекте, но и в его прототипах, а <span>метод hasOwnProperty</span> — только в объекте.</p> <p><img class='question__img' src='img/habr70/63.3habr70.png' alt=''></p>",
+      answer1:
+        "<p>Отличие состоит в том, что <span>оператор «in»</span> проверяет наличие свойства не только в самом объекте, но и в его прототипах, а <span>метод hasOwnProperty</span> — только в объекте.</p> <p><img class='question__img' src='img/habr70/63.3habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -980,7 +993,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#65",
       linkName: "answer on habr.com",
-      answer1: "<p>Допустим, у нас есть следующее:</p> <p><img class='question__img' src='img/habr70/65habr70.png' alt=''></p> <p>Вызов <span>notHoistedFunc</span> приведет к ошибке, а вызов <span>hoistedFunc</span> нет, потому что <span>hoistedFunc «всплывает»</span>, поднимается в глобальную область видимости, а <span>notHoistedFunc нет</span>.</p> ",
+      answer1:
+        "<p>Допустим, у нас есть следующее:</p> <p><img class='question__img' src='img/habr70/65habr70.png' alt=''></p> <p>Вызов <span>notHoistedFunc</span> приведет к ошибке, а вызов <span>hoistedFunc</span> нет, потому что <span>hoistedFunc «всплывает»</span>, поднимается в глобальную область видимости, а <span>notHoistedFunc нет</span>.</p> ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1008,7 +1022,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#67",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Мемоизация</span> — это прием создания функции, способной запоминать ранее вычисленные результаты или значения. Преимущество мемоизации заключается в том, что мы избегаем повторного выполнения функции с одинаковыми аргументами. Недостатком является то, что мы вынуждены выделять дополнительную память для сохранения результатов.</p>",
+      answer1:
+        "<p><span>Мемоизация</span> — это прием создания функции, способной запоминать ранее вычисленные результаты или значения. Преимущество мемоизации заключается в том, что мы избегаем повторного выполнения функции с одинаковыми аргументами. Недостатком является то, что мы вынуждены выделять дополнительную память для сохранения результатов.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3400,6 +3415,8 @@ const questionsJSHabr35 = [
 let questionJavaScript = questionsJSProglibPart1.concat(
   ...questionsJSProglibPart1
 );
+
+
 
 export { questionsJSHabr };
 export { questionsJSProglibPart1 };
