@@ -1,0 +1,14 @@
+.answer {
+  p {
+    text-align: justify;
+    text-wrap: balance;
+
+    &:last-child {
+      text-align: left;
+      text-wrap: pretty;
+      a {
+        color: rgb(189, 24, 183);
+      }
+    }
+  }
+}

@@ -9,18 +9,22 @@
 .bg-body-tertiary {
 }
 .container-fluid {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
   background: rgba(58, 65, 70, 1);
 }
 .navbar-brand {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 36px;
   font-weight: bold;
   color: rgb(251, 131, 83);
 
   &:hover {
     color: lightsalmon;
+  }
+
+  @media (max-width: 397px) {
+    &:not(.collapse) {
+      margin: 0px auto;
+    }
   }
 }
 .navbar-toggler {
@@ -38,6 +42,12 @@
     text-decoration: none;
     outline: 0;
     box-shadow: none;
+  }
+
+  @media (max-width: 416px) {
+    &:not(.collapse) {
+      margin: 0px auto;
+    }
   }
 }
 .navbar-toggler-icon {

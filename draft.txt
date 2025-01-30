@@ -33,8 +33,9 @@ img/habr70/
 <a href='http://' target='_blank' rel='noopener noreferrer'></a>
 
 <p><a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
+<p>Подробнее тут:<a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
 
-<a class='question__link' href='http://' target='_blank' rel='noopener noreferrer'></a>
+<a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a>
 
 Понравился такой формат? Держите ещё 15 интересных вопросов к собеседованию фронтенд. Проверьте себя: пишите свои ответы в комментариях.
 

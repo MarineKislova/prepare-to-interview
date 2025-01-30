@@ -60,7 +60,7 @@ function accordionCard(question, container) {
   // add answer1
   const answerItem1 = document.createElement("div");
   const answerItemText1 = document.createElement("p");
-  answerItemText1.innerHTML = question.answer.answer1;
+  answerItemText1.innerHTML = question.answer.answer1 ;
   const link1 = document.createElement("a");
   link1.target = "_blank";
   link1.href = question.answer.href;

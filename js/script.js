@@ -9,6 +9,7 @@ import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
 
 import { questionJavaScript } from "./modules/question_JS_Data.js";
+import { commonList } from "./modules/question_JS_Data.js";
 
 // import questions css
 import { questionCSS } from "./modules/questions_CSS_Data.js";
@@ -27,7 +28,7 @@ import zoomImage from "./modules/zoomImage.js";
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-    //active nav-item
+  //active nav-item
   // Текущий URL с учетом хэша
   const currentPage = window.location.href;
 
@@ -96,6 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Render questions to the page
 
+  //js questions
   const questionProglibPart1 = document.querySelector(".proglib-P1-container");
   if (document.querySelector(".proglib-P1-container")) {
     questionsJSProglibPart1.forEach((question) => {
@@ -150,6 +152,83 @@ window.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".habr-70-container")) {
     questionsJSHabr.forEach((question) => {
       accordionCard(question, questionHabr70);
+    });
+  }
+
+  //css questions
+  const questionCSSContainer = document.querySelector(
+    ".questions-css__content"
+  );
+
+  function addCssQuestions(question, container) {
+    //  add accordionContainer
+    const accordionContainer = document.createElement("div");
+    accordionContainer.classList.add("accordion", "accordion-flush");
+    accordionContainer.setAttribute("id", `accordionFlushExample`);
+    container.appendChild(accordionContainer);
+
+    // add accordion-item
+    const accordionCard = document.createElement("div");
+    accordionCard.classList.add("accordion-item");
+    accordionContainer.appendChild(accordionCard);
+
+    // add h2 class accordion-header
+    const accordionCardHeader = document.createElement("h2");
+    accordionCardHeader.classList.add(
+      "accordion-header",
+      "d-flex",
+      "justify-content-between",
+      "align-items-center"
+    );
+
+    accordionCard.appendChild(accordionCardHeader);
+
+    // add button class accordion-button collapsed
+    const accordionCardButton = document.createElement("button");
+    accordionCardButton.classList.add(
+      "accordion-button",
+      "collapsed",
+      "w-100",
+      "text-left",
+      "fs-2"
+    );
+    accordionCardButton.setAttribute("data-bs-toggle", "collapse");
+    accordionCardButton.setAttribute(
+      "data-bs-target",
+      `#flush-collapse${question.id}`
+    );
+    accordionCardButton.setAttribute("aria-expanded", "false");
+    accordionCardButton.setAttribute(
+      "aria-controls",
+      `flush-collapse${question.id}`
+    );
+    accordionCardButton.innerHTML = `${question.id}. ${question.question}`;
+    accordionCardHeader.appendChild(accordionCardButton);
+
+    // add accordion-collapse collapse
+    const accordionCardCollapse = document.createElement("div");
+    accordionCardCollapse.id = `flush-collapse${question.id}`;
+    accordionCardCollapse.classList.add("accordion-collapse", "collapse");
+    accordionCard.appendChild(accordionCardCollapse);
+
+    // add card-body
+    const accordionCardBody = document.createElement("div");
+    accordionCardBody.classList.add("accordion-body");
+
+    accordionCardCollapse.appendChild(accordionCardBody);
+    accordionCardBody.style.backgroundColor = "#FFFAF0";
+
+    // add answer1
+    const answerItem = document.createElement("div");
+    answerItem.classList.add("answer", "fs-5");
+    answerItem.innerHTML = question.answer;
+
+    accordionCardBody.appendChild(answerItem);
+  }
+
+  if (document.querySelector(".questions-css__content")) {
+    questionCSS.forEach((question) => {
+      addCssQuestions(question, questionCSSContainer);
     });
   }
 

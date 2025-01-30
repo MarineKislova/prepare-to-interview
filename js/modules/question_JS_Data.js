@@ -1008,7 +1008,7 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#66",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1: "<p>В JS существует 4 способа вызвать функцию. Вызов определяет значение this или «владельца» функции.</p> <p><span>Вызов в качестве функции.</span> Если функция вызывается как метод, конструктор или с помощью методов apply или call, значит она вызывается как функция. Владельцем такой функции является объект window:</p> <p><img class='question__img' src='img/habr70/66.1habr70.png' alt=''></p> <p><span>Вызов в качестве метода.</span> Когда функция является свойством объекта, мы называем ее методом. Когда вызывается метод, значением <span>this</span> становится объект этого метода:</p> <p><img class='question__img' src='img/habr70/66.2habr70.png' alt=''></p> <p><span>Вызов в качестве конструктора.</span> Когда функция вызывается с использованием <span>ключевого слова «new»</span>, мы называем такую функцию <span>конструктором</span>. При этом создается пустой объект, являющийся значением <span>this</span>:</p> <p><img class='question__img' src='img/habr70/66.3habr70.png' alt=''></p> <p><span>Вызов с помощью методов apply или call.</span> Мы используем эти методы, когда хотим явно определить значение <span>this</span> или владельца функции:</p> <p><img class='question__img' src='img/habr70/66.4habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1037,7 +1037,7 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#68",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1: "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1068,7 +1068,7 @@ const questionsJSHabr = [
       href: "https://habr.com/ru/articles/486820/#70",
       linkName: "answer on habr.com",
       answer1:
-        "Ключевое слово «new» используется в функциях-конструкторах для создания нового объекта (нового экземпляра класса). Ключевое слово «new» делает 4 вещи: Создает пустой объект. Привязывает к нему значение this. Функция наследует от functionName.prototype. Возвращает значение this, если не указано иное.",
+        "<p><span>Ключевое слово «new»</span> используется в функциях-конструкторах для создания нового объекта (нового экземпляра класса).</p> <p>Допустим, у нас есть такой код:</p> <p><img class='question__img' src='img/habr70/70habr70.png' alt=''></p> <ul> Ключевое слово «new» делает 4 вещи: <li>1. Создает пустой объект.</li> <li>2. Привязывает к нему значение this.</li> <li>3. Функция наследует от functionName.prototype.</li> <li></li> <li>4. Возвращает значение this, если не указано иное.</li> </ul>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2449,7 +2449,7 @@ const questionsJSHabrPart2 = [
     id: 1,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2463,7 +2463,7 @@ const questionsJSHabrPart2 = [
     id: 2,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2477,7 +2477,7 @@ const questionsJSHabrPart2 = [
     id: 3,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2491,7 +2491,7 @@ const questionsJSHabrPart2 = [
     id: 4,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2505,7 +2505,7 @@ const questionsJSHabrPart2 = [
     id: 5,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2519,7 +2519,7 @@ const questionsJSHabrPart2 = [
     id: 6,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2533,7 +2533,7 @@ const questionsJSHabrPart2 = [
     id: 7,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2547,7 +2547,7 @@ const questionsJSHabrPart2 = [
     id: 8,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2561,7 +2561,7 @@ const questionsJSHabrPart2 = [
     id: 9,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2575,7 +2575,7 @@ const questionsJSHabrPart2 = [
     id: 10,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2589,7 +2589,7 @@ const questionsJSHabrPart2 = [
     id: 11,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2603,7 +2603,7 @@ const questionsJSHabrPart2 = [
     id: 12,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2617,7 +2617,7 @@ const questionsJSHabrPart2 = [
     id: 13,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2631,7 +2631,7 @@ const questionsJSHabrPart2 = [
     id: 14,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2645,7 +2645,7 @@ const questionsJSHabrPart2 = [
     id: 15,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2659,7 +2659,7 @@ const questionsJSHabrPart2 = [
     id: 16,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2673,7 +2673,7 @@ const questionsJSHabrPart2 = [
     id: 17,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2687,7 +2687,7 @@ const questionsJSHabrPart2 = [
     id: 18,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2701,7 +2701,7 @@ const questionsJSHabrPart2 = [
     id: 19,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2715,7 +2715,7 @@ const questionsJSHabrPart2 = [
     id: 20,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2729,7 +2729,7 @@ const questionsJSHabrPart2 = [
     id: 21,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2743,7 +2743,7 @@ const questionsJSHabrPart2 = [
     id: 22,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2757,7 +2757,7 @@ const questionsJSHabrPart2 = [
     id: 23,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2771,7 +2771,7 @@ const questionsJSHabrPart2 = [
     id: 24,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2785,7 +2785,7 @@ const questionsJSHabrPart2 = [
     id: 25,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2799,7 +2799,7 @@ const questionsJSHabrPart2 = [
     id: 26,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2813,7 +2813,7 @@ const questionsJSHabrPart2 = [
     id: 27,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2827,7 +2827,7 @@ const questionsJSHabrPart2 = [
     id: 28,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2841,7 +2841,7 @@ const questionsJSHabrPart2 = [
     id: 29,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -2855,7 +2855,7 @@ const questionsJSHabrPart2 = [
     id: 30,
     question: "",
     answer: {
-      href: "ttps://habr.com/ru/articles/785596/",
+      href: "https://habr.com/ru/articles/785596/",
       linkName: "habr.com",
       answer1: "",
       image1: "",
@@ -3416,7 +3416,35 @@ let questionJavaScript = questionsJSProglibPart1.concat(
   ...questionsJSProglibPart1
 );
 
+function extractQuestionsKey(questions) {
+  return questions.map((question) => {
+    return {
+      id: question.id,
+      question: question.question,
+      answer: question.answer.href,
+    };
+  });
+}
 
+let questionsHabr70 = extractQuestionsKey(questionsJSHabr);
+let questionsProglibPart1 = extractQuestionsKey(questionsJSProglibPart1);
+let questionsProglibPart2 = extractQuestionsKey(questionsJSProglibPart2);
+let questionsProglib10 = extractQuestionsKey(questionsJSProglib10);
+let questionsTproger30 = extractQuestionsKey(questionsJSTproger30);
+let questionsHabrPart1 = extractQuestionsKey(questionsJSHabrPart1);
+let questionsHabrPart2 = extractQuestionsKey(questionsJSHabrPart2);
+let questionsHabr35 = extractQuestionsKey(questionsJSHabr35);
+
+const commonList = [
+  ...questionsHabr70,
+  ...questionsProglibPart1,
+  ...questionsProglibPart2,
+  ...questionsProglib10,
+  ...questionsTproger30,
+  ...questionsHabrPart1,
+  // ...questionsHabrPart2,
+  ...questionsHabr35,
+];
 
 export { questionsJSHabr };
 export { questionsJSProglibPart1 };
@@ -3427,3 +3455,4 @@ export { questionsJSHabrPart1 };
 export { questionsJSHabrPart2 }; //не заполнено
 export { questionsJSHabr35 };
 export { questionJavaScript };
+export { commonList };
