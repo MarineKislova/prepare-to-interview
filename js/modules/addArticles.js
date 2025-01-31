@@ -9,7 +9,7 @@ function addArticles(articles) {
             <h5 class="my-0">${articles.title}</h5>
             
           </div>
-          <div class="card-body d-flex flex-column align-items-center">
+          <div class="card-body d-flex flex-column align-items-center" style='line-height:1.5;'>
           ${
             articles.image
               ? `<img src="${articles.image}" alt="${articles.title}">`

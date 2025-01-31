@@ -2,6 +2,7 @@
   p {
     text-align: justify;
     text-wrap: balance;
+    text-wrap: pretty;
 
     &:last-child {
       text-align: left;
@@ -11,4 +12,66 @@
       }
     }
   }
+}
+
+.questions-css {
+
+  &__container {
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // flex-wrap: wrap-reverse;
+    // height: 400px;
+    backdrop-filter: blur(1px) saturate(80%);
+    position: fixed;
+    z-index: 2;
+    writing-mode: sideways-lr;
+    flex-direction: row;
+  }
+
+  &__header {
+  }
+
+  &__title-main {
+  }
+
+  &__content {
+    margin-left: 60px;
+  }
+}
+.filter-css-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50px;
+  max-height: 140px;
+  padding:5px 5px;
+  margin: 5px;
+  color: #fff;
+  color: lemonchiffon;
+  border-radius: 10px;
+  border: 1px solid lemonchiffon;
+  backdrop-filter: blur(1px) saturate(80%);
+  background-color: rgba(255, 160, 122, 0.75);
+  text-wrap: pretty;
+  text-wrap-mode: wrap;
+
+  &:disabled {
+    border-radius: 50%;
+    padding: 3px;
+  }
+
+  &.active {
+    background-color: rgba(247, 124, 76, 0.75);
+    border: 2px solid rgb(130, 80, 80);;
+    color: rgb(130, 80, 80);
+    font-weight: bold;
+  }
+}
+.fs-1 {
+}
+.text-center {
 }

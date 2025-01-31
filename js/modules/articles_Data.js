@@ -168,7 +168,7 @@ const articlesFromWeb = [
   {
     title: "Вопросы на собеседование CSS",
     content:
-      "<p>Эта статья поможет вам подготовиться к собеседованию по CSS, предоставляя список часто встречающихся вопросов с краткими ответами и ссылками на материалы для дополнительного изучения. Проверьте свои знания стилизации веб-страниц, а именно: основные концепции CSS, селекторы, свойства и техники, необходимые для успешного прохождения собеседования.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
+      "<p>Эта статья поможет вам подготовиться к собеседованию по CSS, предоставляя список часто встречающихся вопросов с краткими ответами и ссылками на материалы для дополнительного изучения. Проверьте свои знания стилизации веб-страниц, а именно: основные концепции CSS, селекторы, свойства и техники, необходимые для успешного прохождения собеседования.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a><a class='question__link' href='https://github.com/FedorovAlexander/Front-end-Job-Interview-Questions/blob/master/CSS/README.md' target='_blank' rel='noopener noreferrer'>Front-end-Job-Interview-Questions на русском</a></p>",
     category: "interview_questions",
     hashTag: "css",
     linkTittle: "Ссылка на chm.org.ua",

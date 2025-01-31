@@ -1,5 +1,5 @@
 <p></p> <p></p> <p></p> <p></p>
-<p></p> <p></p> <p></p> <p></p>
+<p>- </p> <p>- </p> <p>- </p> <p>- </p>
 <p></p> <p><span></span></p> <p></p>
 <p></p>
 <p></p>
@@ -8,7 +8,7 @@
 <p></p>
 <p></p>
 
-img/habr70/
+
 
 <pre><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></pre>
 
@@ -21,7 +21,8 @@ img/habr70/
 <blockquote></blockquote>
 <br>
 
-
+img/habr70/
+img/css/
 
 <ol> <li></li> <li></li> <li></li> <li></li> <li></li> </ol>
 
@@ -33,6 +34,7 @@ img/habr70/
 <a href='http://' target='_blank' rel='noopener noreferrer'></a>
 
 <p><a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
+
 <p>Подробнее тут:<a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
 
 <a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a>

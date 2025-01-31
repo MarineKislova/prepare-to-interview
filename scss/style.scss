@@ -284,6 +284,7 @@
 .accordion {
 }
 .accordion-flush {
+  margin: 10px 0px;
 }
 .accordion-item {
   display: flex;
@@ -294,6 +295,8 @@
   border: 1px solid rgba(104, 111, 117, 0.3);
 }
 .accordion-button {
+  display: flex;
+  align-items: start;
   &:not(.collapsed) {
     background-color: rgba(104, 111, 117, 0.85);
     color: #fff;
@@ -309,6 +312,14 @@
 }
 
 .collapsed {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10px;
+
+  a {
+    align-self: center;
+  }
 }
 .accordion-collapse {
 }

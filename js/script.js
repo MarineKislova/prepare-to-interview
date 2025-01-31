@@ -22,8 +22,10 @@ import { articlesFromWeb } from "./modules/articles_Data.js";
 // import functions for displaying questions and articles
 import accordionCard from "./modules/accordionCard.js";
 import displayQuestion from "./modules/displayQuestions.js";
+import filter from "./modules/filter.js";
 import addArticles from "./modules/addArticles.js";
 import zoomImage from "./modules/zoomImage.js";
+import addCssQuestions from "./modules/addCssQuestions.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -160,72 +162,6 @@ window.addEventListener("DOMContentLoaded", () => {
     ".questions-css__content"
   );
 
-  function addCssQuestions(question, container) {
-    //  add accordionContainer
-    const accordionContainer = document.createElement("div");
-    accordionContainer.classList.add("accordion", "accordion-flush");
-    accordionContainer.setAttribute("id", `accordionFlushExample`);
-    container.appendChild(accordionContainer);
-
-    // add accordion-item
-    const accordionCard = document.createElement("div");
-    accordionCard.classList.add("accordion-item");
-    accordionContainer.appendChild(accordionCard);
-
-    // add h2 class accordion-header
-    const accordionCardHeader = document.createElement("h2");
-    accordionCardHeader.classList.add(
-      "accordion-header",
-      "d-flex",
-      "justify-content-between",
-      "align-items-center"
-    );
-
-    accordionCard.appendChild(accordionCardHeader);
-
-    // add button class accordion-button collapsed
-    const accordionCardButton = document.createElement("button");
-    accordionCardButton.classList.add(
-      "accordion-button",
-      "collapsed",
-      "w-100",
-      "text-left",
-      "fs-2"
-    );
-    accordionCardButton.setAttribute("data-bs-toggle", "collapse");
-    accordionCardButton.setAttribute(
-      "data-bs-target",
-      `#flush-collapse${question.id}`
-    );
-    accordionCardButton.setAttribute("aria-expanded", "false");
-    accordionCardButton.setAttribute(
-      "aria-controls",
-      `flush-collapse${question.id}`
-    );
-    accordionCardButton.innerHTML = `${question.id}. ${question.question}`;
-    accordionCardHeader.appendChild(accordionCardButton);
-
-    // add accordion-collapse collapse
-    const accordionCardCollapse = document.createElement("div");
-    accordionCardCollapse.id = `flush-collapse${question.id}`;
-    accordionCardCollapse.classList.add("accordion-collapse", "collapse");
-    accordionCard.appendChild(accordionCardCollapse);
-
-    // add card-body
-    const accordionCardBody = document.createElement("div");
-    accordionCardBody.classList.add("accordion-body");
-
-    accordionCardCollapse.appendChild(accordionCardBody);
-    accordionCardBody.style.backgroundColor = "#FFFAF0";
-
-    // add answer1
-    const answerItem = document.createElement("div");
-    answerItem.classList.add("answer", "fs-5");
-    answerItem.innerHTML = question.answer;
-
-    accordionCardBody.appendChild(answerItem);
-  }
-
   if (document.querySelector(".questions-css__content")) {
     questionCSS.forEach((question) => {
       addCssQuestions(question, questionCSSContainer);
@@ -274,28 +210,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Filter articles by category
   const filterButtons = document.querySelectorAll(".filter-btn");
+  if (filterButtons) {
+    filter(".filter-btn", "data-filter", ".col-md-4");
+  }
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const filter = button.getAttribute("data-filter");
-      const articles = document.querySelectorAll(".col-md-4");
-
-      articles.forEach((article) => {
-        if (
-          filter === "all" ||
-          article.getAttribute("data-category") === filter
-        ) {
-          article.style.display = "flex";
-        } else {
-          article.style.display = "none";
-        }
-      });
-
-      // Highlight active button
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
-    });
-  });
+  const filterButtonsCSS = document.querySelectorAll(".filter-css-btn");
+  if (filterButtonsCSS) {
+    filter(".filter-css-btn", "data-filter-css", ".accordion-flush");
+  }
+  
+  
+  
 
   //add clock
   const clock = document.querySelector(".time__clock");
