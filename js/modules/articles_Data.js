@@ -143,7 +143,7 @@ const articlesFromWeb = [
     href: "https://habr.com/ru/articles/499370/",
     image: "./img/questions_640.jpg",
   },
-    {
+  {
     title: "Вопросы на собеседование Git",
     content:
       "<p>Список этих вопросов поможет вам подготовиться к собеседованию по Git. На этой странице вы найдете список вопросов с краткими ответами и ссылками на материалы для более глубокого изучения. Проверьте свои знания о системе контроля версий Git, включая основные команды, ветвление, слияния и решение конфликтов, чтобы успешно пройти интервью и быть готовым к работе с Git в реальном проекте.</p> <p>Больше вопросов по ссылке:<a class='question__link' href='https://github.com/h5bp/Front-end-Developer-Interview-Questions' target='_blank' rel='noopener noreferrer'>Front-end-Developer-Interview-Questions</a></p>",
@@ -197,6 +197,44 @@ const articlesFromWeb = [
     href: "https://chm.org.ua/ru/testy-po-programmirovaniiu/",
     image: "./img/test_640.jpg",
   },
+  {
+    title: "Практическое руководство по JSON в JavaScript",
+    content:
+      "JSON (JavaScript Object Notation) — это текстовый формат обмена данными, который используется повсеместно для отправки и получения информации между клиентом и сервером. Лёгкость структуры JSON и простота работы с ним делают его основным форматом для большинства современных веб-приложений.",
+    category: "articles",
+    hashTag: "",
+    linkTittle: "",
+    href: "https://telegra.ph/Prakticheskoe-rukovodstvo-po-JSON-v-JavaScript-10-31",
+    image: "./img/articles.jpg",
+  },
+  {
+    title: "Как сделать фильтр на сайте",
+    content:
+      "Добавление фильтра на веб-сайт может значительно улучшить пользовательский опыт, позволяя пользователям находить нужную информацию или товары. В этом посте мы рассмотрим, как создать простой фильтр на вашем сайте.",
+    category: "articles",
+    hashTag: "",
+    linkTittle: "",
+    href: "https://telegra.ph/Kak-sdelat-filtr-na-sajte-10-29",
+    image: "./img/articles.jpg",
+  },
+  {
+    title: "Front-End Interview Handbook ",
+    content: "полный гид по подготовке к собеседованиям на позицию фронтенд-разработчика. Включает разделы по вопросам, задачам и практикам, которые часто встречаются на собеседованиях",
+    category: "interview",
+    hashTag: "",
+    linkTittle: "",
+    href: "(https://github.com/yangshun/front-end-interview-handbook)",
+    image: "./img/interview_640.png",
+  },
+  // {
+  //   title: "Article 1",
+  //   content: "This is the content of Article 1",
+  //   category: "articles",
+  //   hashTag: "",
+  //   linkTittle: "",
+  //   href: "",
+  //   image: "./img/articles.jpg",
+  // },
   // {
   //   title: "Article 1",
   //   content: "This is the content of Article 1",
