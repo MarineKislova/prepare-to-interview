@@ -115,6 +115,27 @@ function accordionCard(question, container) {
   if (question.answer.answer3 == "" || question.answer.answer3 == null) {
     accordionCardBody.removeChild(answerItem3);
   }
+
+  // add answer4
+  const answerItem4 = document.createElement("div");
+  const answerItemText4 = document.createElement("p");
+  answerItemText4.innerHTML = question.answer.answer4;
+  const link4 = document.createElement("a");
+  link4.target = "_blank";
+  link4.href = question.answer.href4;
+  link4.textContent = question.answer.linkName4;
+
+  answerItem4.appendChild(answerItemText4);
+  answerItem4.appendChild(link4);
+  accordionCardBody.appendChild(answerItem4);
+  // add underline and bold style to answer4
+  link4.style.textDecoration = "underline";
+  link4.style.color = "purple";
+  link4.style.fontWeight = "bold";
+  
+  if (question.answer.answer4 == "" || question.answer.answer4 == null) {
+    accordionCardBody.removeChild(answerItem4);
+  }
 }
 
 export default accordionCard;

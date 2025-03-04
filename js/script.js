@@ -7,9 +7,10 @@ import { questionsJSHabrPart1 } from "./modules/question_JS_Data.js";
 import { questionsJSHabrPart2 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
+import { questionsJS } from "./modules/questions_comon_JS_Data.js";
 
-import { questionJavaScript } from "./modules/question_JS_Data.js";
-import { commonList } from "./modules/question_JS_Data.js";
+// import { questionJavaScript } from "./modules/question_JS_Data.js";
+// import { commonList } from "./modules/question_JS_Data.js";
 
 // import questions css
 import { questionCSS } from "./modules/questions_CSS_Data.js";
@@ -100,6 +101,13 @@ window.addEventListener("DOMContentLoaded", () => {
   // Render questions to the page
 
   //js questions
+  const questionJS = document.querySelector(".common-questionsJS-container");
+  if(questionJS){
+    questionsJS.forEach((question) => {
+      accordionCard(question, questionJS);
+    });
+  }
+
   const questionProglibPart1 = document.querySelector(".proglib-P1-container");
   if (document.querySelector(".proglib-P1-container")) {
     questionsJSProglibPart1.forEach((question) => {
@@ -186,7 +194,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document
       .querySelector("#randomJavascript")
       .addEventListener("click", () => {
-        displayQuestion(questionJavaScript, "question", "answer");
+        displayQuestion(questionsJS, "question", "answer");
       });
 
     // random css question
@@ -218,9 +226,6 @@ window.addEventListener("DOMContentLoaded", () => {
   if (filterButtonsCSS) {
     filter(".filter-css-btn", "data-filter-css", ".accordion-flush");
   }
-  
-  
-  
 
   //add clock
   const clock = document.querySelector(".time__clock");

@@ -1,3 +1,5 @@
+
+
 /* 70 вопросов по JavaScript для подготовки к собеседованию */
 /* https://habr.com/ru/articles/486820/ */
 const questionsJSHabr = [
@@ -1008,7 +1010,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#66",
       linkName: "answer on habr.com",
-      answer1: "<p>В JS существует 4 способа вызвать функцию. Вызов определяет значение this или «владельца» функции.</p> <p><span>Вызов в качестве функции.</span> Если функция вызывается как метод, конструктор или с помощью методов apply или call, значит она вызывается как функция. Владельцем такой функции является объект window:</p> <p><img class='question__img' src='img/habr70/66.1habr70.png' alt=''></p> <p><span>Вызов в качестве метода.</span> Когда функция является свойством объекта, мы называем ее методом. Когда вызывается метод, значением <span>this</span> становится объект этого метода:</p> <p><img class='question__img' src='img/habr70/66.2habr70.png' alt=''></p> <p><span>Вызов в качестве конструктора.</span> Когда функция вызывается с использованием <span>ключевого слова «new»</span>, мы называем такую функцию <span>конструктором</span>. При этом создается пустой объект, являющийся значением <span>this</span>:</p> <p><img class='question__img' src='img/habr70/66.3habr70.png' alt=''></p> <p><span>Вызов с помощью методов apply или call.</span> Мы используем эти методы, когда хотим явно определить значение <span>this</span> или владельца функции:</p> <p><img class='question__img' src='img/habr70/66.4habr70.png' alt=''></p>",
+      answer1:
+        "<p>В JS существует 4 способа вызвать функцию. Вызов определяет значение this или «владельца» функции.</p> <p><span>Вызов в качестве функции.</span> Если функция вызывается как метод, конструктор или с помощью методов apply или call, значит она вызывается как функция. Владельцем такой функции является объект window:</p> <p><img class='question__img' src='img/habr70/66.1habr70.png' alt=''></p> <p><span>Вызов в качестве метода.</span> Когда функция является свойством объекта, мы называем ее методом. Когда вызывается метод, значением <span>this</span> становится объект этого метода:</p> <p><img class='question__img' src='img/habr70/66.2habr70.png' alt=''></p> <p><span>Вызов в качестве конструктора.</span> Когда функция вызывается с использованием <span>ключевого слова «new»</span>, мы называем такую функцию <span>конструктором</span>. При этом создается пустой объект, являющийся значением <span>this</span>:</p> <p><img class='question__img' src='img/habr70/66.3habr70.png' alt=''></p> <p><span>Вызов с помощью методов apply или call.</span> Мы используем эти методы, когда хотим явно определить значение <span>this</span> или владельца функции:</p> <p><img class='question__img' src='img/habr70/66.4habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1037,7 +1040,8 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#68",
       linkName: "answer on habr.com",
-      answer1: "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
+      answer1:
+        "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
