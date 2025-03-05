@@ -219,12 +219,23 @@ const articlesFromWeb = [
   },
   {
     title: "Front-End Interview Handbook ",
-    content: "полный гид по подготовке к собеседованиям на позицию фронтенд-разработчика. Включает разделы по вопросам, задачам и практикам, которые часто встречаются на собеседованиях",
+    content:
+      "полный гид по подготовке к собеседованиям на позицию фронтенд-разработчика. Включает разделы по вопросам, задачам и практикам, которые часто встречаются на собеседованиях",
     category: "interview",
     hashTag: "",
     linkTittle: "",
     href: "(https://github.com/yangshun/front-end-interview-handbook)",
     image: "./img/interview_640.png",
+  },
+  {
+    title: "Frontend Собеседование с разбором. Путь к трудоустройству 2024",
+    content: "В этом видео представлено тестовое собеседование фронтенд-разработчика",
+    category: "video",
+    hashTag: "",
+    linkTittle: "",
+    href: "https://www.youtube.com/watch?v=fNhEAnp3ntw&ab_channel=Reactify%7CFrontend%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0",
+    image: "",
+    video: "<iframe width='560' height='315' src='https://www.youtube.com/embed/fNhEAnp3ntw?si=QDcY5tePmywxE-Nt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
   },
   // {
   //   title: "Article 1",
@@ -269,7 +280,16 @@ const articlesFromWeb = [
   // hashTag: "",
   //   linkTittle: "",
   //   href: "",
-  //   image: "./img/test_640.jpg"",
+  //   image: "./img/test_640.jpg",
+  // },
+  // {
+  //   title: "Article 1",
+  //   content: "This is the content of Article 1",
+  //   category: "video",
+  // hashTag: "",
+  //   linkTittle: "",
+  //   href: "",
+  //   image: "./img/test_640.jpg",
   // },
 ];
 

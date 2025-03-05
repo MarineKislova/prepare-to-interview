@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //js questions
   const questionJS = document.querySelector(".common-questionsJS-container");
-  if(questionJS){
+  if (questionJS) {
     questionsJS.forEach((question) => {
       accordionCard(question, questionJS);
     });
