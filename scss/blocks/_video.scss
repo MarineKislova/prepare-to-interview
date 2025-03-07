@@ -1,0 +1,46 @@
+.video {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #514545;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+
+
+  iframe {
+    width: 100%;
+    height: min-content;
+    border: none;
+    outline: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+.card-body {
+    line-height: 1.25;
+  text-align: center;
+  text-wrap-mode: wrap;
+  text-wrap-style: stable;
+}
+.card-title {
+    font-weight: 800;
+    color: burlywood;
+}
+.card-text {
+    color: rgb(227, 183, 151);
+}
+.btn {
+}
+.btn-primary {
+}

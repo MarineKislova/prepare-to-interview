@@ -498,7 +498,7 @@ const questionsJSHabr = [
       href: "https://habr.com/ru/articles/486820/#32",
       linkName: "answer on habr.com",
       answer1:
-        "<p><span>Функция высшего порядка</span> — это функция, возвращающая другую функцию или принимающая другую функцию в качестве аргумента.</p> <p><span>function higherOrderFunction(param, callback)<br>{ return callback(param) }</span></p> ",
+        "<p><span>Функция высшего порядка</span> — это функция, возвращающая другую функцию или принимающая другую функцию в качестве аргумента.</p> <p><span>function higherOrderFunction(param, callback)<br>{ return callback(param) }</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
