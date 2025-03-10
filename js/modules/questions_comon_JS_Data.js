@@ -24,6 +24,44 @@ const questionsJS = [
   },
   {
     id: 2,
+    question: "Как в JavaScript реализованы методы примитивных типов данных?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>JavaScript позволяет работать с примитивными типами данных – строками, числами, логическими значениями – как с объектами, поскольку у них тоже есть методы. Например, у строк есть методы <span>toUpperCase()</span> и <span>toLowerCase()</span>, у чисел есть методы <span>toFixed()</span> и <span>toPrecision()</span> и т.д.</p> <p>Эта возможность реализована благодаря специальным оберточным объектам для каждого примитивного типа данных. Эти объекты называются:</p> <ul> <li><span>String</span> – для строк</li> <li><span>Number</span> – для чисел</li> <li><span>Boolean</span> – для логических значений</li> <li><span>Symbol</span> – для символов</li> </ul> <p>Когда мы вызываем метод у примитивного значения, например 'test'.toUpperCase(), происходит следующее:</p> <ul> <li>Создается временный оберточный объект типа Stringсо значением 'test'.</li> <li>У этого объекта вызывается метод toUpperCase().</li> <li>Результат возвращается обратно в примитивное значение.</li> <li>Временный оберточный объект удаляется.</li> </ul> <p>Таким образом реализуется возможность использовать методы у примитивных типов данных. Благодаря этому механизму, примитивы в JavaScript ведут себя как объекты.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 3,
+    question: "Объясните разницу между изменяемыми и неизменяемыми значениями",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>Значения примитивных типов (например, строка или число) не могут быть изменены после того, как попали в память.</p> <p>Значения объектных типов (объекты, массивы) могут изменяться в ходе работы программы.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 4,
     question: "В чем разница между null и undefined?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#1",
@@ -45,7 +83,7 @@ const questionsJS = [
     },
   },
   {
-    id: 3,
+    id: 5,
     question: "В чем разница между null, undefined и undeclared?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -64,7 +102,7 @@ const questionsJS = [
     },
   },
   {
-    id: 4,
+    id: 6,
     question: "В чем разница между undefined и is not defined?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -83,7 +121,7 @@ const questionsJS = [
     },
   },
   {
-    id: 5,
+    id: 7,
     question:
       "Почему typeof null возвращает object? Как проверить, является ли значение null?",
     answer: {
@@ -103,7 +141,7 @@ const questionsJS = [
     },
   },
   {
-    id: 6,
+    id: 8,
     question: "Какие значения в JS являются ложными?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#21",
@@ -122,7 +160,7 @@ const questionsJS = [
     },
   },
   {
-    id: 7,
+    id: 9,
     question:
       "Что такое NaN? Какого типа это значение? Как проверить, является ли значение NaN?",
     answer: {
@@ -151,7 +189,7 @@ const questionsJS = [
     },
   },
   {
-    id: 8,
+    id: 10,
     question: "Как проверить, является ли значение ложным?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#22",
@@ -170,7 +208,7 @@ const questionsJS = [
     },
   },
   {
-    id: 9,
+    id: 11,
     question: "В чем разница между ключевыми словами «var», «let» и «const»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#42",
@@ -189,7 +227,7 @@ const questionsJS = [
     },
   },
   {
-    id: 10,
+    id: 12,
     question: "Какие способы объявления переменных есть в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -208,7 +246,7 @@ const questionsJS = [
     },
   },
   {
-    id: 11,
+    id: 13,
     question: "В чем разница между ключевыми словами «var», «let» и «const»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#42",
@@ -235,7 +273,7 @@ const questionsJS = [
     },
   },
   {
-    id: 12,
+    id: 14,
     question: "Что такое область видимости (Scope)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#19",
@@ -255,7 +293,27 @@ const questionsJS = [
     },
   },
   {
-    id: 13,
+    id: 15,
+    question:
+      "Почему лучше оставлять глобальную область видимости 'как есть' и не трогать ее?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>По той причине, что свойства глобальной области видимости может изменить любой JavaScript-код, имеющий к ней доступ. Также, это грозит конфликтами имен.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 16,
     question:
       "В чем разница между областью видимости функции и блочной областью видимости?",
     answer: {
@@ -275,7 +333,7 @@ const questionsJS = [
     },
   },
   {
-    id: 14,
+    id: 17,
     question: "Что такое замыкание (Closures)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#20",
@@ -301,7 +359,7 @@ const questionsJS = [
     },
   },
   {
-    id: 15,
+    id: 18,
     question: "Что такое поднятие (Hoisting)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#18",
@@ -322,7 +380,7 @@ const questionsJS = [
     },
   },
   {
-    id: 16,
+    id: 19,
     question: "Для чего используется оператор ' && ' ?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#2",
@@ -341,7 +399,7 @@ const questionsJS = [
     },
   },
   {
-    id: 17,
+    id: 20,
     question: "Для чего используется оператор ' || ' ?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#3",
@@ -360,7 +418,7 @@ const questionsJS = [
     },
   },
   {
-    id: 18,
+    id: 21,
     question: "Для чего используется оператор '!!'?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#16",
@@ -379,7 +437,7 @@ const questionsJS = [
     },
   },
   {
-    id: 19,
+    id: 22,
     question: "В чем разница между операторами ' == ' и ')' === ' ?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -401,7 +459,7 @@ const questionsJS = [
     },
   },
   {
-    id: 20,
+    id: 23,
     question:
       "Почему результатом сравнения двух похожих объектов является false?",
     answer: {
@@ -421,7 +479,7 @@ const questionsJS = [
     },
   },
   {
-    id: 21,
+    id: 24,
     question:
       "Является ли использование унарного плюса (оператор ' + ') самым быстрым способом преобразования строки в число?",
     answer: {
@@ -442,7 +500,7 @@ const questionsJS = [
     },
   },
   {
-    id: 22,
+    id: 25,
     question: "Что такое DOM?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#5",
@@ -469,7 +527,7 @@ const questionsJS = [
     },
   },
   {
-    id: 23,
+    id: 26,
     question: "Что такое теневой DOM?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -488,7 +546,7 @@ const questionsJS = [
     },
   },
   {
-    id: 24,
+    id: 27,
     question: "Что такое распространение события (Event Propogation)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#6",
@@ -507,7 +565,7 @@ const questionsJS = [
     },
   },
   {
-    id: 25,
+    id: 28,
     question: "Что такое всплытие события (Event Bubbling)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#7",
@@ -527,7 +585,7 @@ const questionsJS = [
     },
   },
   {
-    id: 26,
+    id: 29,
     question: "Что такое погружение события (Event Capturing)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#8",
@@ -547,7 +605,7 @@ const questionsJS = [
     },
   },
   {
-    id: 27,
+    id: 30,
     question:
       "В чем разница между методами event.preventDefault() и event.stopPropagation()?",
     answer: {
@@ -569,7 +627,7 @@ const questionsJS = [
     },
   },
   {
-    id: 28,
+    id: 31,
     question: "Как узнать об использовании метода event.preventDefault()?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#10",
@@ -588,7 +646,7 @@ const questionsJS = [
     },
   },
   {
-    id: 29,
+    id: 32,
     question: "Что такое цель события или целевой элемент (event.target)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#12",
@@ -607,7 +665,7 @@ const questionsJS = [
     },
   },
   {
-    id: 30,
+    id: 33,
     question: "Что такое текущая цель события (event.currentTarget)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#13",
@@ -626,7 +684,7 @@ const questionsJS = [
     },
   },
   {
-    id: 31,
+    id: 34,
     question: "Что такое шаблонные литералы (Template Literals) / (бэктики)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#45",
@@ -647,7 +705,7 @@ const questionsJS = [
     },
   },
   {
-    id: 32,
+    id: 35,
     question: "Что такое тернарный оператор и как он работает?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -666,7 +724,26 @@ const questionsJS = [
     },
   },
   {
-    id: 33,
+    id: 36,
+    question: "Для чего нужен оператор опциональной последовательности?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Оператор опциональной последовательности ?. позволяет получить безопасный доступ к вложенным свойствам объекта – даже в том случае, когда промежуточное свойство отсутствует. Оператор ?.прекращает оценку и возвращаетundefined, если часть после ?. является либоundefined, либо null.</p> <p><img class='question__img' src='img/24proglibPart2.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 37,
     question: "Что такое регулярные выражения?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -685,7 +762,7 @@ const questionsJS = [
     },
   },
   {
-    id: 34,
+    id: 38,
     question: "Для чего используется директива «use strict»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#23",
@@ -706,7 +783,7 @@ const questionsJS = [
     },
   },
   {
-    id: 35,
+    id: 39,
     question:
       "Какое значение имеет this? Что такое this? Отличие this в function declaration и стрелочных функциях",
     answer: {
@@ -728,7 +805,7 @@ const questionsJS = [
     },
   },
   {
-    id: 36,
+    id: 40,
     question: "Что такое прототип объекта?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#25",
@@ -748,7 +825,7 @@ const questionsJS = [
     },
   },
   {
-    id: 37,
+    id: 41,
     question: "Как создать объект, не имеющий прототипа?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#38",
@@ -767,7 +844,7 @@ const questionsJS = [
     },
   },
   {
-    id: 38,
+    id: 42,
     question: "Что такое прототипное наследование?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -786,7 +863,7 @@ const questionsJS = [
     },
   },
   {
-    id: 39,
+    id: 43,
     question: "С помощью чего в JS реализуются наследование?",
     answer: {
       href: "https://habr.com/ru/articles/784548/",
@@ -806,7 +883,7 @@ const questionsJS = [
     },
   },
   {
-    id: 40,
+    id: 44,
     question: "Что такое функции высшего порядка (Higher Order Functions)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#32",
@@ -827,7 +904,7 @@ const questionsJS = [
     },
   },
   {
-    id: 41,
+    id: 45,
     question:
       "Почему функции в JS называют объектами первого класса (First-class Objects)?",
     answer: {
@@ -847,7 +924,7 @@ const questionsJS = [
     },
   },
   {
-    id: 42,
+    id: 46,
     question: "Как в JS вызвать функцию?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#66",
@@ -866,7 +943,7 @@ const questionsJS = [
     },
   },
   {
-    id: 43,
+    id: 47,
     question: "Для чего используется метод Function.prototype.apply?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#27",
@@ -885,7 +962,7 @@ const questionsJS = [
     },
   },
   {
-    id: 44,
+    id: 48,
     question: "Для чего используется метод Function.prototype.call?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#28",
@@ -904,7 +981,7 @@ const questionsJS = [
     },
   },
   {
-    id: 45,
+    id: 49,
     question: "Для чего используется метод Function.prototype.bind?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#30",
@@ -924,7 +1001,7 @@ const questionsJS = [
     },
   },
   {
-    id: 46,
+    id: 50,
     question: "В чем разница между методами call, apply, bind?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#29",
@@ -946,7 +1023,7 @@ const questionsJS = [
     },
   },
   {
-    id: 47,
+    id: 51,
     question: "Как изменить контекст функции?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -966,7 +1043,7 @@ const questionsJS = [
   },
 
   {
-    id: 48,
+    id: 52,
     question: "Что такое IIFE (Immediately Invoked Function Expression)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#26",
@@ -986,7 +1063,7 @@ const questionsJS = [
     },
   },
   {
-    id: 49,
+    id: 53,
     question:
       "В чем разница между объявлением функции и функциональным выражением?",
     answer: {
@@ -1006,7 +1083,7 @@ const questionsJS = [
     },
   },
   {
-    id: 50,
+    id: 54,
     question: "Зачем оборачивать содержимое исходного JS-файла в блок функции?",
     answer: {
       href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
@@ -1026,7 +1103,7 @@ const questionsJS = [
     },
   },
   {
-    id: 51,
+    id: 55,
     question: "Что такое функции-конструкторы?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1046,7 +1123,7 @@ const questionsJS = [
   },
 
   {
-    id: 52,
+    id: 56,
     question: "Для чего используется ключевое слово «new»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#70",
@@ -1065,7 +1142,7 @@ const questionsJS = [
     },
   },
   {
-    id: 53,
+    id: 57,
     question: "Что такое классы (Classes)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#44",
@@ -1084,7 +1161,7 @@ const questionsJS = [
     },
   },
   {
-    id: 54,
+    id: 58,
     question: "Как происходит наследование классов в ES6?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1103,7 +1180,7 @@ const questionsJS = [
     },
   },
   {
-    id: 55,
+    id: 59,
     question: "В чем разница между ES6 class и ES5 function constructor?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -1122,7 +1199,7 @@ const questionsJS = [
     },
   },
   {
-    id: 56,
+    id: 60,
     question: "Как проверить, из какого класса был создан объект?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1141,7 +1218,7 @@ const questionsJS = [
     },
   },
   {
-    id: 57,
+    id: 61,
     question:
       "В чем разница между Array.prototype.forEach и Array.prototype.map?",
     answer: {
@@ -1157,7 +1234,7 @@ const questionsJS = [
     },
   },
   {
-    id: 58,
+    id: 62,
     question: "Как бы Вы реализовали метод Array.prototype.map?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#34",
@@ -1176,7 +1253,7 @@ const questionsJS = [
     },
   },
   {
-    id: 59,
+    id: 63,
     question: "Как бы Вы реализовали метод Array.prototype.filter?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#35",
@@ -1195,7 +1272,7 @@ const questionsJS = [
     },
   },
   {
-    id: 60,
+    id: 64,
     question: "Как бы Вы реализовали метод Array.prototype.reduce?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#36",
@@ -1214,7 +1291,7 @@ const questionsJS = [
     },
   },
   {
-    id: 61,
+    id: 65,
     question: "Что такое объект arguments?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#37",
@@ -1233,12 +1310,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 66,
+    question: "Что такое стрелочные функции (Arrow Functions)?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#43",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Стрелочная функция</span>— это относительно новый способ создания функций в JS. Стрелочные функции создаются быстрее и имеют более читаемый синтаксис, чем функциональные выражения. В стрелочных функциях опускается слово <span>«function»</span>:</p>  <p><span>const getCurrentDate = () => new Date().</span></p> <p>В <span>функциональном выражении</span>мы используем ключевое слово «return» для возврата значения. В стрелочной функции мы этого не делаем, поскольку стрелочные функции неявно возвращают значения при условии, что мы возвращаем одно выражение или значение:</p> <p><span>function greet(name){ return 'Hello ' + name + '!' } // ES5</span></p> <p><span>const greet = (name) => `Hello ${name}`<br>const greet2 = name = > `Hello ${name}`<br>// ES6</span></p> <p>Мы также можем передавать параметры стрелочным функциям. Если мы передаем один параметр, его можно не оборачивать в круглые скобки:</p> <p></p>  <span>const getArgs = () => arguments<br>const getArgs2 = (...rest) => rest</span> <p>У стрелочных функций нет доступа к объекту <span>arguments</span>. Поэтому вызов первой функции приведет к ошибке. Для получения параметров, переданных функции, мы можем использовать оператор <span>rest</span>.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1251,12 +1329,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 67,
+    question: "Чем стрелочные функции отличаются от обычных?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Стрелочные функции позволяют использовать упрощенный синтаксис при создании небольших функций-обработчиков. У них есть некоторые ограничения по сравнению с обычными функциями:</p> <p><span>Стрелочные функции не могут использовать объект arguments.</span> В обычных функциях этот объект содержит все переданные при вызове аргументы:</p> <p><img class='question__img' src='img/5.1proglibPart1.png' alt=''></p><p><span>У стрелочных функций другой синтаксис записи.</span> Они записываются короче, используя стрелку => и не требуя ключевого слова function:</p> <p><img class='question__img' src='img/5.2proglibPart1.png' alt=''></p> <p><span>У стрелочных функций нет собственного контекста this.</span> Вместо этого контекст берется из внешней области видимости:</p> <p><img class='question__img' src='img/5.3proglibPart1.png' alt=''></p> <p><span>Стрелочные функции нельзя использовать как конструкторы с ключевым словом new.</span> То есть, из них нельзя создавать объекты при помощи оператора new:</p> <p><img class='question__img' src='img/5.4proglibPart1.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1269,12 +1348,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 68,
+    question: "Объясните стрелочные функции",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>Ответ:</span>Стрелочная функция – это краткий способ записи функциональных выражений. Стрелочные функции не являются конструкторами, не поддерживают ключевые слова this, arguments, super и new.target и записываются следующим образом:</p> <p>const hello = () => { 	console.log('good morning'); } hello();</p> ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1287,12 +1367,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 69,
+    question: "Что такое функция обратного вызова (Callback Function)?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#49",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Функция обратного вызова</span> — это функция, вызов которой отложен на будущее (происходит при некоторых условиях, например, при наступлении события).</p> <p><span>Колбэк-функция (или обратный вызов)</span> - это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.</p> <p>Вот краткий пример <span>синхронного колбэка</span>, поскольку функция <span>processUserInput</span> выполняется <span>синхронно:</span></p> <p><img class='question__img' src='img/habr70/49.1habr70.png' alt=''></p> <p>Колбэки часто используются для продолжения выполнения кода после завершения <span>асинхронной операции</span> - они называются <span>асинхронными колбэками.</span>Пример:</p> <p><img class='question__img' src='img/habr70/49.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1305,12 +1386,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 70,
+    question: "Что такое рекурсия и как ее можно использовать в JavaScript?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>Рекурсия</span>  в программировании – это процесс, в котором функция вызывает саму себя. Рекурсия обычно используется для решения задач, которые можно разбить на более простые подзадачи. В JavaScript рекурсию можно использовать, например, для работы с многоуровневыми массивами и обхода деревовидных структур данных.</p> <p>Так можно преобразовать вложенный массив в одномерный:</p> <p><img class='question__img' src='img/26.1proglibPart2.png' alt=''></p> <p>А так можно обойти и визуализировать дерево:</p> <p><img class='question__img' src='img/26.2proglibPart2.png' alt=''></p> <p>Результат: <img class='question__img' src='https://media.proglib.io/posts/2024/01/10/72020711c8a0f0f9bd59c96d88bfebb6.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1323,12 +1405,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 71,
+    question: "Что такое генераторы?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>Генераторы в JavaScript</span> представляют собой специальный тип функций, которые генерируют последовательность значений <span>по одному</span> за раз по мере необходимости, и позволяют приостанавливать и возобновлять свое выполнение (в отличие от обычных функций, которые выполняются до завершения). Генераторы хорошо работают с объектами и упрощают создание потоков данных.</p> <p>Чтобы объявить генератор, используют специальный синтаксис – функцию-генератор. Функция-генератор определяется с помощью символа * после ключевого слова <span>function</span>:</p> <p><img class='question__img' src='img/33proglibPart2.png' alt=''></p> <p>Генератор возвращает итератор, который можно использовать для контроля над выполнением функции. Основной метод итератора – next(). Когда вызывается next(), выполнение кода продолжается до ближайшего оператора yield. Когда достигнут yield, выполнение функции приостанавливается, и соответствующее значение возвращается во внешний код.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1341,12 +1424,680 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 72,
+    question: "Какие приемы работы с асинхронным кодом в JS Вы знаете?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#64",
+      linkName:
+        "<p>- Функции обратного вызова (Callbacks).</p> <p>- Промисы (Promises).</p> <p>- Async/await.</p> <p>- Библиотеки вроде async.js, blueprint, q, co.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 73,
+    question: "Что такое промисы (Promises)?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#50",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Promise (промис)</span> - это объект, представляющий результат успешного или неудачного завершения асинхронной операции.</p> <p>В сущности, <span>промис</span> - это возвращаемый объект, в который вы записываете два колбэка вместо того, чтобы передать их функции.</p> <p><img class='question__img' src='img/habr70/50.1habr70.png' alt=''></p> <ul> У промиса есть четыре состояния: <li><span>Ожидание (pending)</span> — начальное состояние промиса, не исполнен и не отклонён.. Результата промиса неизвестен, поскольку операция не завершена.</li> <li><span>Выполнено (fulfilled)</span> — асинхронная операция выполнена, имеется результат. Операция завершена успешно.</li> <li><span>Отклонено (rejected)</span> — асинхронная операция не выполнена, имеется причина. Операция завершена с ошибкой.</li> <li><span>Завершено</span> — выполнено или отклонено.</li>  </ul> <p>При создании промис находится в <span>ожидании (pending)</span>, а затем может стать <span>исполненным (fulfilled)</span>, вернув полученный <span>результат (значение)</span>, или <span>отклонённым (rejected)</span>, вернув причину отказа. В любом из этих случаев вызывается обработчик, прикреплённый к промису <span>методом then</span>. (Если в момент назначения обработчика промис уже исполнен или отклонён, обработчик всё равно будет вызван, т.е. асинхронное исполнение промиса и назначение обработчика не будет происходить в «состоянии гонки», как, например, в случае с событиями в DOM.)</p> <p>В качестве параметров конструктор промиса принимает <span>resolve </span>и <span>reject</span>. В <span>resolve</span> записывается результат выполнения операции, в <span>reject</span> — причина невыполнения операции. Результат может быть обработан в методе <span>.then</span>, ошибка — в методе <span>.catch</span>. Метод <span>.then</span> также возвращает <span>промис</span>, поэтому мы можем использовать цепочку, состоящую из нескольких <span>.then</span>.</p> <p><img class='question__img' src='img/habr70/50.2habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://learn.javascript.ru/promise-basics' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
+      image1: "",
+      href2:
+        "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName2: "proglib.io",
+      answer2:
+        "<p><span>Промис (Promise)</span> — специальный объект JavaScript, который используется для написания и обработки асинхронного кода. Он имеет три состояния:</p> <ul> <li><span>pending</span> – начальное состояние, означает, что асинхронная операция еще не завершена.</li> <li><span>fulfilled</span> – операция успешно завершена.</li> <li><span>rejected</span> – операция завершена с ошибкой.</li> </ul> <p>Промисы создаются с помощью конструктора <span>new Promise()</span>. Этот конструктор принимает в качестве аргумента функцию, которая выполняет асинхронную операцию. Функция принимает два аргумента <span>resolve</span> и <span>reject</span>, которые используются для изменения состояния промиса. Если асинхронная операция завершена успешно, вызывается <span>resolve</span>, если произошла ошибка, вызывается <span>reject</span>:</p> <p><img class='question__img' src='img/13.1proglibPart1.png' alt=''></p> <p> Промисы позволяют обрабатывать результаты асинхронных операций, используя методы <span>.then()</span> и <span>.catch()</span>. Метод <span>.then()</span> принимает два аргумента: функцию обратного вызова, которая будет вызвана при успешном выполнении промиса, и функцию обратного вызова, которая будет вызвана при ошибке. Метод <span>.catch()</span> используется для обработки ошибок, которые могут произойти при выполнении промиса:</p> <p><img class='question__img' src='img/13.2proglibPart1.png' alt=''></p> <p> Промисы можно связывать в цепочки, что позволяет выполнять несколько асинхронных операций последовательно. Для этого результат каждого промиса передается в следующий промис в цепочке. Это делается с помощью метода <span>.then()</span>:</p> <p><img class='question__img' src='img/13.3proglibPart1.png' alt=''></p>",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 74,
+    question: "Что такое Promise, и какие бывают состояния",
+    answer: {
+      href: "https://habr.com/ru/articles/784548/",
+      linkName: "habr.com",
+      answer1:
+        "<p>Promise - это объект в JavaScript, который представляет результат асинхронной операции. Промис позволяет обрабатывать результат операции, когда он станет доступным, вместо того, чтобы блокировать выполнение кода и ожидать завершения операции.</p> <p>Промис может находиться в одном из трех состояний:</p> <p><span>Pending:</span> Исходное состояние промиса. Он находится в ожидании выполнения или отклонения операции.</p> <p><span>Fulfilled:</span> Промис переходит в это состояние, когда операция успешно завершается. В этом случае промис возвращает результат операции.</p> <p><span>Rejected:</span> Промис переходит в это состояние, когда операция завершается с ошибкой. В этом случае промис возвращает причину ошибки.</p> <p></p> <p></p> <p></p> ",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 75,
+    question:
+      "Какие преимущества и недостатки у использования Promise API вместо обратных вызовов?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>Обещания избавляют разработчиков от ада обратных вызовов, но это не единственное их достоинство.</p> <p>Важно также отметить, что пользуясь обратными вызовами, мы зачастую были вынуждены 'верить' стороннему коду. А вызовет ли он наш коллбэк? А вызовет ли он его корректное количество раз? А не вызовет ли он его слишком рано или слишком поздно?</p> <p>Представьте, что функция, снимающая деньги со счета пользователя, передается коллбэком в сторонний (в той или иной степени) код. Что будет, если он вследствие внесенных со стороны изменений начнет вести себя некорректно и, скажем, начнет вызывать эту функцию пять раз вместо одного?</p> <p>Используя обещания, мы сами властны над нашим кодом. Мы сначала дожидаемся результата вызова сторонней функции, возвращающей обещание, а потом передаем управление необходимому блоку кода. Обещание может быть разрешено один раз и с тех пор оно неизменно, так что надежность нашего кода резко возрастает.</p>",
+      image1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 76,
+    question: "Что такое async/await и как они используются?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#51",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Async/await</span> — относительно новый способ написания асинхронного (неблокирующего) кода в JS. Им оборачивают промис. Он делает код более читаемым и чистым, чем промисы и функции обратного вызова. Однако для использования async/await необходимо хорошо знать промисы.</p> <p><img class='question__img' src='img/habr70/51.1habr70.png' alt=''></p> <p><span>Запомните</span>: использование ключевого слова <span>«async»</span> перед функцией заставляет ее возвращать <span>промис</span>:</p> <p><img class='question__img' src='img/habr70/51.2habr70.png' alt=''></p> <p>Ключевое слово «await» можно использовать только внутри асинхронной функции. Использование «await» внутри другой функции приведет к ошибке. Await ожидает завершения выражения справа, чтобы вернуть его значение перед выполнением следующей строчки кода.</p> <p><img class='question__img' src='img/habr70/51.3habr70.png' alt=''></p> <p>Подробнее о промисах можно почитать <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://learn.javascript.ru/async-await' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
+      image1: "",
+      href2:
+        "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName2: "proglib.io",
+      answer2:
+        "<p><span>Async/await</span> – это синтаксис JavaScript, который облегчает работу с промисами. Ключевое слово <span>async</span> перед функцией означает, что функция всегда возвращает промис. Ключевое слово <span>await</span> используется внутри асинхронных функций и заставляет JavaScript ожидать, пока промис не будет выполнен, прежде чем продолжить выполнение кода:</p> <p><img class='question__img' src='img/14.1proglibPart1.png' alt=''></p> <p>Надо отметить, что <span>await</span> нельзя использовать вне асинхронной функции. Например, этот код приведет к ошибке:</p> <p><img class='question__img' src='img/14.2proglibPart1.png' alt=''></p> <p>Чтобы решить эту проблему, можно обернуть вызов в другую асинхронную функцию:</p> <p><img class='question__img' src='img/14.3proglibPart1.png' alt=''></p>",
+      image2: "",
+      href3: "https://habr.com/ru/articles/784548/",
+      linkName3: "habr.com",
+      answer3:
+        "<p>async/await - это синтаксический сахар в языке программирования, который позволяет писать асинхронный код в более понятном и линейном стиле. Он используется в языках, поддерживающих асинхронное программирование, таких как JavaScript, C#, Python и других.</p> <p>Преимущества использования async/await включают более простой и понятный синтаксис, отсутствие необходимости в явном использовании колбэков или цепочек промисов, а также возможность использования блоков try/catch для обработки ошибок.</p>",
+      image3: "",
+    },
+  },
+  {
+    id: 77,
+    question: "Объясните разницу между синхронными и асинхронными функциями",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>JavaScript - это однопоточный язык, то-есть функции выполняются в синхронном порядке. Приложение блокируется на время выполнения каждой конкретной функции. Так происходит по той причине, что JavaScript имеет только один стек вызовов.</p> <p>С другой стороны, есть асинхронный способ выполнения функций, когда мы не блокируем весь интерфейс благодаря тому, что не дожидаемся выполнения функции, а подписываемся на событие с передачей обратного вызова. Ну, или мы можем иметь дело с обещанием или с прочими внешними API вроде setTimeout.</p> <p>В таком случае браузер помещает обработчик события в очередь задач, а когда наступает время его вызвать, он перемещает его в стек вызовов.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 78,
+    question: "Что такое AJAX?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#60",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>AJAX или Asyncronous JavaScript and XML</span> — это набор взаимосвязанных технологий, которые позволяют работать с данными в асинхронном режиме. Это означает, что мы можем отправлять данные на сервер и получать данные с него без перезагрузки веб-страницы.</p> <ul><span>AJAX</span> использует следующие технологии: <li><span>HTML</span> — структура веб-страницы.</li> <li><span>CSS</span> — стили веб-страницы.</li> <li><span>JavaScript</span> — поведение страницы и работа с DOM.</li> <li><span>XMLHttpRequest API</span> — отправка и получение данных с сервера.</li> <li>PHP, Python, Nodejs — какой-нибудь <span>серверный язык</span>.</li> </ul>",
+      image1: "",
+      href2: "https://habr.com/ru/articles/578370/",
+      linkName2: "35 вопросов с собеседования JavaScript-разработчика",
+      answer2:
+        "<p>AJAX = Asynchronous Javascript And XML. Это подход к асинхронному (неблокирующему) обмену данными с сервером.</p> <p>Изначально для решения подобной задачи использовался объект XMLHttpRequest , сейчас же более актуален дружелюбный к обещаниям (Promise) fetch API.</p>",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 79,
+    question: "Как в JS создать объект?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#61",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Объектный литерал:</span></p> <p><img class='question__img' src='img/habr70/61.1habr70.png' alt=''></p> <p><span>Функция-конструктор:</span></p> <p><img class='question__img' src='img/habr70/61.2habr70.png' alt=''></p> <p><span>Метод Object.create:</span></p> <p><img class='question__img' src='img/habr70/61.3habr70.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 80,
+    question: "Какие способы создания объектов есть в JavaScript?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p> Объекты JavaScript создаются с помощью функции-конструктора, литеральной нотации объекта, класса и метода <span>Object.create()</span>.</p> <p><span>Функция-конструктор</span> – это специальная функция, которую можно использовать для создания объектов с определенными свойствами и методами. Функция-конструктор используется с ключевым словом <span>new</span>:</p> <p><img class='question__img' src='img/12.1proglibPart1.png' alt=''></p> <p><span>Литеральная нотация</span> объекта позволяет создать объект, указав его свойства и значения внутри фигурных скобок <span>{}</span>:</p> <p><img class='question__img' src='img/12.2proglibPart1.png' alt=''></p> <p><span>Классы</span> позволяют создавать объекты с помощью синтаксиса, похожего на классы в других языках программирования:</p> <p><img class='question__img' src='img/12.3proglibPart1.png' alt=''></p> <p><span>Метод Object.create()</span> позволяет создать новый объект, используя существующий объект в качестве прототипа для нового объекта. Этот метод принимает два аргумента: прототип и объект свойств. Объект свойств определяет свойства нового объекта и их атрибуты <span>configurable</span>, <span>enumerable</span>, <span>writable</span> и <span>value</span>:</p> <p><img class='question__img' src='img/12.4proglibPart1.png' alt=''></p> ",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 81,
+    question: "Какие основные методы работы с массивами есть в JavaScript?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Oсновные методы для работы с массивами – <span>forEach</span>, <span>filter</span>, <span>map</span> и <span>reduce</span>.</p> <p>Метод <span>forEach</span> выполняет функцию для каждого элемента в массиве. Он не возвращает ничего, но позволяет выполнять действия с каждым элементом массива.  Применяется, когда нужно выполнить некоторые операции над каждым элементом, но не нужно создавать новый массив:</p> <p><img class='question__img' src='img/11.1proglibPart1.png' alt=''></p> <p>Метод <span>filter</span> создает новый массив, включающий только те элементы исходного массива, для которых функция обратного вызова возвращает <span>true</span>. Используется, когда нужно отфильтровать массив, чтобы включить только определенные элементы:</p> <p><img class='question__img' src='img/11.2proglibPart1.png' alt=''></p> <p>Метод <span>map</span> создает новый массив, который состоит из результатов применения функции к каждому элементу исходного массива. Применяется, когда нужно преобразовать каждый элемент массива:</p> <p><img class='question__img' src='img/11.3proglibPart1.png' alt=''></p> <p>Метод <span>reduce</span> выполняет функцию для каждого элемента массива, накапливая результат в одном значении. Используется, когда нужно объединить все элементы массива в одно значение, например, вычислить сумму всех чисел в массиве</p> <p><img class='question__img' src='img/11.4proglibPart1.png' alt=''></p> <p>Статья по теме: <a class='question__link' href='https://proglib.io/p/metody-massivov-v-javascript-dlya-novichkov-sovety-rekomendacii-i-primery-2022-04-26' target='_blank' rel='noopener noreferrer'>Методы массивов в JavaScript для новичков: советы, рекомендации и примеры</a></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 82,
+    question: "Как проверить, является ли значение массивом?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#57",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Для этого следует использовать метод <span>Array.isArray</span></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 83,
+    question: "Как определить наличие свойства в объекте?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#59",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Существует три способа это сделать.</p> <p><img class='question__img' src='img/habr70/59.1habr70.png' alt=''></p> <p>Первый способ состоит в использовании <span>оператора «in»</span>:</p> <p><img class='question__img' src='img/habr70/59.2habr70.png' alt=''></p> <p>Второй — использовать <span>метод hasOwnProperty</span>:</p> <p>Третий — <span>индексная нотация массива</span>:</p> <p><img class='question__img' src='img/habr70/59.3habr70.png' alt=''></p>",
+      image1: "",
+      href2:
+        "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName2: "proglib.io",
+      answer2:
+        "<p>В JavaScript есть два основных способа проверить наличие свойства в объекте – метод hasOwnProperty и оператор in.</p> <p>Метод <span>hasOwnProperty()</span> возвращает <span>true</span>, если указанное свойство является прямым свойством объекта, и <span>false</span> в противном случае. Этот метод не проверяет свойства в цепочке прототипов объекта. Оператор <span>in</span> возвращает <span>true</span>, если указанное свойство существует в объекте, независимо от того, является ли оно собственным свойством или унаследовано:</p> <p><img class='question__img' src='img/9proglibPart1.png' alt=''></p> ",
+      image2: "",
+      href3: "https://habr.com/ru/articles/784548/",
+      linkName3: "habr.com",
+      answer3:
+        "<p>В JavaScript есть несколько способов определить наличие свойства в объекте.</p> <p>Оператор in: Можно использовать оператор in, чтобы проверить наличие свойства в объекте или его прототипе.</p> <p>const obj = { name: 'John', age: 30 }; console.log('name' in obj); // true console.log('city' in obj); // false</p> <p>Метод hasOwnProperty(): Метод hasOwnProperty() проверяет, содержит ли объект указанное свойство и не учитывает свойства в прототипе объекта.</p> <p>const obj = { name: 'John', age: 30 }; console.log(obj.hasOwnProperty('name')); // true console.log(obj.hasOwnProperty('city')); // false</p> <p>Сравнение со значением undefined: Можно сравнить значение свойства с undefined, чтобы определить его наличие.</p> <p>const obj = { name: 'John', age: 30 }; console.log(obj.name !== undefined); // true  console.log(obj.city !== undefined); // false</p> <p>Использование Object.keys(): Можно использовать метод Object.keys() для получения массива всех свойств объекта и затем проверить наличие свойства в этом массиве.</p> <p>const obj = { name: 'John', age: 30 }; console.log(Object.keys(obj).includes('name')); // true console.log(Object.keys(obj).includes('city')); // false</p>",
+      image3: "",
+    },
+  },
+  {
+    id: 84,
+    question: "В чем разница между оператором «in» и методом hasOwnProperty?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#63",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Отличие состоит в том, что <span>оператор «in»</span> проверяет наличие свойства не только в самом объекте, но и в его прототипах, а <span>метод hasOwnProperty</span> — только в объекте.</p> <p><img class='question__img' src='img/habr70/63.3habr70.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 85,
+    question: "Как получить доступ к свойствам объекта?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>В JavaScript есть два основных способа доступа к свойствам объекта: <span>статический</span> (с использованием точечной нотации) и <span>динамический</span> (с использованием квадратных скобок).</p> <p>Точечная нотация позволяет напрямую получить доступ к свойству объекта, используя <span>имя</span> свойства. Скобочная нотация позволяет динамически получить доступ к свойству объекта с использованием квадратных скобок:</p> <p><img class='question__img' src='img/10.1proglibPart1.png' alt=''></p> <p>Скобочная нотация использует интерполяцию и особенно полезна, если имя свойства неизвестно заранее или когда оно хранится в переменной:</p> <p><img class='question__img' src='img/10.2proglibPart1.png' alt=''></p>  ",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 86,
+    question: "Как получить список ключей и значений объекта?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>В JavaScript для получения списка ключей и значений объекта используются методы<span>Object.keys() и Object.values()</span>.</p>  <p><span>Object.keys()</span> возвращает массив со всеми ключами объекта:</p> <p><img class='question__img' src='img/29.1proglibPart2.png' alt=''></p> <p><span></span></p> <p><img class='question__img' src='img/29.2proglibPart2.png' alt=''></p> <p>Используя Object.keys() и Object.values(), можно сделать перебор:</p> <p><img class='question__img' src=''img/29.3proglibPart2.png' alt=''></p> <p>Или вывести ключи и значения в виде объекта:</p> <p><img class='question__img' src=''img/29.4proglibPart2.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 87,
+    question: "Как проверить, является ли объект массивом?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Для такой проверки можно использовать встроенный метод <span>Array.isArray()</span>. Этот метод принимает объект в качестве аргумента и возвращает <span>true</span>, если объект является массивом, и <span>false</span> в противном случае:</p> <p><img class='question__img' src='img/15proglibPart1.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 88,
+    question: "Как можно добавить элемент в начало и в конец массива?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>Чтобы добавить элемент в начало массива, можно использовать Array.prototype.unshift(). Для добавления элемента в конец массива подойдет Array.prototype.push().</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 89,
+    question: "Как выполняется клонирование объекта?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Если объект не содержит вложенных объектов, как в приведенном ниже примере, для клонирования можно использовать оператор расширения <span>...</span> или метод <span>Object.assign()</span>:</p> <p><img class='question__img' src='img/17.1proglibPart1.png' alt=''></p> <p>Если объект содержит вложенные объекты, нужно выполнить глубокое копирование. Относительно медленный вариант – с использованием <span>JSON</span>:</p> <p><img class='question__img' src='img/17.2proglibPart1.png' alt=''></p> <p>Другой вариант – с использованием метода <span>cloneDeep</span> из библиотеки <span>lodash</span>:</p> <p><img class='question__img' src='img/17.3proglibPart1.png' alt=''></p>",
+      image1: "",
+      href2: "https://habr.com/ru/articles/578370/",
+      linkName2: "35 вопросов с собеседования JavaScript-разработчика",
+      answer2:
+        "<p>Можно использовать оператор остатка ....</p> <p>Можно использовать Object.assign(newObj, oldObj).</p> <p>Но эти подходы не позволяют выполнить глубокое клонирование. Поэтому, если нам нужно клонировать объект со вложенными объектами, мы можем использовать либо метод какой-либо библиотеки (привет, lodash), либо сделать это средствами встроенного объекта</p> <p>JSON. JSON.parse(JSON.stringify(objectToClone))</p>",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 90,
+    question: "Что такое деструктуризация объекта (Object Destructuring)?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#46",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Деструктуризация</span> — относительно новый способ получения (извлечения) значений объекта или массива.</p> <p>Допустим, у нас есть такой объект:</p> <p><span>const employee = {   <br>firstName: 'Marko',<br> lastName: 'Polo',<br> position: 'Software Developer',<br> yearHired: 2017<br>}</span></p> <p>Раньше для получения свойств объекта мы создавали переменные для каждого свойства. Это было очень скучно и сильно раздражало:</p> <p><span>var firstName = employee.firstName<br>var lastName = employee.lastName<br>var position = employee.position<br>var yearHired = employee.yearHired</span></p> <p>Использование <span>деструктуризации</span> позволяет сделать код чище и отнимает меньше времени. Синтаксис деструктуризации следующий: заключаем свойства <span>объекта</span>, которые хотим получить, в фигурные скобки <span>({ })</span>, а если речь идет о <span>массиве</span> — в квадратные скобки <span>([ ])</span>:</p> <p><span>let { firstName, lastName, position, yearHired } = employee</span></p> <p>Для изменения имени переменной следует использовать <span>«propertyName: newName»</span>:</p>  <p><span>let { firstName: fName, lastName: lName, position, yearHired } = employee</span></p> <p>Для присвоения переменным значения по умолчанию следует использовать <span>«propertyName = 'defaultValue'»</span>:</p> <p><span> let { firstName = 'Mark', lastName: lName, position, yearHired } = employee</span></p>",
+      image1: "",
+      href2:
+        "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName2: "proglib.io",
+      answer2:
+        "<p><span>Деструктуризация</span> в JavaScript позволяет извлечь данные из массива или свойства объекта и присвоить их отдельным переменным. Деструктуризация удобна тем, что позволяет не писать лишний код для доступа к данным внутри объектов/массивов по индексам или ключам.</p> <p><span>Деструктуризация массива:</span></p> <p><img class='question__img' src='img/20.1proglibPart1.png' alt=''></p> <p><span>Деструктуризация объекта:</span></p> <p><img class='question__img' src='img/20.2proglibPart1.png' alt=''></p>",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 91,
+    question: "Что такое объект Set?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#48",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Объект Set</span> позволяет хранить уникальные значения, примитивы и ссылки на объекты. Еще раз: в <span>Set</span> можно добавлять только уникальные значения. Он проверяет хранящиеся в нем значения с помощью алгоритма <span>SameZeroValue</span>.</p> <p><span>Экземпляр Set</span> создается с помощью <span>конструктора Set</span>. Мы также можем передать ему некоторые значения при создании:</p> <p><span>const set1 = new Set()<br>const set2 = new Set(['a','b','c','d','d','e']) // вторая 'd' не добавится</span></p> <p>Его основные методы это:</p> <ul> <li>- new Set(iterable) – создаёт Set, и если в качестве аргумента был предоставлен итерируемый объект (обычно это массив), то копирует его значения в новый Set.</li> <li>- set.add(value) – добавляет значение (если оно уже есть, то ничего не делает), возвращает тот же объект set.</li> <li>- set.delete(value) – удаляет значение, возвращает true, если value было в множестве на момент вызова, иначе false.</li> <li>- set.has(value) – возвращает true, если значение присутствует в множестве, иначе false.</li> <li>- set.clear() – удаляет все имеющиеся значения.</li> <li>- set.size – возвращает количество элементов в множестве.</li> </ul> <p>Подробнее смотри<a class='question__link' href='https://learn.javascript.ru/map-set' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
+      image1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 92,
+    question: "Что такое Map и Set в JavaScript?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Map и Set – это два типа коллекций, которые были введены в ECMAScript 6 (ES6). Они предоставляют более гибкие и мощные способы работы с наборами данных по сравнению с обычными объектами и массивами.</p> <p><span>Map</span> – это коллекция, которая состоит из пар <span>ключ-значение</span>, подобно объектам. Основное отличие Map от объектов заключается в том, что Map запоминает порядок добавления пар и позволяет использовать в качестве ключей данные любых типов:</p> <p><img class='question__img' src='img/8.1proglibPart1.png' alt=''></p> <p>При желании в <span>Map</span> в качестве ключей можно использовать функции:</p> <p><img class='question__img' src='img/8.2proglibPart1.png' alt=''></p> <p><span>Set</span> – это множество, в котором каждое значение может появляться только один раз. Дубликатов в <span>Set</span> нет:</p> <p><img class='question__img' src='img/8.3proglibPart1.png' alt=''></p> <p>Подробнее смотри<a class='question__link' href='https://learn.javascript.ru/map-set' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 93,
+    question: "Чем отличается Map от WeakMap?",
+    answer: {
+      href: "https://habr.com/ru/articles/784548/",
+      linkName: "habr.com",
+      answer1:
+        "<p>Map и WeakMap - это две разные структуры данных в JavaScript, которые предоставляют ассоциативное отображение ключей на значения.</p> <p>Вот основные отличия между Map и WeakMap:</p> <ol> <li><span>Сильные ссылки и сборка мусора:</span> В Map используются сильные ссылки на ключи, что означает, что если объект, используемый в качестве ключа, больше не используется, он не будет удален из памяти, пока есть ссылка на него. В WeakMap используются слабые ссылки на ключи, что означает, что если объект, используемый в качестве ключа, больше не имеет других ссылок, кроме ссылки из WeakMap, он может быть удален сборщиком мусора.</li> <li><span>Ключи:</span> В Map ключами могут быть любые значения, включая примитивы и объекты. В WeakMap ключами могут быть только объекты.</li> <li><span>Итерация:</span> Map поддерживает итерацию с помощью методов keys(), values() и entries(), которые возвращают итераторы для перебора ключей, значений и пар ключ-значение соответственно. WeakMap не поддерживает эти методы, поскольку слабые ссылки могут быть непредсказуемыми и не гарантируют порядок итерации.</li> <li><span>Размер:</span> Map имеет свойство size, которое возвращает количество элементов в Map. WeakMap не имеет свойства size, поскольку слабые ссылки не позволяют точно определить количество элементов.</li> <li><span>Методы:</span> Map предоставляет различные методы для работы с элементами, такие как set(), get(), has(), delete() и другие. WeakMap предоставляет только методы get(), set(), has() и delete().</li> <li>В целом, Map обычно используется для обычных случаев ассоциативного отображения, когда ключи и значения должны оставаться в памяти, пока есть ссылки на них. WeakMap полезен, когда вам нужно ассоциативное отображение с объектами в качестве ключей, и вы хотите, чтобы объекты могли быть автоматически удалены из WeakMap, когда больше нет ссылок на них.</li> </ol> <p>Еще можно почитать <a class='question__link' href='https://learn.javascript.ru/weakmap-weakset' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakMap' target='_blank' rel='noopener noreferrer'>здесь</a>.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 94,
+    question: "Чем отличается Set от WeakSet?",
+    answer: {
+      href: "https://habr.com/ru/articles/784548/",
+      linkName: "habr.com",
+      answer1:
+        "<p>Основное отличие между Set и WeakSet заключается в типе значений, которые они могут содержать, и в поведении при сборке мусора. Set может содержать любые значения и не удаляет их автоматически, а WeakSet может содержать только объекты и может быть автоматически очищен сборщиком мусора, если на объект больше нет ссылок.</p> <p>Еще можно почитать <a class='question__link' href='https://learn.javascript.ru/weakmap-weakset' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakMap' target='_blank' rel='noopener noreferrer'>здесь</a>.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 95,
+    question:
+      "В чем заключается разница между WeakSet, WeakMap и обычными Set и Map?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>WeakSet и WeakMap</span> – это специальные структуры данных в JavaScript, которые отличаются особенностью хранения ссылок на объекты.</p> <p>В обычных Set и Map хранятся <span><</span> ссылки на объекты. Это значит, что пока существует ссылка на объект в этих структурах, сборщик мусора не удалит этот объект из памяти, даже если больше нигде в коде нет ссылок на него.</p> <p>И напротив, в WeakSet и WeakMap хранятся <span>слабые</span> ссылки. Это означает, что если объект, на который есть ссылка в этих структурах, больше недоступен в коде (т.е. нигде больше нет сильных ссылок на него), то сборщик мусора может удалить этот объект из памяти, даже если в WeakSet или WeakMap все еще есть ссылка на него. Таким образом, использование слабых ссылок позволяет не держать в памяти ненужные больше объекты и экономить память.</p> <p>Кроме того, в WeakMap в качестве ключей могут использоваться только объекты, а не примитивные значения. А в WeakSet хранятся только объекты, без ключей.</p> <p>Подробнее о Set и Map смотри<a class='question__link' href='https://learn.javascript.ru/map-set' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 96,
+    question:
+      "Какие конструкции языка вы используете для обхода массивов и объектов?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>В случае с массивами, это чаще всего forEach и map. Реже возникает необходимость в for, for in, for of, reduce, filter и подобных.</p> <p>А чтобы обойти объект, понадобится немного изобретательности. Один из вариантов - получить ключи с помощью Object.keys, по которым впоследствии пройти с помощью forEach. Либо же можно воспользоваться Object.values, Object.entries, Object.keys.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 97,
+    question: "В чем разница между spread-оператором и rest-оператором?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#52",
+      linkName: "answer on habr.com",
+      answer1: "<p><span>ИСКАТЬ В ИНЕТЕ</span></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2:
+        "<p>Операторы <span>spread</span> и <span>rest</span> имеют одинаковый синтаксис <span>('...')</span>. Разница состоит в том, что с помощью <span>spread</span> мы передаем или распространяем данные массива на другие данные, а с помощью <span>rest</span> — получаем все параметры функции и помещаем их в массив (или извлекаем часть параметров).</p> <p><span>Оператор spread</span> — это конструкция в JavaScript, которая позволяет передавать элементы массива или свойства объекта в виде отдельных аргументов.</p> <p><span>Spread syntax</span>позволяет расширить доступные для итерации элементы (например, массивы или строки) в местах</p> <ul> <li>для функций: где ожидаемое количество аргументов для вызовов функций равно нулю или больше нуля;</li> <li>для элементов (литералов массива);</li> <li>для выражений объектов: в местах, где количество пар 'ключ-значение' должно быть равно нулю или больше (для объектных литералов);</li> </ul> <p><img class='question__img' src='img/habr70/52.1habr70.png' alt=''></p> <p><span>Оператор rest</span> — это синтаксическая конструкция в JavaScript, которая позволяет собирать оставшиеся элементы массива в другой массив или собирать оставшиеся свойства объекта в другой объект. Он всегда идёт последним и может использоваться только раз при одной операции «распаковки» массива или объекта.</p> <p><img class='question__img' src='img/habr70/52.2habr70.png' alt=''></p>",
+      image2: "",
+      href3: "https://habr.com/ru/articles/784548/",
+      linkName3: "habr.com",
+      answer3:
+        "<p>Spread-оператор и rest-оператор - это два разных оператора, которые используются в JavaScript для работы с массивами и объектами.</p> <p>Spread-оператор (...):</p> <ul> <li>Распространяет элементы массива или свойства объекта.</li> <li>Используется для создания нового массива или объекта, содержащего элементы или свойства исходного массива или объекта.</li> <li>Распаковывает элементы массива или свойства объекта, позволяя передавать их в другие функции или объединять с другими массивами или объектами.</li> </ul> <p>Пример: <span>const numbers = [1, 2, 3]; const newArray = [...numbers, 4, 5]; // [1, 2, 3, 4, 5]</span></p> <p>Rest-оператор (...):</p> <ul> <li>Собирает оставшиеся аргументы функции в массив.</li> <li>Используется для объявления параметра функции, который будет содержать все оставшиеся аргументы, переданные при вызове функции.</li> </ul> <p>Пример:</p> <p>function sum(...numbers) { let total = 0; for (let number of numbers) { total += number; } return total; console.log(sum(1, 2, 3, 4, 5)); // 15</p> <p>function printNames(first, last, ...middle) { console.log('First name:', first); console.log('Last name:', last);   console.log('Middle names:', middle); } printNames('John', 'Doe', 'Smith', 'Johnson', 'Williams'); // First name: John  // Last name: Doe // Middle names: ['Smith', 'Johnson', 'Williams']</p> <p></p>",
+      image3: "",
+    },
+  },
+  {
+    id: 98,
+    question: "Что делает оператор расширения?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Оператор расширения <span>...</span> разворачивает итерируемые элементы в отдельные элементы, что удобно для передачи аргументов, объединения массивов/объектов и добавления новых свойств в объекты. Используется: </p> <p>1. В функциях, где ожидаемое количество аргументов для вызова равно нулю или более</p> <p><img class='question__img' src='img/16.1proglibPart1.png' alt=''></p> <p>2. В литералах массива</p> <p><img class='question__img' src='img/16.2proglibPart1.png' alt=''></p> <p>3. В литералах объекта, где количество пар ключ-значение должно быть равно нулю или более</p> <p><img class='question__img' src='img/16.3proglibPart1.png' alt=''></p> <p>4. Для преобразования pстроки в массив символов</p> <p><img class='question__img' src='img/16.4proglibPart1.png' alt=''></p> <p> 5. Для преобразования числа в массив цифр и наоборот</p> <p><img class='question__img' src='img/16.5proglibPart1.png' alt=''></p> <p>6. Для копирования объектов</p> <p><img class='question__img' src='img/16.6proglibPart1.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 99,
+    question: "Что такое цикл событий (Event loop) и как он работает?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>Цикл событий</span> в JavaScript – это механизм, который управляет выполнением кода. Он обеспечивает обработку событий и выполнение задач в правильном порядке. Хотя JavaScript работает в однопоточной среде, цикл событий дает возможность обрабатывать асинхронные операции и предотвращает блокировку основного потока выполнения.</p> <p>Когда асинхронная операция (например, запрос к серверу) завершается, она помещает соответствующее событие в очередь событий. Цикл событий обрабатывает задачи в порядке их поступления. Он берет событие из очереди и передает его для выполнения. Если событие содержит обратный вызов или обработчик – вызывается соответствующая функция для выполнения кода, связанного с этим событием. Цикл событий также обрабатывает задачи, связанные с таймерами и промисами. Благодаря циклу событий, JavaScript быстро реагирует на действия пользователя и эффективно использует ресурсы при работе с асинхронными операциями.</p> <p>В приведенном ниже примере, несмотря на то, что setTimeout(firstTask, 0) имеет время ожидания0 секунд, первая задача firstTask()все равно не будет выполнена сразу после secondTask(). Это происходит потому, что JavaScript использует цикл событий для управления выполнением асинхронных операций. Когда мы вызываем setTimeout(), функция firstTask() помещается в очередь событий, – цикл событий начинает обрабатывать эту функцию, когда стек вызовов опустеет.</p> <p><img class='question__img' src='img/22proglibPart2.png' alt=''></p>",
+      image1: "",
+      href2:
+        "https://tproger.ru/articles/20-voprosov-na-sobesedovanii-frontend-razrabotchika1",
+      linkName2: "tproger.ru",
+      answer2:
+        "<p>это механизм в JavaScript, который позволяет выполнить асинхронный код и обрабатывать события, такие как клики мыши, нажатия клавиш и таймеры.</p> <p>Event loop работает внутри JavaScript движка и состоит из двух основных фаз: фаза синхронизации и фаза выполнения задач. В фазе синхронизации обрабатываются синхронные операции, такие как выполнение кода и обработка событий, которые были помещены в очередь в прошлый цикл. В фазе выполнения задач обрабатываются асинхронные операции, такие как колбэки таймеров и событий.</p> <p>Когда JavaScript выполняет код, все синхронные операции помещаются в очередь. Когда очередь становится пустой, Event loop проверяет, есть ли в очереди асинхронные операции. Если есть, они выполняются в порядке их добавления в очередь.</p> <p>Например, если мы вызываем setTimeout с задержкой в 1 секунду, функция setTimeout помещает колбэк функцию в очередь и устанавливает таймер на 1 секунду. Когда таймер сработает, колбэк функция будет добавлена в очередь, и Event loop выполнит ее.</p> <p>Важно понимать, что фаза выполнения задач может быть перервана фазой синхронизации. Например, если мы запускаем бесконечный цикл, который занимает все ресурсы процессора, JavaScript не сможет выполнить другие задачи, пока цикл не закончится.</p> <p>Event loop является важным концептом в асинхронном программировании на JavaScript, поэтому важно понимать, как он работает, чтобы писать эффективный и предсказуемый асинхронный код.</p>",
+      image2: "",
+      href3: "https://habr.com/ru/articles/784548/",
+      linkName3: "habr.com",
+      answer3:
+        "<p>Цикл событий (event loop) - это механизм, используемый в JavaScript и других языках программирования для обработки событий и выполнения асинхронного кода. Он позволяет программе эффективно обрабатывать события, такие как пользовательские действия, таймеры, сетевые запросы и другие асинхронные операции.</p> <p>Работа цикла событий в JavaScript обычно выглядит следующим образом:</p> <ol> <li>Ожидание событий: Цикл событий начинает свою работу, ожидая возникновения событий. Это могут быть пользовательские действия (например, щелчки мыши или нажатия клавиш), таймеры, сетевые запросы или другие асинхронные операции.</li> <li>Обработка событий: Когда событие происходит, оно помещается в очередь событий (event queue). Цикл событий извлекает событие из очереди и передает его на обработку.</li> <li>Выполнение обработчиков событий: Цикл событий вызывает соответствующий обработчик события, который содержит код, который должен быть выполнен в ответ на событие. Обработчик выполняется синхронно, то есть блокирует выполнение других событий до завершения.</li> <li>Обработка асинхронного кода: Если в обработчике события есть асинхронный код, такой как таймеры или сетевые запросы, он не блокирует выполнение других событий. Вместо этого асинхронный код помещается в очередь задач (task queue) для выполнения в будущем.</li> <li>Возврат к ожиданию событий: После выполнения всех обработчиков событий и обработки асинхронного кода, цикл событий возвращается к ожиданию новых событий. Процесс повторяется, пока не будет завершена работа программы.</li> </ol> <p>Цикл событий позволяет JavaScript выполнять асинхронный код без блокировки основного потока выполнения. Это позволяет создавать отзывчивые веб-приложения, которые могут обрабатывать пользовательские действия и одновременно выполнять другие задачи, такие как загрузка данных или анимации.</p> <p>Еще можно почитать <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Event_loop' target='_blank' rel='noopener noreferrer'>здесь</a></p>",
+      image3: "",
+    },
+  },
+  {
+    id: 100,
+    question:
+      "Что такое цикл событий? В чем разница между стеком вызовов и очередью задач?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>Стек вызовов - это структура данных (первым вошел, последним вышел), используемая для отслеживания порядка выполнения функций в текущем контексте (области видимости).</p> <p>Очередь задач - это структура данных (первым вошел, первым вышел), используемая для отслеживания выполнения асинхронных функций, готовых оказаться в стеке вызовов.</p> <p>Цикл событий - это механизм, на каждом тике выполняющий функции из стека вызовов и, если он оказывается пустым, перемещающий задачи из очереди задач в стек вызовов для выполнения.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 101,
+    question: "Что такое микрозадачи и макрозадачи?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>В JavaScript микрозадачи и макрозадачи относятся к типам задач, которые должны выполняться в цикле событий.</p> <p><span>Микрозадачи</span> – это задачи, которые должны быть выполнены в текущем цикле событий <span>перед</span> тем, как браузер перерисует страницу. Они обычно добавляются в очередь выполнения с помощью методов, таких как Promise.then(), process.nextTick() (в Node.js) или MutationObserver. Примеры микрозадач – выполнение обработчиков промисов и мутации DOM.</p> <p>С другой стороны, <span>макрозадачи</span> – это задачи, которые должны быть выполнены <span>после</span> окончания текущего цикла событий и <span>перед</span> тем, как изменения будут отрендерены на экране. Это включает задачи, добавленные в очередь событий с помощью setTimeout, setInterval, requestAnimationFrame, а также обработку входных событий и сетевых запросов. Макрозадачи выполняются <span>после</span> того, как завершается обработка <span>></span> микрозадач в текущем цикле событий.</p> <p>Разница между микрозадачами и макрозадачами определяет порядок выполнения и позволяет управлять приоритетами различных задач в JavaScript. Микрозадачи имеют более высокий приоритет и выполняются до макрозадач, что позволяет быстрее обновлять интерфейс и предотвращает блокировку основного потока выполнения JavaScript. В приведенном ниже примере <span>setTimeout</span> является макрозадачей, а <span>Promise.then()</span> – микрозадачей. Поскольку микрозадачи имеют более высокий приоритет, <span>Promise.then()</span> выполняется перед <span>setTimeout</span>, и поэтому <span>promise</span> появляется в первую очередь:</p> <p><img class='question__img' src='img/32proglibPart2.png' alt=''></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 102,
+    question: "В чем разница между методами Object.freeze и Object.seal?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#62",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Разница заключается в том, что при использовании метода <span>Object.freeze</span> мы не можем менять или редактировать свойства объекта, а при использовании <span>Object.seal</span> у нас такая возможность имеется.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 103,
+    question: "Объясните различие между Object.freeze() и const",
+    answer: {
+      href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
+      linkName: "proglib.io",
+      answer1:
+        "<p><span>Ответ:</span> const и Object.freeze – две разные фичи JavaScript. const применяется только для неизменяемой ссылки на ячейку памяти со значением, что означает невозможность задать новое значение для переменной. Object.freeze работает со значениями объектов. Делает объект неизменяемым, то есть изменить его свойства невозможно.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 104,
+    question: "Какие существуют методы для сохранения данных в браузере?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Есть 3 основных метода хранения данных в браузере:</p> <ul> <li><span>LocalStorage</span> и <span>SessionStorage</span> используются для хранения пар <span>ключ-значение</span>. Данные, сохраненные в них, сохраняются после обновления страницы. При этом только LocalStorage может сохранять данные <span>после перезапуска</span> браузера. Оба хранилища могут использовать только строки в качестве ключей и значений, поэтому объекты необходимо преобразовать с помощью <span>JSON.stringify()</span>.</li> <li><span>Cookie</span> – небольшие строки данных, которые хранятся в браузере. Cookie обычно устанавливаются веб-сервером с использованием заголовка Set-Cookie. Браузер затем автоматически добавляет их почти ко всем запросам на тот же домен с использованием заголовка Cookie. Один экземпляр cookie может содержать до 4 кб данных. В зависимости от браузера, допускается более 20 cookie на сайт.</li> <li><span>IndexedDB</span> – встроенная база данных, более мощная, чем localStorage. Это NoSQL-хранилище данных в формате JSON внутри браузера, где доступны несколько типов ключей, а значения могут быть практически любым. IndexedDB поддерживает асинхронный доступ, транзакции для обеспечения согласованности данных и создание индексов для эффективного поиска. Позволяет хранить больше данных, чем localStorage, может быть связана с Service Workers и другими технологиями, которые обеспечивают функционирование PWA в оффлайне.</li> </ul>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 105,
+    question: "В чем заключается разница между sessionStorage и localStorage?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Сессионное хранилище <span>sessionStorage</span> и локальное хранилище <span>localStorage</span> позволяют сохранять данные в формате <span>ключ-значение</span> в браузере. Оба они используются для хранения данных на стороне клиента, но имеют некоторые отличия:</p> <ul> <li><span>Объем хранимых данных</span> – localStorage может хранить до 10 МБ данных, в то время как sessionStorage может хранить только до 5 МБ данных.</li> <li><span>Срок хранения данных</span> – в localStorage данные не удаляются, когда закрывается браузер или вкладка. И напротив, данные в sessionStorage удаляются, когда закрывается вкладка или окно браузера.</li> <li><span>Доступность данных</span> – из localStorage данные доступны в любом окне браузера, в то время как данные из sessionStorage доступны только из того же окна браузера, где они были сохранены.</li> </ul>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 107,
+    question: "Объясните, что такое файлы cookie в JavaScript",
+    answer: {
+      href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
+      linkName: "proglib.io",
+      answer1:
+        "<p>С помощью этого вопроса интервьюер оценивает ваши базовые знания в веб-разработке.</p> <p><span>Ответ:</span>  Cookies – это небольшие текстовые файлы, которые хранятся на компьютере и создаются, когда пользователь заходит на веб-сайты. Например, это могут быть сведения о пользователе или информация о содержимом корзины покупок из прошлых посещений.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -1577,3 +2328,17 @@ const questionsJS = [
 ];
 
 export { questionsJS };
+
+// console.table(questionsJS);
+
+function sort(question) {
+  return `${question.id}. ${question.question}`;
+}
+
+questionsJS.forEach((question) => {
+  console.log(sort(question));
+});
+
+
+
+
