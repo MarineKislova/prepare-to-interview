@@ -27,6 +27,7 @@ import filter from "./modules/filter.js";
 import addArticles from "./modules/addArticles.js";
 import zoomImage from "./modules/zoomImage.js";
 import addCssQuestions from "./modules/addCssQuestions.js";
+import tabs from "./modules/tabs.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -52,6 +53,16 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  //tabs on pages with questions
+  if (document.querySelector(".tab-js")) {
+    tabs({
+      selectorContent: "[data-js]",
+      selectorTab: ".tab-js__btn",
+      selectorParent: ".tab-js__container",
+      activeClass: "btn-js-active",
+    });
+  }
 
   //add button toUp
   const questionContainers = document.querySelectorAll(".accordion-item");
@@ -99,6 +110,20 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // Render questions to the page
+
+  //js common questions
+  const questionJSList = document.querySelector(".common-questions__list");
+  function renderJSQuestions(questions) {
+    const li = document.createElement("li");
+    li.classList.add("list-group-item");
+    li.textContent = `${questions.id}. ${questions.question}`;
+    questionJSList.appendChild(li);
+  }
+  questionsJS.forEach((questions) => {
+    renderJSQuestions(questions);
+  });
+
+  //js common questions with answers
 
   //js questions
   const questionJS = document.querySelector(".common-questionsJS-container");

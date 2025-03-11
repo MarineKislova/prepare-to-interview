@@ -2110,12 +2110,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 108,
+    question: "Разница между cookie, sessionStorage и localStorage",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://tproger.ru/articles/20-voprosov-na-sobesedovanii-frontend-razrabotchika1",
+      linkName: "tproger.ru",
+      answer1:
+        "<p>Вот он, родной и горячо любимый HTML.</p> <p>cookie, sessionStorage и localStorage — это технологии для хранения данных на стороне клиента в браузере. Однако, у них есть различия в использовании и хранении данных.</p> <p>cookie — небольшой фрагмент данных, который отправляется сервером в браузер, а затем сохраняется в браузере клиента. Cookie могут храниться в течение определённого периода времени, определяемого сервером. Они используются для сохранения пользовательских настроек, данных авторизации и другой информации о пользователях.</p> <p>sessionStorage — объект, который позволяет сохранять данные в браузере на время сессии, т.е. пока вкладка браузера открыта. Данные сохраняются в виде пары ключ-значение, и они могут быть использованы для сохранения состояния приложения или другой информации, которая должна быть доступна только в течение сессии.</p> <p>localStorage — объект, который позволяет сохранять данные в браузере на неопределенный период времени, т.е. данные будут доступны даже после закрытия браузера и перезагрузки компьютера. Данные также сохраняются в виде пары ключ-значение и могут быть использованы для сохранения состояния приложения или другой информации, которая должна быть доступна в любое время.</p> <p>В целом, разница между cookie, sessionStorage и localStorage заключается в их жизненном цикле и времени жизни, а также в том, как они могут быть использованы в приложениях.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2128,12 +2129,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 109,
+    question: "Что такое модули (Modules)?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#47",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Модули</span> позволяют объединять (использовать) код из разных файлов и избавляют нас от необходимости держать весь код в одном большом файле.</p> <p>Синтаксис модулей очень простой: мы используем <span>import</span> для импорта функциональности или значений из другого файла или файлов и <span>export</span> для экспорта</p> <p>До появления модулей в JS существовало две популярные системы модулей для поддержки кода:</p> <p>1. CommonJS — Nodejs.</p> <p>2. AMD (AsyncronousModuleDefinition) — Browsers.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2146,12 +2148,12 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 110,
+    question: "Что такое запоминание или мемоизация (Memoization)?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#67",
+      linkName: "answer on habr.com",
+      answer1: "<p><span>Мемоизация</span> — это прием создания функции, способной запоминать ранее вычисленные результаты или значения. Преимущество мемоизации заключается в том, что мы избегаем повторного выполнения функции с одинаковыми аргументами. Недостатком является то, что мы вынуждены выделять дополнительную память для сохранения результатов.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2164,12 +2166,12 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 111,
+    question: "Как бы Вы реализовали вспомогательную функцию запоминания?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#68",
+      linkName: "answer on habr.com",
+      answer1: "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2182,12 +2184,12 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 112,
+    question: "Что такое ECMAScript?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#40",
+      linkName: "answer on habr.com",
+      answer1: "<p><span>ECMAScript</span>— это спецификация, стандарт скриптовых языков программирования, он является основой JS, поэтому любые изменения <span>ECMAScript</span> отражаются на JS.</p> <p>Последний вариант спецификации <span>ECMA-262</span>  можно посмотреть<a class='question__link' href='https://ecma-international.org/publications-and-standards/standards/ecma-262/' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2200,16 +2202,16 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 113,
+    question: "Что нового привнес в JS стандарт ES6 или ECMAScript2015?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#41",
+      linkName: "answer on habr.com",
+      answer1: " <p>1. Стрелочные функции (Arrow Functions).</p> <p>2. Классы (Classes).</p> <p>3. Шаблонные строки (Template Strings).</p> <p>4. Расширенные объектные литералы (Enhanced Object pterals).</p> <p>. 5Деструктуризация (Object Destructuring).</p> <p>6. Промисы (Promises).</p> <p>7. Генераторы (Generators).</p> <p>8. Модули (Modules).</p> <p>9. Symbol.</p> <p>10. Прокси (Proxies).</p> <p>11. Множества (Sets).</p> <p>12. Параметры по умолчанию.</p> <p>13. Операторы rest и spread.</p> <p>14. Блочная область видимости (ключевые слова «let» и «const»).</p> ",
       image1: "",
-      href2: "",
-      linkName2: "",
-      answer2: "",
+      href2: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName2: "proglib.io",
+      answer2: "p>В ES6 множество <a class='question__link' href='https://www.w3schools.com/js/js_es6.asp' target='_blank' rel='noopener noreferrer'>нововведений, вот всего несколько примеров.</a></p> <ul> <li>Деструктуризация объектов: const user = { name: 'Алиса',  age: 20 }; const {name, age} = user; // name = 'Алиса'; age = 20 </li> <li>Деструктуризация массивов: const array = [1, 2, 3]; let [x, y] = array; // x = 1; y = 2</li> <li>Шаблонные строки: const name = 'Инна'; console.log(`Привет, ${name}!`); // Привет, Инна!</li> <li>Стрелочные функции: const sum = (a, b) => a + b; console.log(sum(1, 2)); // 3</li> <li>Параметры по умолчанию: function volume(x = 1, y = 2, z = 3) { return x * y * z; } volume(); // 6 volume(2); // 12</li> <li></li> <li>Объявление переменных с помощью let и const. let – аналог var, но с блочной областью видимости. const – объявление константы (переменной, которую нельзя изменить).</li> <li>Оператор распространения (позволяет распаковывать элементы массива или объекта для аргументов функции или создания новых массивов/объектов): const obj1 = { a: 1, b: 2 }; const obj2 = { c: 3, d: 4 }; const merged = { ...obj1, ...obj2 }; console.log(merged); // { a: 1, b: 2, c: 3, d: 4 }</li> </ul>",
       image2: "",
       href3: "",
       linkName3: "",
@@ -2331,14 +2333,12 @@ export { questionsJS };
 
 // console.table(questionsJS);
 
-function sort(question) {
+function sortByQestion(question) {
   return `${question.id}. ${question.question}`;
 }
 
-questionsJS.forEach((question) => {
-  console.log(sort(question));
-});
-
-
+// questionsJS.forEach((question) => {
+//   console.log(sortByQestion(question));
+// });
 
 

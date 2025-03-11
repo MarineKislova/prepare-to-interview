@@ -20,7 +20,9 @@
         <div class="navbar__container">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand fs-1" href="index.html">Prepare to interview</a>
+              <a class="navbar-brand fs-1" href="index.html"
+                >Prepare to interview</a
+              >
               <button
                 class="navbar-toggler"
                 type="button"
@@ -74,17 +76,55 @@
           </div>
         </div>
         <!-- end timer -->
+        <div class="tab-js">
+          <div class="tab-js__container">
+            <button type="button" class="tab-js__btn" id="common-questionsJS">
+              Общий список вопросов
+            </button>
+            <button
+              type="button"
+              class="tab-js__btn"
+              id="common-answersJS"
+            >
+              Общий список вопросов с ответами
+            </button>
+            <button type="button" class="tab-js__btn" id="common-cardsJS">
+              Карточки
+            </button>
+            <button type="button" class="tab-js__btn" id="common-sourcesJS">
+              Вопросы
+            </button>
+            <button type="button" class="tab-js__btn" disabled>Вкладка</button>
+          </div>
+        </div>
 
         <!-- common questions -->
-        <div class="common-questions">
+        <div class="common-questions" data-js="common-questionsJS">
           <div class="common-questions__container">
+            <div class="common-questions__title">Общий список вопросов</div>
             <div class="common-questions__list"></div>
           </div>
         </div>
-        <div class="list"></div>
         <!-- end common question  -->
 
-        <div class="questions">
+        <!-- common qanswers -->
+        <div class="common-answers" data-js="common-answersJS">
+          <div class="common-answers__container">
+            <div class="common-answers__title">Общий список вопросов с ответами</div>
+            <div class="common-answers__list">Общий список вопросов с ответами</div>
+          </div>
+        </div>
+        <!-- end common answers  -->
+
+        <!-- cards js -->
+        <div class="cards-js" data-js="common-cardsJS">
+          <div class="cards-js__container">
+            <h2 class="cards-js__list">Карточки по JavaScript</h2>
+          </div>
+        </div>
+        <!-- end cards js -->
+
+        <div class="questions" data-js="common-sourcesJS">
           <div class="questions__container">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <!--9. Общий список вопросов -->

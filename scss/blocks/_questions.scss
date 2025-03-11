@@ -163,8 +163,6 @@
       transition: all 0.3s ease-in-out;
     }
   }
-
-  
 }
 .proglib-P1-container {
 }
@@ -205,3 +203,50 @@
 .habr-30-container {
 }
 
+.tab-js {
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid rgba(104, 111, 117, 0.3);
+    box-shadow: inset 0px -3px 3px rgba(104, 111, 117, 1);
+  }
+
+  &__btn {
+    background-color: #e2e3e4;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: background-color 0.4s linear;
+  }
+
+  .btn-js-active {
+    background-color: #f2757d;
+  }
+}
+
+.common-questions {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Josefin Sans";
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__list {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-bottom: 2px;
+    text-align: justify;
+    text-wrap: pretty;
+  }
+
+  &__list-group-item {
+  }
+}
