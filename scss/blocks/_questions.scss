@@ -212,8 +212,9 @@
     box-shadow: inset 0px -3px 3px rgba(104, 111, 117, 1);
   }
 
-  &__btn {
+  &__btn-js {
     background-color: #e2e3e4;
+    color: #333;
     border-radius: 5px;
     padding: 10px 20px;
     font-weight: 700;
@@ -222,6 +223,7 @@
 
   .btn-js-active {
     background-color: #f2757d;
+    color: #fff;
   }
 }
 
@@ -249,4 +251,132 @@
 
   &__list-group-item {
   }
+}
+
+.common-answers {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    line-height: 1.5;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__list {
+    li::marker {
+      content: "";
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      display: flex;
+      margin: 0px auto;
+      width: 50vh;
+      height: max-content;
+      object-fit: contain;
+    }
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__question {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background-color: bisque;
+    text-align: center;
+  }
+
+  &__answer1,
+  &__answer2,
+  &__answer3,
+  &__answer4 {
+    padding: 0px 20px;
+    background-color: #f79292;
+    font-weight: 500;
+  }
+
+  // &__answer1 {
+  // }
+
+  // &__answer2 {
+  // }
+
+  // &__answer3 {
+  // }
+
+  // &__answer4 {
+  // }
+}
+
+.accordion-js {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Josefin Sans";
+    line-height: 1.5;
+  }
+
+  &__tittle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 25px;
+  }
+}
+
+.accordion-card {
+  display: flex;
+  flex-direction: column;
+}
+.accordion {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  background-color: #7588f2;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #F2757D;
+  display: none;
+  overflow: hidden;
 }

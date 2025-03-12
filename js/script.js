@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".tab-js")) {
     tabs({
       selectorContent: "[data-js]",
-      selectorTab: ".tab-js__btn",
+      selectorTab: ".tab-js__btn-js",
       selectorParent: ".tab-js__container",
       activeClass: "btn-js-active",
     });
@@ -83,7 +83,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Добавляем кнопки "Наверх к разделу" для каждого контейнера
+  // Add the buttons "Up to the section" for each container
   questionContainers.forEach((container) => {
     addUpBtn(container);
   });
@@ -94,14 +94,14 @@ window.addEventListener("DOMContentLoaded", () => {
       const container = btn.closest(".accordion-item");
       const upButton = container ? container.querySelector(".btnUp") : null;
 
-      // Проверяем, есть ли кнопка
+      // Check if there is a button
       if (btn.classList.contains("collapsed")) {
-        // Если кнопка аккордеона "закрыта"
+        // if the Aquardeon button "Closed"
         if (upButton) {
           upButton.style.display = "none";
         }
       } else {
-        // Если кнопка аккордеона "открыта"
+        // If the Aquardeon button "Open"
         if (upButton) {
           upButton.style.display = "block";
         }
@@ -124,6 +124,79 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //js common questions with answers
+  const questionJSAnswerList = document.querySelector(".common-answers__list");
+  function renderJSAnswerQuestions(questions) {
+    const li = document.createElement("li");
+    li.classList.add("common-answers__list-item");
+    // li.innerHTML = `<p>></p>`;
+    questionJSAnswerList.appendChild(li);
+
+    const questionText = document.createElement("div");
+    questionText.classList.add("common-answers__question", "fs-5");
+    questionText.innerHTML = `<span>${questions.id}. ${questions.question}</span>`;
+    li.appendChild(questionText);
+
+    const answerItem1 = document.createElement("div");
+    answerItem1.classList.add("common-answers__answer1", "fs-5");
+    answerItem1.innerHTML = `<span>Ответ 1:</span> ${questions.answer.answer1}`;
+    li.appendChild(answerItem1);
+
+    const answerItem2 = document.createElement("div");
+    answerItem2.classList.add("common-answers__answer2", "fs-5");
+    answerItem2.innerHTML = `<span>Ответ 2:</span> ${questions.answer.answer2}`;
+    li.appendChild(answerItem2);
+
+    const answerItem3 = document.createElement("div");
+    answerItem3.classList.add("common-answers__answer3", "fs-5");
+    answerItem3.innerHTML = `<span>Ответ 3:</span> ${questions.answer.answer3}`;
+    li.appendChild(answerItem3);
+
+    const answerItem4 = document.createElement("div");
+    answerItem4.classList.add("common-answers__answer4", "fs-5");
+    answerItem4.innerHTML = `<span>Ответ 4:</span> ${questions.answer.answer4}`;
+    li.appendChild(answerItem4);
+
+    if (questions.answer.answer2 == "") {
+      answerItem2.style.display = "none";
+    }
+    if (questions.answer.answer3 == "") {
+      answerItem3.style.display = "none";
+    }
+    if (
+      questions.answer.answer4 == "" ||
+      questions.answer.answer4 == undefined
+    ) {
+      answerItem4.style.display = "none";
+    }
+  }
+  questionsJS.forEach((questions) => {
+    renderJSAnswerQuestions(questions);
+  });
+
+  //js questions cards with answers
+  const questionJSAccordionList = document.querySelector(".accordion-js__list");
+  function renderJSQuestionCards(questions) {
+    const accordionCard = document.createElement("div");
+    accordionCard.classList.add("accordion-card");
+    questionJSAccordionList.appendChild(accordionCard);
+
+    const btn = document.createElement("button");
+    btn.classList.add("accordion");
+    btn.innerHTML = `<h2>${questions.id}. ${questions.question}</h2>`;
+    accordionCard.appendChild(btn);
+
+    const panel = document.createElement("div");
+    panel.classList.add("panel");
+    panel.innerHTML = `<div class="back-content"><h3>Ответы:</h3><p>Ответ 1: ${questions.answer.answer1}</p></div>`;
+    accordionCard.appendChild(panel);
+  }
+
+  questionsJS.forEach((questions) => {
+    renderJSQuestionCards(questions);
+  });
+
+  const acc = document.getElementsByClassName("accordion");
+  
 
   //js questions
   const questionJS = document.querySelector(".common-questionsJS-container");

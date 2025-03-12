@@ -49,6 +49,10 @@
   }
 }
 
+.open{
+  display: flex !important;
+}
+
 .time {
   &__container {
     display: flex;
