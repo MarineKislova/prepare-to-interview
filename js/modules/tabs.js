@@ -18,7 +18,7 @@ function tabs({ selectorTab, selectorContent, selectorParent, activeClass }) {
     }
 
     hideTabContent();
-    showTabContent(2);
+    showTabContent(1);
 
     tabs.forEach((item, i) => {
       item.addEventListener("click", () => {

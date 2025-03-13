@@ -828,7 +828,7 @@ const questionsJSHabr = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#54",
       linkName: "answer on habr.com",
-      answer1: "",
+      answer1: "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
       image1: "",
       href2: "",
       linkName2: "",

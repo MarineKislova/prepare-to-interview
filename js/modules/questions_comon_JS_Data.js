@@ -42,6 +42,24 @@ const questionsJS = [
     },
   },
   {
+    id: 1,
+    question: "Что такое объектная обертка (Wrapper Objects)?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#54",
+      linkName: "answer on habr.com",
+      answer1: "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
     id: 3,
     question: "Объясните разницу между изменяемыми и неизменяемыми значениями",
     answer: {
@@ -2153,7 +2171,8 @@ const questionsJS = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#67",
       linkName: "answer on habr.com",
-      answer1: "<p><span>Мемоизация</span> — это прием создания функции, способной запоминать ранее вычисленные результаты или значения. Преимущество мемоизации заключается в том, что мы избегаем повторного выполнения функции с одинаковыми аргументами. Недостатком является то, что мы вынуждены выделять дополнительную память для сохранения результатов.</p>",
+      answer1:
+        "<p><span>Мемоизация</span> — это прием создания функции, способной запоминать ранее вычисленные результаты или значения. Преимущество мемоизации заключается в том, что мы избегаем повторного выполнения функции с одинаковыми аргументами. Недостатком является то, что мы вынуждены выделять дополнительную память для сохранения результатов.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2171,7 +2190,8 @@ const questionsJS = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#68",
       linkName: "answer on habr.com",
-      answer1: "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
+      answer1:
+        "<p><img class='question__img' src='img/habr70/68.1habr70.png' alt=''></p> <p>Мы реализовали функцию мемоизации с одним аргументом. Сделаем ее «мультиаргументной»:</p> <p><img class='question__img' src='img/habr70/68.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2189,7 +2209,8 @@ const questionsJS = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#40",
       linkName: "answer on habr.com",
-      answer1: "<p><span>ECMAScript</span>— это спецификация, стандарт скриптовых языков программирования, он является основой JS, поэтому любые изменения <span>ECMAScript</span> отражаются на JS.</p> <p>Последний вариант спецификации <span>ECMA-262</span>  можно посмотреть<a class='question__link' href='https://ecma-international.org/publications-and-standards/standards/ecma-262/' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
+      answer1:
+        "<p><span>ECMAScript</span>— это спецификация, стандарт скриптовых языков программирования, он является основой JS, поэтому любые изменения <span>ECMAScript</span> отражаются на JS.</p> <p>Последний вариант спецификации <span>ECMA-262</span>  можно посмотреть<a class='question__link' href='https://ecma-international.org/publications-and-standards/standards/ecma-262/' target='_blank' rel='noopener noreferrer'>здесь.</a></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2207,11 +2228,14 @@ const questionsJS = [
     answer: {
       href: "https://habr.com/ru/articles/486820/#41",
       linkName: "answer on habr.com",
-      answer1: " <p>1. Стрелочные функции (Arrow Functions).</p> <p>2. Классы (Classes).</p> <p>3. Шаблонные строки (Template Strings).</p> <p>4. Расширенные объектные литералы (Enhanced Object pterals).</p> <p>. 5Деструктуризация (Object Destructuring).</p> <p>6. Промисы (Promises).</p> <p>7. Генераторы (Generators).</p> <p>8. Модули (Modules).</p> <p>9. Symbol.</p> <p>10. Прокси (Proxies).</p> <p>11. Множества (Sets).</p> <p>12. Параметры по умолчанию.</p> <p>13. Операторы rest и spread.</p> <p>14. Блочная область видимости (ключевые слова «let» и «const»).</p> ",
+      answer1:
+        " <p>1. Стрелочные функции (Arrow Functions).</p> <p>2. Классы (Classes).</p> <p>3. Шаблонные строки (Template Strings).</p> <p>4. Расширенные объектные литералы (Enhanced Object pterals).</p> <p>. 5Деструктуризация (Object Destructuring).</p> <p>6. Промисы (Promises).</p> <p>7. Генераторы (Generators).</p> <p>8. Модули (Modules).</p> <p>9. Symbol.</p> <p>10. Прокси (Proxies).</p> <p>11. Множества (Sets).</p> <p>12. Параметры по умолчанию.</p> <p>13. Операторы rest и spread.</p> <p>14. Блочная область видимости (ключевые слова «let» и «const»).</p> ",
       image1: "",
-      href2: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      href2:
+        "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
       linkName2: "proglib.io",
-      answer2: "p>В ES6 множество <a class='question__link' href='https://www.w3schools.com/js/js_es6.asp' target='_blank' rel='noopener noreferrer'>нововведений, вот всего несколько примеров.</a></p> <ul> <li>Деструктуризация объектов: const user = { name: 'Алиса',  age: 20 }; const {name, age} = user; // name = 'Алиса'; age = 20 </li> <li>Деструктуризация массивов: const array = [1, 2, 3]; let [x, y] = array; // x = 1; y = 2</li> <li>Шаблонные строки: const name = 'Инна'; console.log(`Привет, ${name}!`); // Привет, Инна!</li> <li>Стрелочные функции: const sum = (a, b) => a + b; console.log(sum(1, 2)); // 3</li> <li>Параметры по умолчанию: function volume(x = 1, y = 2, z = 3) { return x * y * z; } volume(); // 6 volume(2); // 12</li> <li></li> <li>Объявление переменных с помощью let и const. let – аналог var, но с блочной областью видимости. const – объявление константы (переменной, которую нельзя изменить).</li> <li>Оператор распространения (позволяет распаковывать элементы массива или объекта для аргументов функции или создания новых массивов/объектов): const obj1 = { a: 1, b: 2 }; const obj2 = { c: 3, d: 4 }; const merged = { ...obj1, ...obj2 }; console.log(merged); // { a: 1, b: 2, c: 3, d: 4 }</li> </ul>",
+      answer2:
+        "p>В ES6 множество <a class='question__link' href='https://www.w3schools.com/js/js_es6.asp' target='_blank' rel='noopener noreferrer'>нововведений, вот всего несколько примеров.</a></p> <ul> <li>Деструктуризация объектов: const user = { name: 'Алиса',  age: 20 }; const {name, age} = user; // name = 'Алиса'; age = 20 </li> <li>Деструктуризация массивов: const array = [1, 2, 3]; let [x, y] = array; // x = 1; y = 2</li> <li>Шаблонные строки: const name = 'Инна'; console.log(`Привет, ${name}!`); // Привет, Инна!</li> <li>Стрелочные функции: const sum = (a, b) => a + b; console.log(sum(1, 2)); // 3</li> <li>Параметры по умолчанию: function volume(x = 1, y = 2, z = 3) { return x * y * z; } volume(); // 6 volume(2); // 12</li> <li></li> <li>Объявление переменных с помощью let и const. let – аналог var, но с блочной областью видимости. const – объявление константы (переменной, которую нельзя изменить).</li> <li>Оператор распространения (позволяет распаковывать элементы массива или объекта для аргументов функции или создания новых массивов/объектов): const obj1 = { a: 1, b: 2 }; const obj2 = { c: 3, d: 4 }; const merged = { ...obj1, ...obj2 }; console.log(merged); // { a: 1, b: 2, c: 3, d: 4 }</li> </ul>",
       image2: "",
       href3: "",
       linkName3: "",
@@ -2309,13 +2333,66 @@ const questionsJS = [
       image3: "",
     },
   },
+  
+];
+
+const sortedQuestionsJS = [
   {
     id: 1,
-    question: "",
+    question: "Какие типы данных (примитивные типы данных) есть в JavaScript?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/types' target='_blank' rel='noopener noreferrer'>Типы данных</a>, <a class='question__link' href='https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18' target='_blank' rel='noopener noreferrer'>proglib.io</a></p><p>Всего в JS 8 типов данных:</p> <p><span>Число (number)</span>, <span>Строка (string)</span>, <span>Булевый (логический) тип (boolean)</span>, <span>BigInt</span>, <span>Symbol</span>, <span>undefiend</span>, <span>Object</span>, <span>Null</span></p> <ul> <li><span>Number</span> – число. Тип Number в JavaScript может хранить как целые числа, так и числа с плавающей точкой.</li> <li><span>BigInt</span> – используется для представления целых чисел произвольной длины, превышающих 2^53 – 1. BigInt создается с помощью добавления n в конец целочисленного литерала или путем вызова функции BigInt(), которая создает BigInt из строк, чисел и т.д.</li> <li><span>String</span> – строка (последовательность символов), например, 'JavaScript – главный язык интернета'.Строки записываются с использованием кавычек, можно использовать одинарные или двойные кавычки.</li> <li><span>Boolean</span> – логический (булев) тип, который может принимать значения true (истина) или false (ложь).</li> <li><span>Object</span> – объект. Это значение в памяти, на которое возможно сослаться с помощью идентификатора. Объект может расцениваться как набор свойств. Значения свойств могут иметь любой тип, включая другие объекты, что позволяет строить сложные, разветвленные иерархии данных.</li> <li><span>Null</span> – специальное значение, которое представляет «ничего», «пусто», или «неизвестное значение».</li> <li><span>Undefined</span> – это значение присваивается переменной, если она была объявлена, но не получила значения.</li> <li><span>Symbol</span> – это уникальный и неизменяемый тип данных, который можно использовать в качестве идентификатора для свойств объекта.</li> </ul> <p>Все <span>примитивы неизменяемы (immutable)</span>, то есть они не могут быть изменены. Важно не путать сам примитив с переменной, которой присвоено значение примитивного типа. Переменной может быть переприсвоено новое значение, но существующее значение примитивного типа не может быть изменено подобно объектам, массивам и функциям. Но не все встроенные типы данных – примитивы. В JavaScript доступно <span>семь примитивных</span> типов данных: <span>number, bigint, string, boolean, null, undefined, symbol</span>. Все остальное в JavaScript является <span>объектом (Object)</span> .</p>",
+    },
+  },
+  {
+    id: 2,
+    question: "Как в JavaScript реализованы методы примитивных типов данных?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/primitives-methods'>Методы примитивов</a>, <a class='question__link' href='https://developer.mozilla.org/ru/docs/Glossary/Primitive#%D0%BE%D0%B1%D1%91%D1%80%D1%82%D0%BA%D0%B8_%D0%BF%D1%80%D0%B8%D0%BC%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D1%85_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2_%D0%B2_javascript' target='_blank' rel='noopener noreferrer'>Обёртки примитивных типов в JavaScript</a>, <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf' target='_blank' rel='noopener noreferrer'>Object.prototype.valueOf()</a></p><p>JavaScript позволяет работать с примитивными типами данных – строками, числами, логическими значениями – как с объектами, поскольку у них тоже есть методы. Например, у строк есть методы <span>toUpperCase()</span> и <span>toLowerCase()</span>, у чисел есть методы <span>toFixed()</span> и <span>toPrecision()</span> и т.д.</p> <p>Эта возможность реализована благодаря специальным оберточным объектам для каждого примитивного типа данных. Эти объекты называются:</p> <ul> <li><span>String</span> – для строк</li> <li><span>Number</span> – для чисел</li> <li><span>Boolean</span> – для логических значений</li> <li><span>Symbol</span> – для символов</li> </ul> <p>Когда мы вызываем метод у примитивного значения, например 'test'.toUpperCase(), происходит следующее:</p> <ul> <li>Создается временный оберточный объект типа Stringсо значением 'test'.</li> <li>У этого объекта вызывается метод toUpperCase().</li> <li>Результат возвращается обратно в примитивное значение.</li> <li>Временный оберточный объект удаляется.</li> </ul> <p>Таким образом реализуется возможность использовать методы у примитивных типов данных. Благодаря этому механизму, примитивы в JavaScript ведут себя как объекты.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+
+  {
+    id: 3,
+    question: "Объясните разницу между изменяемыми и неизменяемыми значениями",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1:
+        "<p>Значения <span>примитивных типов</span> (например, строка или число) не могут быть изменены после того, как попали в память.</p> <p>Все <span>примитивы неизменяемы (immutable)</span>, то есть они не могут быть изменены. Важно не путать сам примитив с переменной, которой присвоено значение примитивного типа. Переменной может быть переприсвоено новое значение, но существующее значение примитивного типа не может быть изменено подобно объектам, массивам и функциям. Но не все встроенные типы данных – примитивы. В JavaScript доступно <span>семь примитивных</span> типов данных: <span>number, bigint, string, boolean, null, undefined, symbol</span>. </p><p>Все остальное в JavaScript является <span>объектом (Object)</span>.</p><p>Значения <span>объектных типов (объекты, массивы)</span> могут изменяться в ходе работы программы.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 4,
+    question: "Что такое объектная обертка (Wrapper Objects)?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#54",
+      linkName: "answer on habr.com",
+      answer1: "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2331,14 +2408,6 @@ const questionsJS = [
 
 export { questionsJS };
 
-// console.table(questionsJS);
-
-function sortByQestion(question) {
-  return `${question.id}. ${question.question}`;
-}
-
-// questionsJS.forEach((question) => {
-//   console.log(sortByQestion(question));
-// });
+export { sortedQuestionsJS };
 
 

@@ -8,6 +8,7 @@ import { questionsJSHabrPart2 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr35 } from "./modules/question_JS_Data.js";
 import { questionsJSHabr } from "./modules/question_JS_Data.js";
 import { questionsJS } from "./modules/questions_comon_JS_Data.js";
+import { sortedQuestionsJS } from "./modules/questions_comon_JS_Data.js";
 
 // import { questionJavaScript } from "./modules/question_JS_Data.js";
 // import { commonList } from "./modules/question_JS_Data.js";
@@ -131,6 +132,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // li.innerHTML = `<p>></p>`;
     questionJSAnswerList.appendChild(li);
 
+
     const questionText = document.createElement("div");
     questionText.classList.add("common-answers__question", "fs-5");
     questionText.innerHTML = `<span>${questions.id}. ${questions.question}</span>`;
@@ -156,10 +158,12 @@ window.addEventListener("DOMContentLoaded", () => {
     answerItem4.innerHTML = `<span>Ответ 4:</span> ${questions.answer.answer4}`;
     li.appendChild(answerItem4);
 
-    if (questions.answer.answer2 == "") {
+    if (questions.answer.answer2 == ""  ||
+      questions.answer.answer2 == undefined) {
       answerItem2.style.display = "none";
     }
-    if (questions.answer.answer3 == "") {
+    if (questions.answer.answer3 == ""  ||
+      questions.answer.answer3 == undefined) {
       answerItem3.style.display = "none";
     }
     if (
@@ -169,24 +173,34 @@ window.addEventListener("DOMContentLoaded", () => {
       answerItem4.style.display = "none";
     }
   }
-  questionsJS.forEach((questions) => {
+
+  sortedQuestionsJS.forEach((questions) => {
     renderJSAnswerQuestions(questions);
   });
 
+  console.log(sortedQuestionsJS);
+  
+
+  // questionsJS.forEach((questions) => {
+  //   renderJSAnswerQuestions(questions);
+  // });
+
+  
+
   //js questions cards with answers
-  const questionJSAccordionList = document.querySelector(".accordion-js__list");
+  const questionJSAccordionList = document.querySelector(".cards-js__list");
   function renderJSQuestionCards(questions) {
     const accordionCard = document.createElement("div");
-    accordionCard.classList.add("accordion-card");
+    accordionCard.classList.add("cardJS");
     questionJSAccordionList.appendChild(accordionCard);
 
     const btn = document.createElement("button");
-    btn.classList.add("accordion");
+    btn.classList.add("cardJS__btn");
     btn.innerHTML = `<h2>${questions.id}. ${questions.question}</h2>`;
     accordionCard.appendChild(btn);
 
     const panel = document.createElement("div");
-    panel.classList.add("panel");
+    panel.classList.add("cardJS__panel");
     panel.innerHTML = `<div class="back-content"><h3>Ответы:</h3><p>Ответ 1: ${questions.answer.answer1}</p></div>`;
     accordionCard.appendChild(panel);
   }
@@ -195,8 +209,30 @@ window.addEventListener("DOMContentLoaded", () => {
     renderJSQuestionCards(questions);
   });
 
-  const acc = document.getElementsByClassName("accordion");
+  const accordionJS = document.querySelectorAll(".cardJS__btn");
+
   
+
+  accordionJS.forEach((accordion) => {
+    accordion.addEventListener("click", function () {
+      this.classList.toggle("activeCard");
+
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+      const accordionItems = document.querySelectorAll(".cardJS__btn");
+      accordionItems.forEach((item) => {
+        if (item !== this) {
+          item.classList.remove("activeCard");
+          const panel = item.nextElementSibling;
+          panel.style.display = "none";
+        }
+      });
+    });
+  });
 
   //js questions
   const questionJS = document.querySelector(".common-questionsJS-container");

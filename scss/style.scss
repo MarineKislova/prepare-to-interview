@@ -53,6 +53,20 @@
   display: flex !important;
 }
 
+code{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+  border: 1px solid #F7F7F7;
+  box-shadow: 1px 1px 8px rgba(247, 247, 247, 0.3);
+  max-width: max-content;
+  padding: 15px;
+  background-color: #fbd5d5;
+  color: #3f2727;
+  margin-bottom: 5px;
+}
+
 .time {
   &__container {
     display: flex;
