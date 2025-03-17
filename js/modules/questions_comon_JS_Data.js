@@ -42,12 +42,13 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
+    id: 3,
     question: "Что такое объектная обертка (Wrapper Objects)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#54",
       linkName: "answer on habr.com",
-      answer1: "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
+      answer1:
+        "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -60,7 +61,25 @@ const questionsJS = [
     },
   },
   {
-    id: 3,
+    id: 4,
+    question: "Что произойдет в результате выражения var foo = 10 + '20' и почему?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1: "<p>Переменная foo примет значение '1020'.</p> <p>В JavaScript это поведение называется приведением типов. Если хотя бы один из операндов является строкой, второй также будет преобразован в строку.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 5,
     question: "Объясните разницу между изменяемыми и неизменяемыми значениями",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -79,7 +98,7 @@ const questionsJS = [
     },
   },
   {
-    id: 4,
+    id: 6,
     question: "В чем разница между null и undefined?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#1",
@@ -101,7 +120,7 @@ const questionsJS = [
     },
   },
   {
-    id: 5,
+    id: 7,
     question: "В чем разница между null, undefined и undeclared?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -120,7 +139,7 @@ const questionsJS = [
     },
   },
   {
-    id: 6,
+    id: 8,
     question: "В чем разница между undefined и is not defined?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -139,7 +158,7 @@ const questionsJS = [
     },
   },
   {
-    id: 7,
+    id: 9,
     question:
       "Почему typeof null возвращает object? Как проверить, является ли значение null?",
     answer: {
@@ -159,7 +178,7 @@ const questionsJS = [
     },
   },
   {
-    id: 8,
+    id: 10,
     question: "Какие значения в JS являются ложными?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#21",
@@ -178,7 +197,7 @@ const questionsJS = [
     },
   },
   {
-    id: 9,
+    id: 11,
     question:
       "Что такое NaN? Какого типа это значение? Как проверить, является ли значение NaN?",
     answer: {
@@ -207,7 +226,7 @@ const questionsJS = [
     },
   },
   {
-    id: 10,
+    id: 12,
     question: "Как проверить, является ли значение ложным?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#22",
@@ -226,7 +245,7 @@ const questionsJS = [
     },
   },
   {
-    id: 11,
+    id: 13,
     question: "В чем разница между ключевыми словами «var», «let» и «const»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#42",
@@ -245,7 +264,7 @@ const questionsJS = [
     },
   },
   {
-    id: 12,
+    id: 14,
     question: "Какие способы объявления переменных есть в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -264,7 +283,7 @@ const questionsJS = [
     },
   },
   {
-    id: 13,
+    id: 15,
     question: "В чем разница между ключевыми словами «var», «let» и «const»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#42",
@@ -291,7 +310,7 @@ const questionsJS = [
     },
   },
   {
-    id: 14,
+    id: 16,
     question: "Что такое область видимости (Scope)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#19",
@@ -311,7 +330,7 @@ const questionsJS = [
     },
   },
   {
-    id: 15,
+    id: 17,
     question:
       "Почему лучше оставлять глобальную область видимости 'как есть' и не трогать ее?",
     answer: {
@@ -331,7 +350,7 @@ const questionsJS = [
     },
   },
   {
-    id: 16,
+    id: 18,
     question:
       "В чем разница между областью видимости функции и блочной областью видимости?",
     answer: {
@@ -351,7 +370,7 @@ const questionsJS = [
     },
   },
   {
-    id: 17,
+    id: 19,
     question: "Что такое замыкание (Closures)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#20",
@@ -377,7 +396,7 @@ const questionsJS = [
     },
   },
   {
-    id: 18,
+    id: 20,
     question: "Что такое поднятие (Hoisting)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#18",
@@ -398,7 +417,7 @@ const questionsJS = [
     },
   },
   {
-    id: 19,
+    id: 21,
     question: "Для чего используется оператор ' && ' ?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#2",
@@ -417,7 +436,7 @@ const questionsJS = [
     },
   },
   {
-    id: 20,
+    id: 22,
     question: "Для чего используется оператор ' || ' ?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#3",
@@ -436,7 +455,7 @@ const questionsJS = [
     },
   },
   {
-    id: 21,
+    id: 23,
     question: "Для чего используется оператор '!!'?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#16",
@@ -455,7 +474,7 @@ const questionsJS = [
     },
   },
   {
-    id: 22,
+    id: 24,
     question: "В чем разница между операторами ' == ' и ')' === ' ?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -477,7 +496,7 @@ const questionsJS = [
     },
   },
   {
-    id: 23,
+    id: 25,
     question:
       "Почему результатом сравнения двух похожих объектов является false?",
     answer: {
@@ -485,6 +504,24 @@ const questionsJS = [
       linkName: "answer on habr.com",
       answer1:
         "<p><span>let a = {a: 1} <br> let b = {a: 1} <br> let c = a <br> console.log(a === b) // <br> false console.log(a === c) // true</span></p> <p>В JS объекты и примитивы сравниваются по-разному. Примитивы сравниваются по значению. Объекты — по ссылке или адресу в памяти, где хранится переменная. Вот почему первый console.log возвращает false, а второй — true. Переменные «a» и «c» ссылаются на один объект, а переменные «a» и «b» — на разные объекты с одинаковыми свойствами и значениями.</p>",
+      image1: "",
+      href2: "https://habr.com/ru/articles/784548/",
+      linkName2: "habr.com",
+      answer2: "<p>Результатом сравнения двух похожих объектов в JavaScript может быть false, потому что сравнение объектов происходит по ссылке, а не по содержимому.</p> <p>Когда мы сравниваем два объекта, JavaScript проверяет, указывают ли оба операнда на один и тот же объект в памяти. Если это так, то результатом будет true. Однако, если операнды указывают на разные объекты, даже если они имеют одинаковую структуру и значения свойств, результатом будет false.</p> <p>Пример: <span>const obj1 = { name: 'John', age: 25 }; const obj2 = { name: 'John', age: 25 }; console.log(obj1 === obj2); // Вывод: false</span></p> <p>В этом примере obj1 и obj2 содержат одинаковые свойства и значения, но они являются разными объектами в памяти. Поэтому результатом сравнения obj1 === obj2 будет false.</p> <p>Если вам нужно сравнить содержимое двух объектов, вам придется реализовать собственную логику сравнения, перебирая свойства объектов и сравнивая их значения.</p>",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 26,
+    question: "Почему два объекта с одинаковыми полями возвращают false при сравнении?",
+    answer: {
+      href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
+      linkName: "proglib.io",
+      answer1: "<p>В JavaScript объекты сравниваются по ссылкам на область памяти, где они хранятся. Два разных объекта, даже если у них одинаковые поля и значения этих полей, располагаются в разных областях памяти. Например, у нас есть:</p> <p>const example1 = {fruit: 'яблоко'}; <br> const example2 = {fruit: 'яблоко'}; <br> console.log(example1 == example2); // false</p> <p>Хотя у этих двух объектов одно и то же поле fruit со значением 'яблоко', на самом деле это два абсолютно разных объекта, которые хранятся в разных ячейках памяти. Поэтому если мы сравним их, результат будет false. Для того чтобы два объекта считались равными, нужно, чтобы это был один и тот же объект, то есть чтобы обе переменные ссылались на одну и ту же область памяти.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -496,8 +533,9 @@ const questionsJS = [
       image3: "",
     },
   },
+  
   {
-    id: 24,
+    id: 27,
     question:
       "Является ли использование унарного плюса (оператор ' + ') самым быстрым способом преобразования строки в число?",
     answer: {
@@ -518,7 +556,7 @@ const questionsJS = [
     },
   },
   {
-    id: 25,
+    id: 28,
     question: "Что такое DOM?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#5",
@@ -545,7 +583,7 @@ const questionsJS = [
     },
   },
   {
-    id: 26,
+    id: 29,
     question: "Что такое теневой DOM?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -564,7 +602,7 @@ const questionsJS = [
     },
   },
   {
-    id: 27,
+    id: 30,
     question: "Что такое распространение события (Event Propogation)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#6",
@@ -583,7 +621,7 @@ const questionsJS = [
     },
   },
   {
-    id: 28,
+    id: 31,
     question: "Что такое всплытие события (Event Bubbling)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#7",
@@ -603,7 +641,7 @@ const questionsJS = [
     },
   },
   {
-    id: 29,
+    id: 32,
     question: "Что такое погружение события (Event Capturing)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#8",
@@ -623,7 +661,7 @@ const questionsJS = [
     },
   },
   {
-    id: 30,
+    id: 33,
     question:
       "В чем разница между методами event.preventDefault() и event.stopPropagation()?",
     answer: {
@@ -645,7 +683,7 @@ const questionsJS = [
     },
   },
   {
-    id: 31,
+    id: 34,
     question: "Как узнать об использовании метода event.preventDefault()?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#10",
@@ -664,7 +702,7 @@ const questionsJS = [
     },
   },
   {
-    id: 32,
+    id: 35,
     question: "Что такое цель события или целевой элемент (event.target)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#12",
@@ -683,7 +721,7 @@ const questionsJS = [
     },
   },
   {
-    id: 33,
+    id: 36,
     question: "Что такое текущая цель события (event.currentTarget)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#13",
@@ -702,7 +740,7 @@ const questionsJS = [
     },
   },
   {
-    id: 34,
+    id: 37,
     question: "Что такое шаблонные литералы (Template Literals) / (бэктики)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#45",
@@ -723,7 +761,7 @@ const questionsJS = [
     },
   },
   {
-    id: 35,
+    id: 38,
     question: "Что такое тернарный оператор и как он работает?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -742,7 +780,7 @@ const questionsJS = [
     },
   },
   {
-    id: 36,
+    id: 39,
     question: "Для чего нужен оператор опциональной последовательности?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -761,7 +799,7 @@ const questionsJS = [
     },
   },
   {
-    id: 37,
+    id: 40,
     question: "Что такое регулярные выражения?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -780,7 +818,7 @@ const questionsJS = [
     },
   },
   {
-    id: 38,
+    id: 41,
     question: "Для чего используется директива «use strict»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#23",
@@ -801,7 +839,7 @@ const questionsJS = [
     },
   },
   {
-    id: 39,
+    id: 42,
     question:
       "Какое значение имеет this? Что такое this? Отличие this в function declaration и стрелочных функциях",
     answer: {
@@ -823,7 +861,7 @@ const questionsJS = [
     },
   },
   {
-    id: 40,
+    id: 43,
     question: "Что такое прототип объекта?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#25",
@@ -843,7 +881,7 @@ const questionsJS = [
     },
   },
   {
-    id: 41,
+    id: 44,
     question: "Как создать объект, не имеющий прототипа?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#38",
@@ -862,7 +900,7 @@ const questionsJS = [
     },
   },
   {
-    id: 42,
+    id: 45,
     question: "Что такое прототипное наследование?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -881,7 +919,7 @@ const questionsJS = [
     },
   },
   {
-    id: 43,
+    id: 46,
     question: "С помощью чего в JS реализуются наследование?",
     answer: {
       href: "https://habr.com/ru/articles/784548/",
@@ -901,7 +939,7 @@ const questionsJS = [
     },
   },
   {
-    id: 44,
+    id: 47,
     question: "Что такое функции высшего порядка (Higher Order Functions)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#32",
@@ -922,7 +960,7 @@ const questionsJS = [
     },
   },
   {
-    id: 45,
+    id: 48,
     question:
       "Почему функции в JS называют объектами первого класса (First-class Objects)?",
     answer: {
@@ -941,8 +979,9 @@ const questionsJS = [
       image3: "",
     },
   },
+  
   {
-    id: 46,
+    id: 49,
     question: "Как в JS вызвать функцию?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#66",
@@ -961,7 +1000,7 @@ const questionsJS = [
     },
   },
   {
-    id: 47,
+    id: 50,
     question: "Для чего используется метод Function.prototype.apply?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#27",
@@ -980,7 +1019,7 @@ const questionsJS = [
     },
   },
   {
-    id: 48,
+    id: 51,
     question: "Для чего используется метод Function.prototype.call?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#28",
@@ -999,7 +1038,7 @@ const questionsJS = [
     },
   },
   {
-    id: 49,
+    id: 52,
     question: "Для чего используется метод Function.prototype.bind?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#30",
@@ -1019,7 +1058,7 @@ const questionsJS = [
     },
   },
   {
-    id: 50,
+    id: 53,
     question: "В чем разница между методами call, apply, bind?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#29",
@@ -1041,7 +1080,7 @@ const questionsJS = [
     },
   },
   {
-    id: 51,
+    id: 54,
     question: "Как изменить контекст функции?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1061,7 +1100,7 @@ const questionsJS = [
   },
 
   {
-    id: 52,
+    id: 55,
     question: "Что такое IIFE (Immediately Invoked Function Expression)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#26",
@@ -1081,7 +1120,7 @@ const questionsJS = [
     },
   },
   {
-    id: 53,
+    id: 56,
     question:
       "В чем разница между объявлением функции и функциональным выражением?",
     answer: {
@@ -1101,7 +1140,27 @@ const questionsJS = [
     },
   },
   {
-    id: 54,
+    id: 57,
+    question:
+      "В чем разница между обычной функцией и функциональным выражением?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#65",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Допустим, у нас есть следующее:</p> <p><img class='question__img' src='img/habr70/65habr70.png' alt=''></p> <p>Вызов <span>notHoistedFunc</span> приведет к ошибке, а вызов <span>hoistedFunc</span> нет, потому что <span>hoistedFunc «всплывает»</span>, поднимается в глобальную область видимости, а <span>notHoistedFunc нет</span>.</p> ",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 58,
     question: "Зачем оборачивать содержимое исходного JS-файла в блок функции?",
     answer: {
       href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
@@ -1121,7 +1180,7 @@ const questionsJS = [
     },
   },
   {
-    id: 55,
+    id: 59,
     question: "Что такое функции-конструкторы?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1141,7 +1200,7 @@ const questionsJS = [
   },
 
   {
-    id: 56,
+    id: 60,
     question: "Для чего используется ключевое слово «new»?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#70",
@@ -1160,7 +1219,7 @@ const questionsJS = [
     },
   },
   {
-    id: 57,
+    id: 61,
     question: "Что такое классы (Classes)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#44",
@@ -1179,7 +1238,7 @@ const questionsJS = [
     },
   },
   {
-    id: 58,
+    id: 62,
     question: "Как происходит наследование классов в ES6?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1198,7 +1257,7 @@ const questionsJS = [
     },
   },
   {
-    id: 59,
+    id: 63,
     question: "В чем разница между ES6 class и ES5 function constructor?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -1217,7 +1276,7 @@ const questionsJS = [
     },
   },
   {
-    id: 60,
+    id: 64,
     question: "Как проверить, из какого класса был создан объект?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1236,7 +1295,7 @@ const questionsJS = [
     },
   },
   {
-    id: 61,
+    id: 65,
     question:
       "В чем разница между Array.prototype.forEach и Array.prototype.map?",
     answer: {
@@ -1252,7 +1311,7 @@ const questionsJS = [
     },
   },
   {
-    id: 62,
+    id: 66,
     question: "Как бы Вы реализовали метод Array.prototype.map?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#34",
@@ -1271,7 +1330,7 @@ const questionsJS = [
     },
   },
   {
-    id: 63,
+    id: 67,
     question: "Как бы Вы реализовали метод Array.prototype.filter?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#35",
@@ -1290,7 +1349,7 @@ const questionsJS = [
     },
   },
   {
-    id: 64,
+    id: 68,
     question: "Как бы Вы реализовали метод Array.prototype.reduce?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#36",
@@ -1309,7 +1368,7 @@ const questionsJS = [
     },
   },
   {
-    id: 65,
+    id: 69,
     question: "Что такое объект arguments?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#37",
@@ -1328,7 +1387,7 @@ const questionsJS = [
     },
   },
   {
-    id: 66,
+    id: 70,
     question: "Что такое стрелочные функции (Arrow Functions)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#43",
@@ -1347,7 +1406,7 @@ const questionsJS = [
     },
   },
   {
-    id: 67,
+    id: 71,
     question: "Чем стрелочные функции отличаются от обычных?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1366,7 +1425,7 @@ const questionsJS = [
     },
   },
   {
-    id: 68,
+    id: 72,
     question: "Объясните стрелочные функции",
     answer: {
       href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
@@ -1385,7 +1444,7 @@ const questionsJS = [
     },
   },
   {
-    id: 69,
+    id: 73,
     question: "Что такое функция обратного вызова (Callback Function)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#49",
@@ -1404,7 +1463,25 @@ const questionsJS = [
     },
   },
   {
-    id: 70,
+    id: 74,
+    question: "В каких случаях используются анонимные функции?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1: "<p>Анонимные функции чаще всего используются в качестве функций обратных вызовов. Также, каждая стрелочная функция является анонимной</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 75,
     question: "Что такое рекурсия и как ее можно использовать в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1423,7 +1500,7 @@ const questionsJS = [
     },
   },
   {
-    id: 71,
+    id: 76,
     question: "Что такое генераторы?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1442,7 +1519,7 @@ const questionsJS = [
     },
   },
   {
-    id: 72,
+    id: 77,
     question: "Какие приемы работы с асинхронным кодом в JS Вы знаете?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#64",
@@ -1460,7 +1537,7 @@ const questionsJS = [
     },
   },
   {
-    id: 73,
+    id: 78,
     question: "Что такое промисы (Promises)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#50",
@@ -1481,7 +1558,7 @@ const questionsJS = [
     },
   },
   {
-    id: 74,
+    id: 79,
     question: "Что такое Promise, и какие бывают состояния",
     answer: {
       href: "https://habr.com/ru/articles/784548/",
@@ -1500,7 +1577,7 @@ const questionsJS = [
     },
   },
   {
-    id: 75,
+    id: 80,
     question:
       "Какие преимущества и недостатки у использования Promise API вместо обратных вызовов?",
     answer: {
@@ -1521,7 +1598,7 @@ const questionsJS = [
     },
   },
   {
-    id: 76,
+    id: 81,
     question: "Что такое async/await и как они используются?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#51",
@@ -1543,7 +1620,7 @@ const questionsJS = [
     },
   },
   {
-    id: 77,
+    id: 82,
     question: "Объясните разницу между синхронными и асинхронными функциями",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -1562,7 +1639,7 @@ const questionsJS = [
     },
   },
   {
-    id: 78,
+    id: 83,
     question: "Что такое AJAX?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#60",
@@ -1582,7 +1659,25 @@ const questionsJS = [
     },
   },
   {
-    id: 79,
+    id: 84,
+    question: "Как работает сборщик мусора в JS?",
+    answer: {
+      href: "https://habr.com/ru/articles/784548/",
+      linkName: "habr.com",
+      answer1: "<p>Сборщик мусора в JavaScript является встроенной функцией, которая автоматически освобождает память, занятую объектами, которые больше не используются в программе. Он следит за объектами, которые были созданы во время выполнения программы, и определяет, когда они больше не доступны для использования.</p> <p>Сборщик мусора в JS использует алгоритм под названием 'Mark and Sweep' (Пометка и Очистка). Вот как это работает:</p> <ul> <li>Пометка (Mark): Сборщик мусора начинает с корневых объектов, таких как глобальный объект (window в браузере) и все объекты, на которые есть ссылки из корневых объектов. Он помечает эти объекты как активные.</li> <li>Распространение (Propagation): Сборщик мусора рекурсивно проходит через все активные объекты и помечает объекты, на которые они ссылаются, как активные. Этот процесс продолжается до тех пор, пока все достижимые объекты не будут помечены.</li> <li>Очистка (Sweep): После завершения пометки и распространения, сборщик мусора проходит по всей памяти и освобождает память, занятую не помеченными объектами. Он удаляет эти объекты и восстанавливает память для будущего использования.</li> </ul> <p>Еще можно почитать <a class='question__link' href='https://learn.javascript.ru/garbage-collection' target='_blank' rel='noopener noreferrer'>здесь</a> и <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Memory_management' target='_blank' rel='noopener noreferrer'>здесь</a>.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 85,
     question: "Как в JS создать объект?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#61",
@@ -1601,7 +1696,7 @@ const questionsJS = [
     },
   },
   {
-    id: 80,
+    id: 86,
     question: "Какие способы создания объектов есть в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1620,7 +1715,7 @@ const questionsJS = [
     },
   },
   {
-    id: 81,
+    id: 87,
     question: "Какие основные методы работы с массивами есть в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1639,7 +1734,7 @@ const questionsJS = [
     },
   },
   {
-    id: 82,
+    id: 88,
     question: "Как проверить, является ли значение массивом?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#57",
@@ -1658,7 +1753,7 @@ const questionsJS = [
     },
   },
   {
-    id: 83,
+    id: 89,
     question: "Как определить наличие свойства в объекте?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#59",
@@ -1680,7 +1775,7 @@ const questionsJS = [
     },
   },
   {
-    id: 84,
+    id: 90,
     question: "В чем разница между оператором «in» и методом hasOwnProperty?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#63",
@@ -1699,7 +1794,7 @@ const questionsJS = [
     },
   },
   {
-    id: 85,
+    id: 91,
     question: "Как получить доступ к свойствам объекта?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1718,7 +1813,25 @@ const questionsJS = [
     },
   },
   {
-    id: 86,
+    id: 92,
+    question: "В чем разница между атрибутами и свойствами?",
+    answer: {
+      href: "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1: "<p>Атрибут - это HTML-термин, в то время как свойство - термин из JavaScript. Иными словами, если речь идет о значении в HTML-разметке, мы говорим об атрибуте. Однако, если имеется в виду свойство объекта, к которому мы получили доступ средствами JavaScript - вернее называть это свойством.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 93,
     question: "Как получить список ключей и значений объекта?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1737,7 +1850,7 @@ const questionsJS = [
     },
   },
   {
-    id: 87,
+    id: 94,
     question: "Как проверить, является ли объект массивом?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1756,7 +1869,7 @@ const questionsJS = [
     },
   },
   {
-    id: 88,
+    id: 95,
     question: "Как можно добавить элемент в начало и в конец массива?",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -1775,7 +1888,7 @@ const questionsJS = [
     },
   },
   {
-    id: 89,
+    id: 96,
     question: "Как выполняется клонирование объекта?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1795,7 +1908,7 @@ const questionsJS = [
     },
   },
   {
-    id: 90,
+    id: 97,
     question: "Что такое деструктуризация объекта (Object Destructuring)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#46",
@@ -1816,7 +1929,7 @@ const questionsJS = [
     },
   },
   {
-    id: 91,
+    id: 98,
     question: "Что такое объект Set?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#48",
@@ -1836,7 +1949,7 @@ const questionsJS = [
     },
   },
   {
-    id: 92,
+    id: 99,
     question: "Что такое Map и Set в JavaScript?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1855,7 +1968,7 @@ const questionsJS = [
     },
   },
   {
-    id: 93,
+    id: 100,
     question: "Чем отличается Map от WeakMap?",
     answer: {
       href: "https://habr.com/ru/articles/784548/",
@@ -1874,7 +1987,7 @@ const questionsJS = [
     },
   },
   {
-    id: 94,
+    id: 101,
     question: "Чем отличается Set от WeakSet?",
     answer: {
       href: "https://habr.com/ru/articles/784548/",
@@ -1893,7 +2006,7 @@ const questionsJS = [
     },
   },
   {
-    id: 95,
+    id: 102,
     question:
       "В чем заключается разница между WeakSet, WeakMap и обычными Set и Map?",
     answer: {
@@ -1913,7 +2026,7 @@ const questionsJS = [
     },
   },
   {
-    id: 96,
+    id: 103,
     question:
       "Какие конструкции языка вы используете для обхода массивов и объектов?",
     answer: {
@@ -1933,7 +2046,7 @@ const questionsJS = [
     },
   },
   {
-    id: 97,
+    id: 104,
     question: "В чем разница между spread-оператором и rest-оператором?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#52",
@@ -1953,7 +2066,7 @@ const questionsJS = [
     },
   },
   {
-    id: 98,
+    id: 105,
     question: "Что делает оператор расширения?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-1-2023-12-18",
@@ -1972,7 +2085,7 @@ const questionsJS = [
     },
   },
   {
-    id: 99,
+    id: 106,
     question: "Что такое цикл событий (Event loop) и как он работает?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -1994,7 +2107,7 @@ const questionsJS = [
     },
   },
   {
-    id: 100,
+    id: 107,
     question:
       "Что такое цикл событий? В чем разница между стеком вызовов и очередью задач?",
     answer: {
@@ -2014,7 +2127,7 @@ const questionsJS = [
     },
   },
   {
-    id: 101,
+    id: 108,
     question: "Что такое микрозадачи и макрозадачи?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -2033,7 +2146,7 @@ const questionsJS = [
     },
   },
   {
-    id: 102,
+    id: 109,
     question: "В чем разница между методами Object.freeze и Object.seal?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#62",
@@ -2052,7 +2165,7 @@ const questionsJS = [
     },
   },
   {
-    id: 103,
+    id: 110,
     question: "Объясните различие между Object.freeze() и const",
     answer: {
       href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
@@ -2071,7 +2184,7 @@ const questionsJS = [
     },
   },
   {
-    id: 104,
+    id: 111,
     question: "Какие существуют методы для сохранения данных в браузере?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -2090,7 +2203,7 @@ const questionsJS = [
     },
   },
   {
-    id: 105,
+    id: 112,
     question: "В чем заключается разница между sessionStorage и localStorage?",
     answer: {
       href: "https://proglib.io/p/voprosy-dlya-podgotovki-k-sobesedovaniyu-po-javascript-chast-2-2024-02-12",
@@ -2109,7 +2222,7 @@ const questionsJS = [
     },
   },
   {
-    id: 107,
+    id: 113,
     question: "Объясните, что такое файлы cookie в JavaScript",
     answer: {
       href: "https://proglib.io/p/10-voprosov-s-sobesedovaniy-po-javascript-2022-02-01",
@@ -2128,7 +2241,7 @@ const questionsJS = [
     },
   },
   {
-    id: 108,
+    id: 114,
     question: "Разница между cookie, sessionStorage и localStorage",
     answer: {
       href: "https://tproger.ru/articles/20-voprosov-na-sobesedovanii-frontend-razrabotchika1",
@@ -2147,7 +2260,7 @@ const questionsJS = [
     },
   },
   {
-    id: 109,
+    id: 115,
     question: "Что такое модули (Modules)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#47",
@@ -2166,7 +2279,7 @@ const questionsJS = [
     },
   },
   {
-    id: 110,
+    id: 116,
     question: "Что такое запоминание или мемоизация (Memoization)?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#67",
@@ -2185,7 +2298,7 @@ const questionsJS = [
     },
   },
   {
-    id: 111,
+    id: 117,
     question: "Как бы Вы реализовали вспомогательную функцию запоминания?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#68",
@@ -2204,7 +2317,7 @@ const questionsJS = [
     },
   },
   {
-    id: 112,
+    id: 118,
     question: "Что такое ECMAScript?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#40",
@@ -2223,7 +2336,7 @@ const questionsJS = [
     },
   },
   {
-    id: 113,
+    id: 119,
     question: "Что нового привнес в JS стандарт ES6 или ECMAScript2015?",
     answer: {
       href: "https://habr.com/ru/articles/486820/#41",
@@ -2244,12 +2357,32 @@ const questionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 120,
+    question:
+      "Что такое функциональное программирование и какие особенности JS позволяют говорить о нем как о функциональном языке программирования?",
     answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
+      href: "https://habr.com/ru/articles/486820/#31",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p><span>Функциональное программирование</span> — это декларативная концепция программирования или образец (паттерн) того, как строятся приложения, как используются функции, содержащие выражения, которые вычисляют значения без изменения аргументов, которые им передаются.</p> <p><span>Объект Array</span> содержит методы <span>map</span>, <span>filter</span> и <span>reduce</span>, которые являются самыми известными функциями в мире функционального программирования из-за их полезности, а также потому, что они не изменяют массив, что делает эти функции «чистыми». Также в JS имеются замыкание и функции высшего порядка, которые являются характеристиками функционального языка программирования.</p> <p><span>Метод map</span> возвращает новый массив с результатами вызова <span>callback</span>callback для каждого элемента массива:</p> <p><span>const words = ['Functional', 'Procedural', 'Object-Oriented']<br>const wordsLength = words.map(word => word.length)</span></p> <p><span>Метод filter</span> создает новый массив со всеми элементами, которые удовлетворяют условию, указанному в <span>callback</span>:</p> <p><img class='question__img' src='img/habr70/31habr70.png' alt=''></p> <p><span>Метод reduce</span> выполняет <span>callback</span> один раз для каждого элемента массива, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего <span>callback</span>), значение текущего элемента, текущий индекс и итерируемый массив:</p> <p><span>const strs = ['I', ' ', 'am', ' ', 'Iron', ' ', 'Man']<br>const result = strs.reduce((acc, currentStr) => acc + str, '')</span></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 121,
+    question: "Какие инструменты вы используете при отладке?",
+    answer: {
+      href:  "https://habr.com/ru/articles/578370/",
+      linkName: "35 вопросов с собеседования JavaScript-разработчика",
+      answer1: "<p>При первой встрече с проблемой я, не спеша усложнять себе жизнь, обращаюсь к console.log. Если это не помогает, вызываю тяжелую артиллерию в виде браузерного отладчика.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2315,26 +2448,10 @@ const questionsJS = [
       image3: "",
     },
   },
-  {
-    id: 1,
-    question: "",
-    answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
-      image1: "",
-      href2: "",
-      linkName2: "",
-      answer2: "",
-      image2: "",
-      href3: "",
-      linkName3: "",
-      answer3: "",
-      image3: "",
-    },
-  },
-  
 ];
+
+console.log(questionsJS.length);
+
 
 const sortedQuestionsJS = [
   {
@@ -2366,9 +2483,45 @@ const sortedQuestionsJS = [
       image3: "",
     },
   },
-
   {
     id: 3,
+    question: "Что такое объектная обертка (Wrapper Objects)?",
+    answer: {
+      href: "https://habr.com/ru/articles/486820/#54",
+      linkName: "answer on habr.com",
+      answer1:
+        "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 4,
+    question: "Что произойдет в результате выражения var foo = 10 + '20' и почему? (приведение типов и преобразование типов)",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p>Подробнее тут:<a class='question__link' href='https://developer.mozilla.org/ru/docs/Glossary/Type_coercion' target='_blank' rel='noopener noreferrer'>Приведение типов,</a> <a class='question__link' href='https://learn.javascript.ru/type-conversions#itogo' target='_blank' rel='noopener noreferrer'>Преобразование типов</a></p><p>Переменная foo примет значение '1020'.</p> <p>В JavaScript это поведение называется <span>приведением типов</span>. Если хотя бы один из операндов является строкой, второй также будет преобразован в строку.</p> <p><span>Приведение типов (type coercion)</span> — это автоматическое или неявное преобразование значений из одного типа данных в другой (например, строки в число)</p> <p><span>Преобразование типа</span> может быть неявным или явным</p><p><span>Приведение типов</span></p> <code>const value1 = '5'; <br> const value2 = 9; <br> let sum = value1 + value2; <br> console.log(sum) // '59';</code><p><span>Преобразование типа</span></p> <code>sum = Number(value1) + value2; <br> console.log(sum) // 14</code>" ,
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 5,
     question: "Объясните разницу между изменяемыми и неизменяемыми значениями",
     answer: {
       href: "https://habr.com/ru/articles/578370/",
@@ -2387,12 +2540,462 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 4,
-    question: "Что такое объектная обертка (Wrapper Objects)?",
+    id: 6,
+    question: "В чем разница между null и undefined?",
     answer: {
-      href: "https://habr.com/ru/articles/486820/#54",
-      linkName: "answer on habr.com",
-      answer1: "<p>Примитивы строка, число и boolean имеют свойства и методы, несмотря на то, что они не являются объектами:</p> <code>let name = 'marko' <br> console.log(typeof name) // string <br> console.log(name.toUpperCase()) // MARKO</code> <p>Name — это строка (примитивный тип), у которого нет свойств и методов, но когда мы вызываем метод toUpperCase(), это приводит не к ошибке, а к «MARKO».</p><p>Причина такого поведения заключается в том, что name временно преобразуется в объект. У каждого примитива, кроме null и undefined, есть объект-обертка. Такими объектами являются String, Number, Boolean, Symbol и BigInt. В нашем случае код принимает следующий вид:</p> <code>console.log(new String(name).toUpperCase()) // MARKO</code> <p>Временный объект отбрасывается по завершении работы со свойством или методом.</p>",
+      href: "",
+      linkName: "",
+      answer1:  "<p><span>Null</span> и <span>undefined</span> - это два различных значения в JavaScript, которые указывают на отсутствие значения, они используются в разных контекстах и имеют разные семантические значения.</p><p style='font-style: italic;'><span>Различия:</span></p> <ul> <li><span>1) null</span> - это явное значение, которое указывает на отсутствие или намеренное присвоение пустого значения. <br><span>undefined</span> - это значение, которое указывает на отсутствие присвоенного значения</li> <li><span>2) null</span> - это объектный тип данных, который представляет отсутствие объекта.<br> <span>undefined</span> - это примитивный тип данных.</li> <li><span>3) null</span> может быть присвоен явно, чтобы указать на отсутствие значения. <br><span>undefined</span> - это значение, которое присваивается переменной по умолчанию, когда она объявлена, но не инициализирована.</li> </ul> <p style='font-style: italic;'><span>Сходства:</span></p> <ul> <li><span>- Осутствие значения:</span> Оба значения, null и undefined, указывают на отсутствие значения.</li> <li><span>- Истинность:</span> Оба значения рассматриваются как ложные (falsy) в логическом контексте. Это означает, что они преобразуются в false, когда используются в условных выражениях.</li> <li><span>- Присваивание:</span> Оба значения могут быть присвоены переменным или свойствам объекта.</li> <li><span>- Тип данных:</span> Оба значения являются уникальными значениями и не имеют своих собственных типов данных.</li> </ul> <p>В целом, <span>null</span> используется, когда явно указывается отсутствие значения, в то время как <span>undefined</span> указывает на отсутствие присвоенного значения.</p> <p>При сравнении <span>null</span> и <span>undefined</span> мы получаем <span>true</span>, когда используем оператор '==', и <span>false</span> при использовании оператора '==='.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 7,
+    question: "В чем разница между null, undefined и undeclared?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p><span>null</span> - это в прямом смысле 'ничего'. Можно использовать это значение в качестве плейсхолдера.</p> <p><span>undefined</span> - это значение для случая 'объявлено, но не инициализировано'.</p> <p><span>undeclared</span> - это ошибка, возникающая в случае обращении к необъявленной переменной.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 8,
+    question: "В чем разница между undefined и is not defined?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p><span>undefined</span> - это значение, присваемое объявленной, но не проинициализированной переменной. Мы получаем <span>undefined</span>, обращаясь к существующей переменной. А в случае обращения к несуществующей (необъявленной) переменной, мы получим ошибку <span>is not defined</span></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 9,
+    question: "Почему typeof null возвращает object? Как проверить, является ли значение null?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p><span>typeof null == 'object'</span> всегда будет возвращать <span>true</span> по историческим причинам. Поступало предложение исправить эту ошибку, изменив <span>typeof null = 'object'</span> на <span>typeof null = 'null'</span>, но оно было отклонено в интересах сохранения обратной совместимости (такое изменение повлекло бы за собой большое количество ошибок)</p> <p>Для проверки, является ли <span>значение null</span> можно использовать <span>оператор строгого равенства (===)</span>:</p> <p><code>function isNull(value){<br> return value === null<br> }</code></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 10,
+    question: "Какие значения в JS являются ложными?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p><span>const falsyValues = ['', 0, null, undefined, NaN, false]</span><br>Ложными являются значения, результатом преобразования которых в логическое значение является <span>false</span>.</p> <p>Для проверки значений на их истинность или ложность можно использовать <span>двойное отрицание !!</span>.</p> <code>console.log(!!''); // => false<br>console.log(!!0); // => false<br>console.log(!!null); // => false <br>console.log(!!undefined); // => false<br>console.log(!!NaN); // => false<br>console.log(!!false); // => false</code><p>Нужно помнить, что пустая функция, а также пустой объект и пустой массив будут приведены к <span>true:</span></p><code>console.log(!!(() => {})); // => true <br> console.log(!!{}); // => true <br> console.log(!![]); // => true</code>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 11,
+    question: "Что такое NaN? Какого типа это значение? Как проверить, является ли значение NaN?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "<p><span>NaN</span> или <span>Not A Number (не число)</span> — это значение, получаемое в результате выполнения числовой операции над нечисловым значением</p> <p>В JS есть <span>встроенный метод isNaN</span>, позволяющий проверять, является ли значение <span>NaN</span></p><p><span style='font-style: italic;'>Возможные причины, по которым значение становится NaN:</span></p> <ul> <li>- Попытка выполнить математическую операцию с нечисловым значением.</li> <li>- Попытка выполнить математическую операцию, результат которой не может быть представлен числом, например деление нуля на ноль или вычисление квадратного корня из отрицательного числа.</li> <li>- Преобразование строки в число, если строка не является валидным числом.</li></ul> <p><span>Значение NaN</span> имеет интересное свойство: оно не равно ни одному другому значению, включая само себя. Поэтому существует <span>специальная функция isNaN()</span>, которая позволяет проверить, является ли <span>значение NaN</span>: <code>let result = isNaN(NaN); // result будет равен true,<br>let result2 = isNaN('hello'); // result2 будет равен true, потому что строка 'hello' не может быть преобразована в число<br> let result3 = isNaN('59'); //result3 будет равен false, потому что строка '59' может быть преобразована в число <br> let result4 = isNaN(10); // result4 будет равен false, потому что 10 - это число</code></p><p>Также можно использовать <span>оператором строго (тройного) равенства ' === '</span>.</p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 1,
+    question: "",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1: "",
       image1: "",
       href2: "",
       linkName2: "",
@@ -2409,5 +3012,10 @@ const sortedQuestionsJS = [
 export { questionsJS };
 
 export { sortedQuestionsJS };
+
+let result2 = isNaN('m');
+console.log(result2);
+
+
 
 
