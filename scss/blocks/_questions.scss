@@ -254,6 +254,7 @@
 }
 
 .common-answers {
+  position: relative;
   &__container {
     display: flex;
     flex-direction: column;
@@ -264,7 +265,6 @@
 
     span {
       font-weight: 700;
-      
     }
   }
 
@@ -312,7 +312,7 @@
     background-color: #f79292;
     font-weight: 500;
 
-    a{
+    a {
       color: #d9f668;
       text-decoration: none;
       transition: all 0.01s ease;
@@ -336,6 +336,22 @@
 
   // &__answer4 {
   // }
+
+  &__btn-up {
+    position: fixed;
+    background:  rgba(247, 146, 146, 0.51);
+    backdrop-filter: blur(6px) saturate(280%);
+    color: #FFFFFF;
+    color: #333;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.01s ease;
+    max-width: 100px;
+    padding: 20px;
+    right: 30px;
+    border-radius: 10px;
+  }
 }
 
 .cards-js {
@@ -408,6 +424,3 @@
 .activeCard {
   background-color: #ccc;
 }
-
-
-

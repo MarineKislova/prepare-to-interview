@@ -9,6 +9,7 @@
 <p style='font-style: italic;'></p>
 
 <code></code>
+<br>
 {
     id: 1,
     question: "",
@@ -32,7 +33,8 @@
 
 <pre><span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></pre>
 
-<span></span>
+<span style='font-weight: 100;'></span>
+<span style='font-style: italic;'></span>
 <span></span>
 <span></span>
 <span></span>
@@ -55,7 +57,7 @@ img/css/
 
 <p><a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
 
-<p>Подробнее тут:<a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
+<p>Подробнее тут: <a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a></p>
 
 <a class='question__link' href='' target='_blank' rel='noopener noreferrer'></a>
 

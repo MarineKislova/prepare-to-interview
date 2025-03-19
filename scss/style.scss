@@ -51,11 +51,13 @@
 
 .open{
   display: flex !important;
+
 }
 
 code{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   gap: 10px;
   border: 1px solid #F7F7F7;
@@ -63,7 +65,7 @@ code{
   max-width: max-content;
   padding: 15px;
   background-color: #fbd5d5;
-  color: #110101;
+  color: #583e29;
   font-weight: 600;
   margin-bottom: 5px;
 }

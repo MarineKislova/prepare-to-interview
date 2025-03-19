@@ -401,6 +401,9 @@ h6 {
   text-align: justify;
   text-wrap: pretty;
 }
+.common-answers {
+  position: relative;
+}
 .common-answers__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +477,23 @@ h6 {
           transform: scale(1.05);
   -webkit-transition: all 0.01s linear;
   transition: all 0.01s linear;
+}
+.common-answers__btn-up {
+  position: fixed;
+  background: rgba(247, 146, 146, 0.51);
+  -webkit-backdrop-filter: blur(6px) saturate(280%);
+          backdrop-filter: blur(6px) saturate(280%);
+  color: #FFFFFF;
+  color: #333;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  -webkit-transition: all 0.01s ease;
+  transition: all 0.01s ease;
+  max-width: 100px;
+  padding: 20px;
+  right: 30px;
+  border-radius: 10px;
 }
 
 .cards-js__container {
@@ -968,6 +988,10 @@ code {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   gap: 10px;
   border: 1px solid #F7F7F7;
@@ -978,7 +1002,7 @@ code {
   max-width: max-content;
   padding: 15px;
   background-color: #fbd5d5;
-  color: #110101;
+  color: #583e29;
   font-weight: 600;
   margin-bottom: 5px;
 }

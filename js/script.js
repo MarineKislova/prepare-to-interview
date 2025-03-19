@@ -132,7 +132,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // li.innerHTML = `<p>></p>`;
     questionJSAnswerList.appendChild(li);
 
-
     const questionText = document.createElement("div");
     questionText.classList.add("common-answers__question", "fs-5");
     questionText.innerHTML = `<span>${questions.id}. ${questions.question}</span>`;
@@ -158,12 +157,16 @@ window.addEventListener("DOMContentLoaded", () => {
     answerItem4.innerHTML = `<span>Ответ 4:</span> ${questions.answer.answer4}`;
     li.appendChild(answerItem4);
 
-    if (questions.answer.answer2 == ""  ||
-      questions.answer.answer2 == undefined) {
+    if (
+      questions.answer.answer2 == "" ||
+      questions.answer.answer2 == undefined
+    ) {
       answerItem2.style.display = "none";
     }
-    if (questions.answer.answer3 == ""  ||
-      questions.answer.answer3 == undefined) {
+    if (
+      questions.answer.answer3 == "" ||
+      questions.answer.answer3 == undefined
+    ) {
       answerItem3.style.display = "none";
     }
     if (
@@ -178,14 +181,19 @@ window.addEventListener("DOMContentLoaded", () => {
     renderJSAnswerQuestions(questions);
   });
 
+  const btnUp = document.querySelector(".common-answers__btn-up");
+  btnUp.addEventListener("click", () => {
+    const title = document.querySelector(".common-answers__title");
+    if (title) {
+      title.scrollIntoView({ behavior: "auto", block: "center" });
+    }
+  });
+
   console.log(sortedQuestionsJS);
-  
 
   // questionsJS.forEach((questions) => {
   //   renderJSAnswerQuestions(questions);
   // });
-
-  
 
   //js questions cards with answers
   const questionJSAccordionList = document.querySelector(".cards-js__list");
@@ -210,8 +218,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const accordionJS = document.querySelectorAll(".cardJS__btn");
-
-  
 
   accordionJS.forEach((accordion) => {
     accordion.addEventListener("click", function () {
