@@ -425,6 +425,23 @@ h6 {
   font-size: 24px;
   font-weight: 900;
 }
+.common-answers__common-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  list-style-type: none;
+}
+.common-answers__common-list-item {
+  border: solid 1px #444;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  max-height: 70px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #bce0f3;
+  cursor: pointer;
+}
 .common-answers__list li::marker {
   content: "";
   font-size: 24px;
@@ -483,7 +500,7 @@ h6 {
   background: rgba(247, 146, 146, 0.51);
   -webkit-backdrop-filter: blur(6px) saturate(280%);
           backdrop-filter: blur(6px) saturate(280%);
-  color: #FFFFFF;
+  color: #ffffff;
   color: #333;
   font-size: 24px;
   font-weight: 900;

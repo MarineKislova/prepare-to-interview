@@ -125,6 +125,21 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //js common questions with answers
+  const questionCommonJSList = document.querySelector(".common-answers__common-list");
+  function renderJSCommonQuestionsList(questions) {
+    const li = document.createElement("li");
+    li.classList.add("common-answers__common-list-item");
+    questionCommonJSList.appendChild(li);
+
+    const questionId = document.createElement("a");
+    questionId.href = `#${questions.id}`;
+    questionId.textContent = `${questions.id}. ${questions.question}`;
+    li.appendChild(questionId);
+  }
+  sortedQuestionsJS.forEach((questions) => {
+    renderJSCommonQuestionsList(questions);
+  });
+
   const questionJSAnswerList = document.querySelector(".common-answers__list");
   function renderJSAnswerQuestions(questions) {
     const li = document.createElement("li");
@@ -135,7 +150,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const questionText = document.createElement("div");
     questionText.classList.add("common-answers__question", "fs-5");
     questionText.innerHTML = `<span>${questions.id}. ${questions.question}</span>`;
+    questionText.setAttribute("id", `${questions.id}`);
     li.appendChild(questionText);
+
 
     const answerItem1 = document.createElement("div");
     answerItem1.classList.add("common-answers__answer1", "fs-5");

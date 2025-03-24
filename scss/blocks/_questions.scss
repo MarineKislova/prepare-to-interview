@@ -274,6 +274,24 @@
     font-weight: 900;
   }
 
+  &__common-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    list-style-type: none;
+  }
+
+  &__common-list-item {
+    border: solid 1px #444;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    max-height: 70px;
+    align-content: center;
+    background-color: #bce0f3;
+    cursor: pointer;
+  }
+
   &__list {
     li::marker {
       content: "";
@@ -339,9 +357,9 @@
 
   &__btn-up {
     position: fixed;
-    background:  rgba(247, 146, 146, 0.51);
+    background: rgba(247, 146, 146, 0.51);
     backdrop-filter: blur(6px) saturate(280%);
-    color: #FFFFFF;
+    color: #ffffff;
     color: #333;
     font-size: 24px;
     font-weight: 900;
