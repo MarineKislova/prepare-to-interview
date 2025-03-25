@@ -427,16 +427,16 @@ h6 {
 }
 .common-answers__common-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 15px;
   list-style-type: none;
 }
 .common-answers__common-list-item {
   border: solid 1px #444;
-  padding: 10px;
+  padding: 5px;
   font-size: 14px;
   font-weight: 900;
-  max-height: 70px;
+  max-height: 90px;
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #bce0f3;
