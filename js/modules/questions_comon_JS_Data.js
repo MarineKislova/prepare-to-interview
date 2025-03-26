@@ -3232,7 +3232,7 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>В JavaScript объекты обычно наследуют свойства и методы от своих прототипов. Однако, существует несколько способов создания объекта без прототипа:</p> <p><span style='font-style: italic;'>Использование Object.create(null):</span></p> <p> <span>Метод Object.create(null)</span> создает новый объект с указанным прототипом <span>null</span>, что означает, что объект не будет наследовать свойства и методы от какого-либо прототипа.</p> <code>const obj = Object.create(null);<br> console.log(obj); //No properties <br> console.log(obj.toString); //undefined</code> <span style='font-style: italic;'>Использование литерала объекта и null в качестве прототипа:</span> <p> Можно создать объект, используя литерал объекта и установив его прототип в null.</p> <code>const obj = Object.setPrototypeOf({}, null);<br> console.log(obj.toString); //undefined</code> <span style='font-style: italic;'>Использование функции-конструктора без прототипа:</span> <p> Можно создать функцию-конструктор, которая не имеет прототипа, и создать объект с помощью этой функции.</p> <code>function NoPrototype() { <br>  // Пустая функция-конструктор без прототипа<br> }<br> const obj = new NoPrototype();<br> console.log(obj.toString); // Вывод: undefined</code> <p>Обратите внимание, что объекты без прототипа могут быть полезны в определенных случаях, но они также могут ограничивать функциональность и использование стандартных методов и свойств. Поэтому рекомендуется использовать объекты без прототипа с осторожностью и только в случаях, когда это действительно необходимо.</p> <p><span style='font-style: italic;'>По определению, null не имеет прототипа и является завершающим звеном в цепочке прототипов.</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3245,12 +3245,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 44,
+    question: "Что такое прототипное наследование?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/prototype-inheritance' target='_blank' rel='noopener noreferrer'>Прототипное наследование,</a> <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain' target='_blank' rel='noopener noreferrer'>Наследование и цепочка прототипов</a></p> <p><span>Прототипное наследование </span>в JavaScript – это механизм, который позволяет одному объекту наследовать свойства и методы другого объекта. Это основной способ наследования в JavaScript.</p> <p>Каждый объект в JavaScript имеет внутреннее скрытое свойство prototype, которое ссылается на другой объект. Этот другой объект называется прототипом первого объекта. При попытке получить доступ к свойству объекта, JavaScript сначала проверяет, есть ли это свойство в самом объекте. Если нет, он ищет его в прототипе объекта. Если и там его нет, то в прототипе прототипа и так далее. Если свойство или метод отсутствуют в объекте и его прототипе, JavaScript вернет undefined</p> <code style='font-size: 12px; max-width: 320px;'>// Прототип TV<br> let TV = {<br> brand: 'Generic',<br> smart: true,<br> resolution: '4k',<br> turnOn() {<br>   console.log(`Включаем ${this.brand}`);<br> },<br> turnOff() {<br>   console.log(`Выключаем ${this.brand}`);<br> }<br>};<br> // Создаем экземпляр Samsung TV <br> let samsungTV = {<br>  __proto__: TV,<br>  brand: 'Samsung'<br> };<br> // Создаем экземпляр Sony TV<br> let sonyTV = {<br>  __proto__: TV,<br>  brand: 'Sony'<br> };<br> // Используем существующие методы экземпляров <br> samsungTV.turnOn(); // Включаем Samsung<br> sonyTV.turnOff(); // Выключаем Sony<br> // Вызываем существующее свойство<br> console.log(sonyTV.smart); // true<br> // Вызываем несуществующее свойство<br> console.log(samsungTV.size); // undefined</code> <p>В плане наследования JavaScript работает лишь с одной сущностью: объектами. Каждый объект имеет внутреннюю ссылку на другой объект, называемый его прототипом. У объекта-прототипа также есть свой собственный прототип и так далее до тех пор, пока цепочка не завершится объектом, у которого свойство prototype равно null.</p> <p><span style='font-style: italic;'>По определению, null не имеет прототипа и является завершающим звеном в цепочке прототипов.</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3263,12 +3263,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 45,
+    question: "С помощью чего в JS реализуются наследование?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://proglib.io/p/kak-realizovat-nasledovanie-v-javascript-7-sposobov-2024-12-03' target='_blank' rel='noopener noreferrer'>Как реализовать наследование в JavaScript: 7 способов</a></p> <p>В JavaScript наследование реализуется с помощью прототипов. Прототипное наследование - это механизм, который позволяет объектам наследовать свойства и методы других объектов. Еще появился новый в ECMAScript 2015 с помощью ключевого слова class.</p> <p>Каждый объект в JavaScript имеет внутреннюю ссылку на <span>прототип (prototype)</span>, которая указывает на другой объект. </p> <p>Существует несколько способов реализации наследования в JavaScript, рассмотрим их все.</p> <p><span>Прототипное наследование с использованием prototype (Наследование через цепочку прототипов):</span></p> <ul> <li>Создается конструктор (функция-класс), у которого есть свойство prototype.</li> <li>Создаются новые объекты с помощью этого конструктора с помощью ключевого слова new.</li> <li>Прототип нового объекта устанавливается равным прототипу конструктора.</li> </ul> <p><span>Наследование с использованием class (введено в ECMAScript 2015):</span></p> <ul> <li>Используется ключевое слово class для определения класса.</li> <li>Используется ключевое слово extends для указания родительского класса.</li> <li>Методы родительского класса могут быть переопределены или расширены в дочернем классе с помощью ключевого слова super.</li> </ul> <p>В JavaScript наследование играет ключевую роль в повторном использовании кода и управлении сложными отношениями объектов. Благодаря прототипно-ориентированной модели, JavaScript предлагает несколько способов реализации наследования, каждый из которых обладает своими преимуществами:</p> <p>- <span style='font-style: italic;'>Наследование через цепочку прототипов.</span></p> <p>- <span style='font-style: italic;'>Наследование через конструктор.</span></p> <p>- <span style='font-style: italic;'>Композиционное наследование.</span></p> <p>- <span style='font-style: italic;'>Паразитическое наследование.</span></p> <p>- <span style='font-style: italic;'>Прототипное наследование.</span></p> <p>- <span style='font-style: italic;'>Паразитическое композиционное наследование.</span></p> <p>- <span style='font-style: italic;'>Наследование через классы ES6.</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3281,12 +3281,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 46,
+    question: "Что такое функции высшего порядка (Higher Order Functions)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://www.dev-notes.ru/articles/javascript/higher-order-functions-in-javascript/' target='_blank' rel='noopener noreferrer'>Функции высшего порядка в JavaScript</a></p> <p><span>Функция высшего порядка</span> — это функция, оперирующая другими функциями, либо принимая их в качестве аргументов, либо возвращая их.  Проще говоря, функции высшего порядка ― это такие функции, которые принимают функцию в качестве аргумента или возвращают функцию в качестве вывода.</p> <p><span>Передача функций в качестве аргументов.</span> Один из самых распространённых способов использования функций высшего порядка — передача функций в качестве аргументов другим функциям. Например, рассмотрим следующий код:</p> <code>function add(x, y) {<br>   return x + y;<br> }<br> function multiply(x, y) {<br>   return x * y;<br> }<br> function calculate(x, y, operation) {<br>   return operation(x, y);<br> }<br> console.log(calculate(2, 3, add)); // 5<br> console.log(calculate(2, 3, multiply)); // 6</code> <p>В данном примере функция calculate принимает в качестве аргументов два числа и функцию и возвращает результат операции. Функции add и multiply передаются в качестве аргументов функции calculate, что позволяет повторно использовать один и тот же код для различных операций.</p> <p><span>Возврат функций.</span>Другой способ использования функций высшего порядка — возврат функции в качестве результата другой функции. Например, рассмотрим следующий код:</p> <code>function createAdder(x) {<br>   return function (y) {<br>     return x + y;<br>   };<br> }<br> var add5 = createAdder(5);<br> var add10 = createAdder(10);<br> console.log(add5(3)); // 8<br> console.log(add10(3)); // 13</code> <p>В этом примере функция createAdder принимает один аргумент x и возвращает новую анонимную функцию, принимающую ещё один аргумент y. Когда вызывается эта функция, она складывает x и y и возвращает результат.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3299,12 +3299,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 47,
+    question: "Почему функции в JS называют объектами первого класса (First-class Objects)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Функции называют объектами первого класса, потому что они обрабатываются также, как и любое другое значение в JS. Они могут присваиваться переменным, быть свойством объекта (методом), элементом массива, аргументом другой функции, значением, возвращаемым функцией. Единственным отличием функции от любого другого значения в JS является то, что функция может быть выполнена или вызвана.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3317,8 +3317,8 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 48,
+    question: "Как в JS вызвать функцию?",
     answer: {
       href: "",
       linkName: "",

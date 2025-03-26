@@ -10,6 +10,9 @@
 <span style='font-style: italic;'></span>
 
 <p style='font-style: italic;'></p>
+<p style='font-style: italic;'></p>
+font-size: 12px;
+    max-width: 300px;
 
 <code></code>
 <br>
