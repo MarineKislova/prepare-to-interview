@@ -11,7 +11,8 @@
 
 <p style='font-style: italic;'></p>
 <p style='font-style: italic;'></p>
-font-size: 12px;
+
+style='font-size: 12px;'
     max-width: 300px;
 
 <code></code>
