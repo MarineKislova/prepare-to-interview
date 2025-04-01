@@ -3478,7 +3478,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>IIFE</span> или <span>Immediately Invoked Function Expression</span> — это функция, которая вызывается или выполняется сразу же после создания или объявления. Для создания <span>IIFE</span> необходимо обернуть функцию в круглые скобки (оператор группировки), превратив ее в выражение, и затем вызвать ее с помощью еще одних круглых скобок. Это выглядит так:</p> <code>(function( ) { })( )</code> <p>Позволяет создавать локальную область видимости для переменных и функций, чтобы избежать конфликтов имен и сохранить приватность данных. IIFE обычно используется для создания модулей, эмуляции блока кода с областью видимости или для выполнения некоторых инициализаций при загрузке страницы.</p> <p>Использование IIFE помогает изолировать код и предотвращает его влияние на глобальную область видимости, что способствует более безопасному и организованному коду.</p>",
+      answer1:
+        "<p><span>IIFE</span> или <span>Immediately Invoked Function Expression</span> — это функция, которая вызывается или выполняется сразу же после создания или объявления. Для создания <span>IIFE</span> необходимо обернуть функцию в круглые скобки (оператор группировки), превратив ее в выражение, и затем вызвать ее с помощью еще одних круглых скобок. Это выглядит так:</p> <code>(function( ) { })( )</code> <p>Позволяет создавать локальную область видимости для переменных и функций, чтобы избежать конфликтов имен и сохранить приватность данных. IIFE обычно используется для создания модулей, эмуляции блока кода с областью видимости или для выполнения некоторых инициализаций при загрузке страницы.</p> <p>Использование IIFE помогает изолировать код и предотвращает его влияние на глобальную область видимости, что способствует более безопасному и организованному коду.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3492,11 +3493,13 @@ const sortedQuestionsJS = [
   },
   {
     id: 55,
-    question: "В чем разница между объявлением функции (Function Declaration) и функциональным выражением (Function Expression)?",
+    question:
+      "В чем разница между объявлением функции (Function Declaration) и функциональным выражением (Function Expression)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Объявление функции и функциональное выражение</span> – это два способа определения функций в JavaScript.</p> <p><span>Объявление функции (Function Declaration)</span>  – это традиционный способ определения функции. Функция создается и присваивается переменной, как любое другое значение. При этом объявленные функции доступны во всем коде, даже до того, как программа достигает того участка, где они определены.</p> <code>declarationFunction(); // 'This is an ordinary function'<br><br> function declarationFunction() {<br>   console.log('This is an ordinary function');<br> }<br><br> declarationFunction(); // 'This is an ordinary function'</code> <p><span>Функциональное выражение (Function Expression)</span>  – это альтернативный способ определения функции:</p> <code>expressionFunction(); // ReferenceError: Cannot access 'expressionFunction' before initialization <br><br> const expressionFunction = function() {<br>   console.log('This is an expression function');</br> }<br><br>expressionFunction(); // 'This is an expression function'</code> <p>В отличие от традиционной функции, <span>функциональное выражение</span> <span style='font-style: italic;'>нельзя</span> вызывать до определения в коде – это приведет к ошибке . Функциональные выражения могут:</p> <ul> <li>быть анонимными;</li> <li>формировать замыкания;</li> <li>передаваться в качестве аргументов другим функциям;</li> <li>использоваться как немедленно вызываемые функциональные выражения (IIFE).</li> </ul>",
+      answer1:
+        "<p><span>Объявление функции и функциональное выражение</span> – это два способа определения функций в JavaScript.</p> <p><span>Объявление функции (Function Declaration)</span>  – это традиционный способ определения функции. Функция создается и присваивается переменной, как любое другое значение. При этом объявленные функции доступны во всем коде, даже до того, как программа достигает того участка, где они определены.</p> <code>declarationFunction(); // 'This is an ordinary function'<br><br> function declarationFunction() {<br>   console.log('This is an ordinary function');<br> }<br><br> declarationFunction(); // 'This is an ordinary function'</code> <p><span>Функциональное выражение (Function Expression)</span>  – это альтернативный способ определения функции:</p> <code>expressionFunction(); // ReferenceError: Cannot access 'expressionFunction' before initialization <br><br> const expressionFunction = function() {<br>   console.log('This is an expression function');</br> }<br><br>expressionFunction(); // 'This is an expression function'</code> <p>В отличие от традиционной функции, <span>функциональное выражение</span> <span style='font-style: italic;'>нельзя</span> вызывать до определения в коде – это приведет к ошибке . Функциональные выражения могут:</p> <ul> <li>быть анонимными;</li> <li>формировать замыкания;</li> <li>передаваться в качестве аргументов другим функциям;</li> <li>использоваться как немедленно вызываемые функциональные выражения (IIFE).</li> </ul>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3514,7 +3517,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1:  "<p>Ответ на этот вопрос может показать ваши знания вспомогательных процессов, которые, скорее всего, специфичны для библиотеки.</p> <p><span>Ответ:</span> Этот метод заключает в себя содержимое файла, создавая приватное пространство имен. Такая реализация позволяет избежать конфликта между объектами JavaScript и библиотеками, в которых они размещены.</p> <p><span>1. Изоляция переменных (Создание локальной области видимости)</span></p> <p>В JavaScript все переменные, объявленные через var, попадают в глобальную область видимости, если они не внутри функции. Это может вызвать конфликты с другими скриптами. Если другой скрипт тоже объявит var message, он перезапишет значение.</p> <p><span>2. Избежание конфликтов с другими библиотеками</span></p> <p>Если на странице загружено несколько скриптов, они могут использовать одинаковые переменные или функции. Оборачивание в функцию защищает от этого.</p> <p><span>3. Немедленный вызов кода (IIFE – Immediately Invoked Function Expression)</span></p> <p>Иногда код нужно выполнить сразу, без создания глобальных переменных. Часто используется для инициализации скриптов.</p> <p><span>4. Имитация приватных переменных и модулей</span></p> <p>Оборачивание кода в функцию позволяет создавать 'приватные' переменные, недоступные извне.</p> <p>Современная альтернатива – использовать ES6-модули (import / export), которые автоматически создают свою область видимости.</p>",
+      answer1:
+        "<p>Ответ на этот вопрос может показать ваши знания вспомогательных процессов, которые, скорее всего, специфичны для библиотеки.</p> <p><span>Ответ:</span> Этот метод заключает в себя содержимое файла, создавая приватное пространство имен. Такая реализация позволяет избежать конфликта между объектами JavaScript и библиотеками, в которых они размещены.</p> <p><span>1. Изоляция переменных (Создание локальной области видимости)</span></p> <p>В JavaScript все переменные, объявленные через var, попадают в глобальную область видимости, если они не внутри функции. Это может вызвать конфликты с другими скриптами. Если другой скрипт тоже объявит var message, он перезапишет значение.</p> <p><span>2. Избежание конфликтов с другими библиотеками</span></p> <p>Если на странице загружено несколько скриптов, они могут использовать одинаковые переменные или функции. Оборачивание в функцию защищает от этого.</p> <p><span>3. Немедленный вызов кода (IIFE – Immediately Invoked Function Expression)</span></p> <p>Иногда код нужно выполнить сразу, без создания глобальных переменных. Часто используется для инициализации скриптов.</p> <p><span>4. Имитация приватных переменных и модулей</span></p> <p>Оборачивание кода в функцию позволяет создавать 'приватные' переменные, недоступные извне.</p> <p>Современная альтернатива – использовать ES6-модули (import / export), которые автоматически создают свою область видимости.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3532,7 +3536,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Функция-конструктор в JavaScript</span> - это функция, которая используется для создания новых объектов. Они создаются с помощью ключевого слова new, и this внутри них ссылается на новый экземпляр объекта. Новые объекты могут иметь свои собственные свойства и методы, определенные в функции-конструкторе.</p><p><span>Конструкторы в JavaScript</span> – это специальные функции, используемые для создания объектов. Вот два основных правила при работе с конструкторами:</p> <ul> <li>Имя конструктора должно начинаться с заглавной буквы.</li> <li>Конструктор вызывается при помощи оператора new.</li> </ul> <p><span style='font-style: italic;'>Когда мы вызываем конструктор через new, происходит следующее:</span></p> <ul> <li>Создается новый пустой объект и присваивается в this.</li> <li>Выполняется код внутри конструктора. Обычно он модифицирует объект this, добавляя в него свойства.</li> <li>Значение this возвращается из конструктора как результат.</li> </ul> <p>Например:</p> <code>function User(name) {<br>   this.name = name;<br>   this.sayHi = function() {<br>     alert(`Привет, меня зовут ${this.name}!`);<br>   };  <br> }<br> <br>let user = new User('Вася'); <br>user.sayHi(); // Привет, меня зовут Вася!</code> <p>Здесь <span style='font-style: italic;'>User – функция-конструктор.</span> Когда мы вызываем конструктор через new User('Вася'), создается объект userс указанным именем и методом sayHi. Таким образом с помощью конструкторов можно многократного создавать объекты по одному шаблону.</p>",
+      answer1:
+        "<p><span>Функция-конструктор в JavaScript</span> - это функция, которая используется для создания новых объектов. Они создаются с помощью ключевого слова new, и this внутри них ссылается на новый экземпляр объекта. Новые объекты могут иметь свои собственные свойства и методы, определенные в функции-конструкторе.</p><p><span>Конструкторы в JavaScript</span> – это специальные функции, используемые для создания объектов. Вот два основных правила при работе с конструкторами:</p> <ul> <li>Имя конструктора должно начинаться с заглавной буквы.</li> <li>Конструктор вызывается при помощи оператора new.</li> </ul> <p><span style='font-style: italic;'>Когда мы вызываем конструктор через new, происходит следующее:</span></p> <ul> <li>Создается новый пустой объект и присваивается в this.</li> <li>Выполняется код внутри конструктора. Обычно он модифицирует объект this, добавляя в него свойства.</li> <li>Значение this возвращается из конструктора как результат.</li> </ul> <p>Например:</p> <code>function User(name) {<br>   this.name = name;<br>   this.sayHi = function() {<br>     alert(`Привет, меня зовут ${this.name}!`);<br>   };  <br> }<br> <br>let user = new User('Вася'); <br>user.sayHi(); // Привет, меня зовут Вася!</code> <p>Здесь <span style='font-style: italic;'>User – функция-конструктор.</span> Когда мы вызываем конструктор через new User('Вася'), создается объект userс указанным именем и методом sayHi. Таким образом с помощью конструкторов можно многократного создавать объекты по одному шаблону.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3550,7 +3555,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Ключевое слово «new»</span> используется в функциях-конструкторах для создания нового объекта (нового экземпляра класса).</p> <p>Допустим, у нас есть такой код:</p> <code>function Employee(name, position, yearHired){<br>     this.name = name<br>     this.position = position<br>     this.yearHired = yearHired<br> }<br><br> const emp = new Employee('Marko Polo', 'Software Development', 2017)</code> <ul> <span style='font-style: italic;'>Ключевое слово «new» делает 4 вещи:</span> <li>1. Создает пустой объект.</li> <li>2. Привязывает к нему значение this.</li> <li>3. Функция наследует от functionName.prototype. Свойство prototype data экземпляра Function используется, когда функция используется как конструктор с new оператором. Оно станет прототипом нового объекта: <span style='font-style: italic;'>console.log(Object.getPrototypeOf(emp));</span></li> <li>4. Возвращает значение this, если не указано иное.</li> </ul>",
+      answer1:
+        "<p><span>Ключевое слово «new»</span> используется в функциях-конструкторах для создания нового объекта (нового экземпляра класса).</p> <p>Допустим, у нас есть такой код:</p> <code>function Employee(name, position, yearHired){<br>     this.name = name<br>     this.position = position<br>     this.yearHired = yearHired<br> }<br><br> const emp = new Employee('Marko Polo', 'Software Development', 2017)</code> <ul> <span style='font-style: italic;'>Ключевое слово «new» делает 4 вещи:</span> <li>1. Создает пустой объект.</li> <li>2. Привязывает к нему значение this.</li> <li>3. Функция наследует от functionName.prototype. Свойство prototype data экземпляра Function используется, когда функция используется как конструктор с new оператором. Оно станет прототипом нового объекта: <span style='font-style: italic;'>console.log(Object.getPrototypeOf(emp));</span></li> <li>4. Возвращает значение this, если не указано иное.</li> </ul>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3568,7 +3574,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/classes' target='_blank' rel='noopener noreferrer'>Классы</a></p><p><span>Классы</span> — это относительно новый способ написания функций-конструкторов в JS. Это синтаксический сахар для функций-конструкторов. В основе классов лежат те же прототипы и прототипное наследование.</p> <p><img class='question__img' src='img/habr70/44.1habr70.png' alt=''></p> <p><img class='question__img' src='img/habr70/44.2habr70.png' alt=''></p>",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/classes' target='_blank' rel='noopener noreferrer'>Классы</a></p><p><span>Классы</span> — это относительно новый способ написания функций-конструкторов в JS. Это синтаксический сахар для функций-конструкторов. В основе классов лежат те же прототипы и прототипное наследование.</p> <p><img class='question__img' src='img/habr70/44.1habr70.png' alt=''></p> <p><img class='question__img' src='img/habr70/44.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3586,7 +3593,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/class-inheritance' target='_blank' rel='noopener noreferrer'>Наследование классов</a></p><p><span>Наследование классов в ES6</span> осуществляется с помощью ключевого слова extends, которое следует за именем родительского класса. Родительский класс часто называют базовым классом, а класс, который наследует базовый/родительский класс, называется производным или дочерним</p> <code style='font-size: 12px;'>class Parent {<br>  constructor(name) {<br>    this.name = name;<br>  }<br><br>  greeting() {<br>    return `Добрый день, ${this.name}!`;<br>  }<br> }<br><br> class Child extends Parent {<br>  constructor(name, age) {<br>    super(name); // вызывает конструктор родительского класса<br>    this.age = age;<br>  }<br><br> greeting() {<br>    let greeting = super.greeting(); // вызывает метод родительского класса<br>    return `${greeting} Как поживаешь?`;<br>  }<br> }<br><br> let vasya = new Child('Вася', 10);<br> console.log(vasya.greeting()); // Добрый день, Вася! Как поживаешь?</code>",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/class-inheritance' target='_blank' rel='noopener noreferrer'>Наследование классов</a></p><p><span>Наследование классов в ES6</span> осуществляется с помощью ключевого слова extends, которое следует за именем родительского класса. Родительский класс часто называют базовым классом, а класс, который наследует базовый/родительский класс, называется производным или дочерним</p> <code style='font-size: 12px;'>class Parent {<br>  constructor(name) {<br>    this.name = name;<br>  }<br><br>  greeting() {<br>    return `Добрый день, ${this.name}!`;<br>  }<br> }<br><br> class Child extends Parent {<br>  constructor(name, age) {<br>    super(name); // вызывает конструктор родительского класса<br>    this.age = age;<br>  }<br><br> greeting() {<br>    let greeting = super.greeting(); // вызывает метод родительского класса<br>    return `${greeting} Как поживаешь?`;<br>  }<br> }<br><br> let vasya = new Child('Вася', 10);<br> console.log(vasya.greeting()); // Добрый день, Вася! Как поживаешь?</code>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3604,7 +3612,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/class#ne-prosto-sintaksicheskiy-sahar' target='_blank' rel='noopener noreferrer'>Не просто синтаксический сахар</a></p><p>Иногда говорят, что class – это просто «синтаксический сахар» в JavaScript (синтаксис для улучшения читаемости кода, но не делающий ничего принципиально нового), потому что мы можем сделать всё то же самое без конструкции class.</p> <p>Результат этого кода очень похож. Поэтому, действительно, есть причины, по которым class можно считать синтаксическим сахаром для определения конструктора вместе с методами прототипа.</p> <p>Однако есть важные отличия:</p> <p>1. Во-первых, функция, созданная с помощью class, помечена специальным внутренним свойством [[IsClassConstructor]]: true. Поэтому это не совсем то же самое, что создавать её вручную. Кроме того, строковое представление конструктора класса в большинстве движков JavaScript начинается с «class …»</p> <p>2. Методы класса являются неперечислимыми. Определение класса устанавливает флаг enumerable в false для всех методов в 'prototype'. И это хорошо, так как если мы проходимся циклом for..in по объекту, то обычно мы не хотим при этом получать методы класса.</p> <p>3. Классы всегда используют use strict. Весь код внутри класса автоматически находится в строгом режиме.</p> <p>4. В ES5 наследование делается вручную через prototype (Куча кода для наследования!), в ES6 через extends</p>",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/class#ne-prosto-sintaksicheskiy-sahar' target='_blank' rel='noopener noreferrer'>Не просто синтаксический сахар</a></p><p>Иногда говорят, что class – это просто «синтаксический сахар» в JavaScript (синтаксис для улучшения читаемости кода, но не делающий ничего принципиально нового), потому что мы можем сделать всё то же самое без конструкции class.</p> <p>Результат этого кода очень похож. Поэтому, действительно, есть причины, по которым class можно считать синтаксическим сахаром для определения конструктора вместе с методами прототипа.</p> <p>Однако есть важные отличия:</p> <p>1. Во-первых, функция, созданная с помощью class, помечена специальным внутренним свойством [[IsClassConstructor]]: true. Поэтому это не совсем то же самое, что создавать её вручную. Кроме того, строковое представление конструктора класса в большинстве движков JavaScript начинается с «class …»</p> <p>2. Методы класса являются неперечислимыми. Определение класса устанавливает флаг enumerable в false для всех методов в 'prototype'. И это хорошо, так как если мы проходимся циклом for..in по объекту, то обычно мы не хотим при этом получать методы класса.</p> <p>3. Классы всегда используют use strict. Весь код внутри класса автоматически находится в строгом режиме.</p> <p>4. В ES5 наследование делается вручную через prototype (Куча кода для наследования!), в ES6 через extends</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3622,7 +3631,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p>Для этого в JavaScript используется оператор <span>instanceof</span>. Он позволяет проверить, из какого класса был создан объект, учитывая наследование.</p> <p>Например, есть базовый класс Animal и классы-наследники Dog и Cat:</p> <code style='font-size: 12px;'>class Animal {<br>   constructor() {}<br> }<br><br> class Dog extends Animal {<br>   constructor() {<br>     super(); <br>   }<br><br>   bark() {}<br> }<br><br> class Cat extends Animal {<br>   constructor() {<br>     super();<br>   }<br><br>    meow() {}<br> }</code> <p>Создадим объект класса Dog и проверим с помощью оператора instanceof, является ли объект экземпляром указанного класса или классов-родителей:</p> <code style='font-size: 12px;'>const dog = new Dog();<br><br> console.log(dog instanceof Dog); // true<br> console.log(dog instanceof Animal); // true<br> console.log(dog instanceof Cat); // false</code>",
+      answer1:
+        "<p>Для этого в JavaScript используется оператор <span>instanceof</span>. Он позволяет проверить, из какого класса был создан объект, учитывая наследование.</p> <p>Например, есть базовый класс Animal и классы-наследники Dog и Cat:</p> <code style='font-size: 12px;'>class Animal {<br>   constructor() {}<br> }<br><br> class Dog extends Animal {<br>   constructor() {<br>     super(); <br>   }<br><br>   bark() {}<br> }<br><br> class Cat extends Animal {<br>   constructor() {<br>     super();<br>   }<br><br>    meow() {}<br> }</code> <p>Создадим объект класса Dog и проверим с помощью оператора instanceof, является ли объект экземпляром указанного класса или классов-родителей:</p> <code style='font-size: 12px;'>const dog = new Dog();<br><br> console.log(dog instanceof Dog); // true<br> console.log(dog instanceof Animal); // true<br> console.log(dog instanceof Cat); // false</code>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3636,11 +3646,13 @@ const sortedQuestionsJS = [
   },
   {
     id: 63,
-    question: "В чем разница между Array.prototype.forEach и Array.prototype.map?",
+    question:
+      "В чем разница между Array.prototype.forEach и Array.prototype.map?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Array.prototype.forEach</span> - это инструмент обхода цикла процедурно, а <span>Array.prototype.map</span> - функционально.</p> <p>.forEach просто проходится по массиву с выполнением переданного обратного вызова на каждой итерации, а .map создает и возвращает новый массив на основе исходного, выкладывая по кирпичику на каждой итерации.</p> <p>Оба метода перебирают массив и выполняют переданную функцию для каждого элемента. Но разница в том, возвращают ли они новый массив или нет.</p> <p><span>1. forEach — просто выполняет действие</span></p> <p>Используется, когда нужно что-то сделать с каждым элементом массива (например, вывести в консоль, изменить DOM), но не нужно создавать новый массив. <span style='font-style: italic;'>Важно: forEach ничего не возвращает, просто выполняет код.</span></p> <p><span>2. map — создаёт новый массив</span></p> <p>Используется, когда нужно преобразовать каждый элемент и создать новый массив. <span style='font-style: italic;'>map не изменяет оригинальный массив, а создаёт новый.</span></p>",
+      answer1:
+        "<p><span>Array.prototype.forEach</span> - это инструмент обхода цикла процедурно, а <span>Array.prototype.map</span> - функционально.</p> <p>.forEach просто проходится по массиву с выполнением переданного обратного вызова на каждой итерации, а .map создает и возвращает новый массив на основе исходного, выкладывая по кирпичику на каждой итерации.</p> <p>Оба метода перебирают массив и выполняют переданную функцию для каждого элемента. Но разница в том, возвращают ли они новый массив или нет.</p> <p><span>1. forEach — просто выполняет действие</span></p> <p>Используется, когда нужно что-то сделать с каждым элементом массива (например, вывести в консоль, изменить DOM), но не нужно создавать новый массив. <span style='font-style: italic;'>Важно: forEach ничего не возвращает, просто выполняет код.</span></p> <p><span>2. map — создаёт новый массив</span></p> <p>Используется, когда нужно преобразовать каждый элемент и создать новый массив. <span style='font-style: italic;'>map не изменяет оригинальный массив, а создаёт новый.</span></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3712,7 +3724,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Объект arguments</span> — это подобный массиву объект, который содержит аргументы, переданные в функцию. Это объект, подобный массиву, у него есть свойство length, мы можем получить доступ к определенному значению с помощью arguments[i], но у него отсутствуют методы forEach, reduce, filter и map. Он позволяет узнать количество параметров функции.</p> <p><span>Объект arguments</span> - это локальная переменная, доступная внутри любой <span style='font-style: italic;'>(нестрелочной)</span> функции.</p> <p>он может быть преобразован в обычный массив: <span style='font-style: italic;'>var args = [].slice.call(arguments);</span></p> <p></p> <p></p>",
+      answer1:
+        "<p><span>Объект arguments</span> - это локальная переменная, доступная внутри любой <span style='font-style: italic;'>(нестрелочной)</span> функции. Объект <span>arguments</span> позволяет ссылаться на аргументы функции внутри неё. Он состоит из переданных в функцию аргументов, индексация начинается с 0.</p> <p><span>Объект arguments</span> — это подобный массиву объект, который содержит аргументы, переданные в функцию. Это объект, подобный массиву, у него есть свойство length, мы можем получить доступ к определенному значению с помощью arguments[i], но у него отсутствуют методы forEach, reduce, filter и map. Он позволяет узнать количество параметров функции.</p>  <p>Он может быть преобразован в обычный массив:</p> <p><span>- использование slice</span></p> <code>function showName() {<br>   const args = Array.prototype.slice.call(arguments);<br> <br>  console.log(typeof args); // object<br>   console.log(Array.isArray(args)); //true<br>   console.log(args); // ['marina', 'dima', 'ivan']<br>   console.log(arguments.length); // 3<br>}<br> <br> let res = showName('marina', 'dima', 'ivan');</code> <p><span>- использование Array.from (современный способ).</span> Array.from читабельнее и удобнее.</p> <code>function myFunction() {<br> const args = Array.from(arguments);<br>  console.log(args); // [5, 6, 7] <br>}<br><br>myFunction(5, 6, 7); </code> <p><span>Оператор ... (рекомендуемый вариант).</span> <span style='font-style: italic; color: yellow'>Работает с методами массива (forEach, reduce, filter и map) и читается проще. Можно использовать в стрелочных фенкциях.</span> Вместо arguments лучше использовать rest-параметры (...args):</p> <code>function myFunction(...args) {<br>   console.log(args); // [8, 9, 10]<br> } <br><br>myFunction(8, 9, 10); </code>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3725,12 +3738,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 68,
+    question: "Что такое стрелочные функции (Arrow Functions)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p><span>Стрелочная функция</span>— это относительно новый способ создания функций в JS. Стрелочные функции создаются быстрее и имеют более читаемый синтаксис, чем функциональные выражения. В стрелочных функциях опускается слово <span>«function»</span>:</p>  <p><span>const getCurrentDate = () => new Date().</span></p> <p>В <span>функциональном выражении</span> мы используем ключевое слово «return» для возврата значения. В стрелочной функции мы этого не делаем, поскольку стрелочные функции неявно возвращают значения при условии, что мы возвращаем одно выражение или значение:</p> <p><span>function greet(name){ return 'Hello ' + name + '!' } // ES5</span></p> <p><span>const greet = (name) => `Hello ${name}`<br>const greet2 = name = > `Hello ${name}`<br>// ES6</span></p> <p>Мы также можем передавать параметры стрелочным функциям. Если мы передаем один параметр, его можно не оборачивать в круглые скобки:</p> <code>const arrowFunc = () => {<br>   console.log(arguments); // Ошибка: arguments is not defined <br>};<br><br> arrowFunc(1, 2, 3);</code> <code>const arrowFunc = (...args) => {<br>   console.log(args); // Массив аргументов<br> };<br> <br> arrowFunc(1, 2, 3); // [1, 2, 3]</code> <p>У стрелочных функций нет доступа к объекту <span>arguments</span>. Поэтому вызов первой функции приведет к ошибке. Для получения параметров, переданных функции, мы можем использовать оператор <span>rest</span>.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3743,12 +3756,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 69,
+    question:"Чем стрелочные функции отличаются от обычных?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Стрелочные функции позволяют использовать упрощенный синтаксис при создании небольших функций-обработчиков. У них есть некоторые ограничения по сравнению с обычными функциями:</p> <p><span>Стрелочные функции не могут использовать объект arguments.</span> В обычных функциях этот объект содержит все переданные при вызове аргументы:</p> <p><img class='question__img' src='img/5.1proglibPart1.png' alt=''></p><p><span>У стрелочных функций другой синтаксис записи.</span> Они записываются короче, используя стрелку => и не требуя ключевого слова function:</p> <p><img class='question__img' src='img/5.2proglibPart1.png' alt=''></p> <p><span>У стрелочных функций нет собственного контекста this.</span> Вместо этого контекст берется из внешней области видимости:</p> <p><img class='question__img' src='img/5.3proglibPart1.png' alt=''></p> <p><span>Стрелочные функции нельзя использовать как конструкторы с ключевым словом new.</span> То есть, из них нельзя создавать объекты при помощи оператора new:</p> <p><img class='question__img' src='img/5.4proglibPart1.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3761,12 +3774,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 70,
+    question: "Объясните стрелочные функции",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p><span>Ответ:</span>Стрелочная функция – это краткий способ записи функциональных выражений. Стрелочные функции не являются конструкторами, не поддерживают ключевые слова this, arguments, super и new.target и записываются следующим образом:</p> <code>const hello = () => { 	console.log('good morning'); } <br><br> hello() // good morning;</code> <p> Они появились в ES6 и стали стандартом для работы с функциями в современном JavaScript.</p> ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3779,12 +3792,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 71,
+    question: "Что такое функция обратного вызова (Callback Function)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p><span>Функция обратного вызова</span> — это функция, вызов которой отложен на будущее (происходит при некоторых условиях, например, при наступлении события).</p> <p><span>Колбэк-функция (или обратный вызов)</span> - это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.</p> <p>Вот краткий пример <span>синхронного колбэка</span>, поскольку функция <span>processUserInput</span> выполняется <span>синхронно:</span></p> <p><img class='question__img' src='img/habr70/49.1habr70.png' alt=''></p> <p>Колбэки часто используются для продолжения выполнения кода после завершения <span>асинхронной операции</span> - они называются <span>асинхронными колбэками.</span>Пример:</p> <p><img class='question__img' src='img/habr70/49.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3797,8 +3810,8 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 72,
+    question: "В каких случаях используются анонимные функции?",
     answer: {
       href: "",
       linkName: "",
