@@ -3743,7 +3743,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Стрелочная функция</span>— это относительно новый способ создания функций в JS. Стрелочные функции создаются быстрее и имеют более читаемый синтаксис, чем функциональные выражения. В стрелочных функциях опускается слово <span>«function»</span>:</p>  <p><span>const getCurrentDate = () => new Date().</span></p> <p>В <span>функциональном выражении</span> мы используем ключевое слово «return» для возврата значения. В стрелочной функции мы этого не делаем, поскольку стрелочные функции неявно возвращают значения при условии, что мы возвращаем одно выражение или значение:</p> <p><span>function greet(name){ return 'Hello ' + name + '!' } // ES5</span></p> <p><span>const greet = (name) => `Hello ${name}`<br>const greet2 = name = > `Hello ${name}`<br>// ES6</span></p> <p>Мы также можем передавать параметры стрелочным функциям. Если мы передаем один параметр, его можно не оборачивать в круглые скобки:</p> <code>const arrowFunc = () => {<br>   console.log(arguments); // Ошибка: arguments is not defined <br>};<br><br> arrowFunc(1, 2, 3);</code> <code>const arrowFunc = (...args) => {<br>   console.log(args); // Массив аргументов<br> };<br> <br> arrowFunc(1, 2, 3); // [1, 2, 3]</code> <p>У стрелочных функций нет доступа к объекту <span>arguments</span>. Поэтому вызов первой функции приведет к ошибке. Для получения параметров, переданных функции, мы можем использовать оператор <span>rest</span>.</p>",
+      answer1:
+        "<p><span>Стрелочная функция</span>— это относительно новый способ создания функций в JS. Стрелочные функции создаются быстрее и имеют более читаемый синтаксис, чем функциональные выражения. В стрелочных функциях опускается слово <span>«function»</span>:</p>  <p><span>const getCurrentDate = () => new Date().</span></p> <p>В <span>функциональном выражении</span> мы используем ключевое слово «return» для возврата значения. В стрелочной функции мы этого не делаем, поскольку стрелочные функции неявно возвращают значения при условии, что мы возвращаем одно выражение или значение:</p> <p><span>function greet(name){ return 'Hello ' + name + '!' } // ES5</span></p> <p><span>const greet = (name) => `Hello ${name}`<br>const greet2 = name = > `Hello ${name}`<br>// ES6</span></p> <p>Мы также можем передавать параметры стрелочным функциям. Если мы передаем один параметр, его можно не оборачивать в круглые скобки:</p> <code>const arrowFunc = () => {<br>   console.log(arguments); // Ошибка: arguments is not defined <br>};<br><br> arrowFunc(1, 2, 3);</code> <code>const arrowFunc = (...args) => {<br>   console.log(args); // Массив аргументов<br> };<br> <br> arrowFunc(1, 2, 3); // [1, 2, 3]</code> <p>У стрелочных функций нет доступа к объекту <span>arguments</span>. Поэтому вызов первой функции приведет к ошибке. Для получения параметров, переданных функции, мы можем использовать оператор <span>rest</span>.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3757,11 +3758,12 @@ const sortedQuestionsJS = [
   },
   {
     id: 69,
-    question:"Чем стрелочные функции отличаются от обычных?",
+    question: "Чем стрелочные функции отличаются от обычных?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p>Стрелочные функции позволяют использовать упрощенный синтаксис при создании небольших функций-обработчиков. У них есть некоторые ограничения по сравнению с обычными функциями:</p> <p><span>Стрелочные функции не могут использовать объект arguments.</span> В обычных функциях этот объект содержит все переданные при вызове аргументы:</p> <p><img class='question__img' src='img/5.1proglibPart1.png' alt=''></p><p><span>У стрелочных функций другой синтаксис записи.</span> Они записываются короче, используя стрелку => и не требуя ключевого слова function:</p> <p><img class='question__img' src='img/5.2proglibPart1.png' alt=''></p> <p><span>У стрелочных функций нет собственного контекста this.</span> Вместо этого контекст берется из внешней области видимости:</p> <p><img class='question__img' src='img/5.3proglibPart1.png' alt=''></p> <p><span>Стрелочные функции нельзя использовать как конструкторы с ключевым словом new.</span> То есть, из них нельзя создавать объекты при помощи оператора new:</p> <p><img class='question__img' src='img/5.4proglibPart1.png' alt=''></p>",
+      answer1:
+        "<p>Стрелочные функции позволяют использовать упрощенный синтаксис при создании небольших функций-обработчиков. У них есть некоторые ограничения по сравнению с обычными функциями:</p> <p><span>Стрелочные функции не могут использовать объект arguments.</span> В обычных функциях этот объект содержит все переданные при вызове аргументы:</p> <p><img class='question__img' src='img/5.1proglibPart1.png' alt=''></p><p><span>У стрелочных функций другой синтаксис записи.</span> Они записываются короче, используя стрелку => и не требуя ключевого слова function:</p> <p><img class='question__img' src='img/5.2proglibPart1.png' alt=''></p> <p><span>У стрелочных функций нет собственного контекста this.</span> Вместо этого контекст берется из внешней области видимости:</p> <p><img class='question__img' src='img/5.3proglibPart1.png' alt=''></p> <p><span>Стрелочные функции нельзя использовать как конструкторы с ключевым словом new.</span> То есть, из них нельзя создавать объекты при помощи оператора new:</p> <p><img class='question__img' src='img/5.4proglibPart1.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3779,7 +3781,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Ответ:</span>Стрелочная функция – это краткий способ записи функциональных выражений. Стрелочные функции не являются конструкторами, не поддерживают ключевые слова this, arguments, super и new.target и записываются следующим образом:</p> <code>const hello = () => { 	console.log('good morning'); } <br><br> hello() // good morning;</code> <p> Они появились в ES6 и стали стандартом для работы с функциями в современном JavaScript.</p> ",
+      answer1:
+        "<p><span>Ответ:</span>Стрелочная функция – это краткий способ записи функциональных выражений. Стрелочные функции не являются конструкторами, не поддерживают ключевые слова this, arguments, super и new.target и записываются следующим образом:</p> <code>const hello = () => { 	console.log('good morning'); } <br><br> hello() // good morning;</code> <p> Они появились в ES6 и стали стандартом для работы с функциями в современном JavaScript.</p> ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3797,7 +3800,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "<p><span>Функция обратного вызова</span> — это функция, вызов которой отложен на будущее (происходит при некоторых условиях, например, при наступлении события).</p> <p><span>Колбэк-функция (или обратный вызов)</span> - это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.</p> <p>Вот краткий пример <span>синхронного колбэка</span>, поскольку функция <span>processUserInput</span> выполняется <span>синхронно:</span></p> <p><img class='question__img' src='img/habr70/49.1habr70.png' alt=''></p> <p>Колбэки часто используются для продолжения выполнения кода после завершения <span>асинхронной операции</span> - они называются <span>асинхронными колбэками.</span>Пример:</p> <p><img class='question__img' src='img/habr70/49.2habr70.png' alt=''></p>",
+      answer1:
+        "<p><span>Функция обратного вызова</span> — это функция, вызов которой отложен на будущее (происходит при некоторых условиях, например, при наступлении события).</p> <p><span>Колбэк-функция (или обратный вызов)</span> - это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.</p> <p>Вот краткий пример <span>синхронного колбэка</span>, поскольку функция <span>processUserInput</span> выполняется <span>синхронно:</span></p> <p><img class='question__img' src='img/habr70/49.1habr70.png' alt=''></p> <p>Колбэки часто используются для продолжения выполнения кода после завершения <span>асинхронной операции</span> - они называются <span>асинхронными колбэками.</span>Пример:</p> <p><img class='question__img' src='img/habr70/49.2habr70.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3815,7 +3819,8 @@ const sortedQuestionsJS = [
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1:
+        "<p><span>Анонимная функция</span> — это функция без имени. Она может быть объявлена прямо в месте использования. В отличие от именованных функций, <span style='font-style: italic; font-weight: bold;'>анонимные функции нельзя вызвать до их объявления</span>, потому что они хранятся в переменной.</p> <code>const sum = function (a, b) {<br>   return a + b;<br> };<br> console.log(sum(3, 4)); // 7</code> <p><span>Когда используются анонимные функции?</span></p> <p><span style='font-style: italic;'> 1. В колбэках (callback-функциях).</span> Часто передаются как аргументы в другие функции (setTimeout, map, forEach и т. д.).</p> <code>setTimeout(function () {<br>   console.log('Прошло 2 секунды!');<br> }, 2000);</code> <code>const numbers = [1, 2, 3];<br> const squared = numbers.map(function (num) {<br>   return num * num;<br> });<br> console.log(squared); // [1, 4, 9]</code> <p><span style='font-style: italic;'>2. Функции-обработчики событий (event listeners).</span> Функция используется только для обработки клика, имя ей не нужно.</p> <code>document.querySelector('button').addEventListener('click', function () {<br>   console.log('Кнопка нажата!');<br> });</code> <p><span style='font-style: italic;'>3. Функции немедленного вызова (IIFE).</span> Используются для создания изолированной области видимости.</p> <code>(function () {<br>   console.log('Этот код выполнится сразу!');<br> })();</code> <p><span style='font-style: italic;'>4. Генерация динамических функций.</span></p> <code>function createMultiplier(factor) {<br>   return function (num) {<br>     return num * factor;<br>   };<br> }<br>const double = createMultiplier(2);<br> console.log(double(5)); // 10</code> <p>Здесь анонимная функция возвращается из другой функции и запоминает factor.</p> <p><span style='font-style: italic;'>5. Стрелочные функции (=>) тоже анонимныею</span> Чаще всего используются в колбэках и коротких функциях.</p> <code>const greet = () => console.log('Привет!');<br> greet();</code> <p><span>ИТОГО:</span></p> <p>1. Анонимные функции становятся доступны, только после того, как интерпретатор дойдет до них, таким образом их вызов возможен только после записи функции в коде. </p> <p>2. Анонимные функции короче и отлично подходят в тех случаях, когда на них не нужно ссылаться в коде. </p> <p>3. Анонимные функции могут вызывать сами себя. </p> <p>4. Анонимные функции могут выступать в качестве параметров в других функциях. </p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3828,8 +3833,27 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 73,
+    question: "Что такое рекурсия и как ее можно использовать в JavaScript?",
+    answer: {
+      href: "",
+      linkName: "",
+      answer1:
+        "<p><span>Рекурсия</span> — это когда функция вызывает саму себя. Главное — задать <span>условие выхода</span> (иначе получится бесконечный вызов). Рекурсия обычно используется для решения задач, которые можно разбить на более простые подзадачи. В JavaScript рекурсию можно использовать, например, для работы с многоуровневыми массивами и обхода деревовидных структур данных.</p> <p><span style='font-style: italic;'>Пример:</span> <br> <code>function countDown(n) { <br>  if (n === 0) return;  // Условие выхода <br>  console.log(n); <br>  countDown(n - 1);     // Рекурсивный вызов <br>} <br><br> countDown(5); //5 4 3 2 1</code> </p> <p>Рекурсию используют, когда вычисление функции можно свести к её более простому вызову.</p> <p>Функция pow(x, n), которая возводит x в натуральную степень n. В математике записывается как: xn = x * xn-1.</p> <p><span style='font-style: italic;'>1. Итеративный способ: цикл for:</span> <code>function pow(x, n) {<br>   let result = 1;<br> // умножаем result на x n раз в цикле<br>   for (let i = 0; i < n; i++) {<br>     result *= x;<br>   }<br>  return result;<br> }<br> console.log(pow(2, 3)); // 8</code></p> <p><span style='font-style: italic;'>2. Рекурсивный способ: упрощение задачи и вызов функцией самой себя:</span> <code>function pow(x, n) {<br>   if (n == 1) {<br>     return x;<br>   } else {<br>     return x * pow(x, n - 1);<br>   }<br> }<br> <br>console.log(pow(2, 3)); // 8</code></p>",
+      image1: "",
+      href2: "",
+      linkName2: "",
+      answer2: "",
+      image2: "",
+      href3: "",
+      linkName3: "",
+      answer3: "",
+      image3: "",
+    },
+  },
+  {
+    id: 77,
+    question: "Что такое генераторы?",
     answer: {
       href: "",
       linkName: "",
@@ -3846,12 +3870,13 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 78,
+    question: "Какие приемы работы с асинхронным кодом в JS Вы знаете?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1:
+        "<p>- Функции обратного вызова (Callbacks).</p> <p>- Промисы (Promises).</p> <p>- Async/await.</p> <p>- Библиотеки вроде async.js, blueprint, q, co.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3864,12 +3889,13 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 79,
+    question: "Что такое промисы (Promises)?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1:
+        "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/promise-basics' target='_blank' rel='noopener noreferrer'>Промисы</a>, <a class='question__link' href='https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise' target='_blank' rel='noopener noreferrer'>Promise</a></p> <p><span>Промис (Promise)</span> — специальный объект JavaScript, который используется для написания и обработки асинхронного кода. Он имеет три состояния:</p> <ul> <li><span>pending</span> – начальное состояние, означает, что асинхронная операция еще не завершена.</li> <li><span>fulfilled</span> – операция успешно завершена.</li> <li><span>rejected</span> – операция завершена с ошибкой.</li> </ul> <p>Промисы создаются с помощью конструктора <span>new Promise()</span>. Этот конструктор принимает в качестве аргумента функцию, которая выполняет асинхронную операцию. Функция принимает два аргумента <span>resolve</span> и <span>reject</span>, которые используются для изменения состояния промиса. Если асинхронная операция завершена успешно, вызывается <span>resolve</span>, если произошла ошибка, вызывается <span>reject</span>:</p> <code>let promise = new Promise((resolve, reject) => {<br>  // асинхронная операция<br>  setTimeout(() => {<br>    resolve('Результат асинхронной операции');<br>  }, 1000);<br> });</code> <p> Промисы позволяют обрабатывать результаты асинхронных операций, используя методы <span>.then()</span> и <span>.catch()</span>. Метод <span>.then()</span> принимает два аргумента: функцию обратного вызова, которая будет вызвана при успешном выполнении промиса, и функцию обратного вызова, которая будет вызвана при ошибке. Метод <span>.catch()</span> используется для обработки ошибок, которые могут произойти при выполнении промиса:</p> <code>let promise = new Promise((resolve, reject) => {<br>  // асинхронная операция<br>  setTimeout(() => {<br>    resolve('Результат асинхронной операции');<br>  }, 1000);<br> });<br> <br>promise<br>  .then(result => {<br>    console.log('Результат: ' + result);<br>  })<br>  .catch(error => {<br>    console.log('Ошибка: ' + error);<br>  });</code> <p> Промисы можно связывать в цепочки, что позволяет выполнять несколько асинхронных операций последовательно. Для этого результат каждого промиса передается в следующий промис в цепочке. Это делается с помощью метода <span>.then()</span>:</p> <code>let promise1 = new Promise((resolve, reject) => {<br>  setTimeout(() => {<br>    resolve('Результат первой операции');<br>  }, 1000);<br> });<br> <br>let promise2 = new Promise((resolve, reject) => {<br>  setTimeout(() => {<br>    resolve('Результат второй операции');<br>  }, 2000);<br> });<br> <br>promise1<br>  .then(result1 => {<br>    console.log('Результат первой операции: ' + result1);<br>    return promise2;<br>  })<br>  .then(result2 => {<br>    console.log('Результат второй операции: ' + result2);<br>  });</code>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3882,12 +3908,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 80,
+    question: "Что такое Promise, и какие бывают состояния",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Promise - это объект в JavaScript, который представляет результат асинхронной операции. Промис позволяет обрабатывать результат операции, когда он станет доступным, вместо того, чтобы блокировать выполнение кода и ожидать завершения операции.</p> <p>Промис может находиться в одном из трех состояний:</p> <p><span>Pending:</span> Исходное состояние промиса. Он находится в ожидании выполнения или отклонения операции.</p> <p><span>Fulfilled:</span> Промис переходит в это состояние, когда операция успешно завершается. В этом случае промис возвращает результат операции.</p> <p><span>Rejected:</span> Промис переходит в это состояние, когда операция завершается с ошибкой. В этом случае промис возвращает причину ошибки.</p> <p></p> <p></p> <p></p> ",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3900,12 +3926,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 81,
+    question: "Какие преимущества и недостатки у использования Promise API вместо обратных вызовов?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/promise-api' target='_blank' rel='noopener noreferrer'><span style='font-weight: 900; color: green'>Promise API</span> <span style='font-style: italic;'>(в классе Promise есть 6 статических методов)</span></a></p> <p>Обещания избавляют разработчиков от ада обратных вызовов, но это не единственное их достоинство.</p> <p>Важно также отметить, что пользуясь обратными вызовами, мы зачастую были вынуждены 'верить' стороннему коду. А вызовет ли он наш коллбэк? А вызовет ли он его корректное количество раз? А не вызовет ли он его слишком рано или слишком поздно?</p> <p>Представьте, что функция, снимающая деньги со счета пользователя, передается коллбэком в сторонний (в той или иной степени) код. Что будет, если он вследствие внесенных со стороны изменений начнет вести себя некорректно и, скажем, начнет вызывать эту функцию пять раз вместо одного?</p> <p>Используя обещания, мы сами властны над нашим кодом. Мы сначала дожидаемся результата вызова сторонней функции, возвращающей обещание, а потом передаем управление необходимому блоку кода. Обещание может быть разрешено один раз и с тех пор оно неизменно, так что надежность нашего кода резко возрастает.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3918,12 +3944,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 82,
+    question: "Что такое async/await и как они используются?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/async-await' target='_blank' rel='noopener noreferrer'>Async/await</a></p> <p><span>async/await</span> - это синтаксический сахар в языке программирования, который позволяет писать асинхронный код в более понятном и линейном стиле. Он используется в языках, поддерживающих асинхронное программирование, таких как JavaScript, C#, Python и других.</p> <p>Преимущества использования async/await включают более простой и понятный синтаксис, отсутствие необходимости в явном использовании колбэков или цепочек промисов, а также возможность использования блоков try/catch для обработки ошибок.</p> <p><span>Async/await</span> – это синтаксис JavaScript, который облегчает работу с промисами. Ключевое слово <span>async</span> перед функцией означает, что функция всегда возвращает промис. Ключевое слово <span>await</span> используется внутри асинхронных функций и заставляет JavaScript ожидать, пока промис не будет выполнен, прежде чем продолжить выполнение кода:</p> <p><img class='question__img' src='img/14.1proglibPart1.png' alt=''></p> <p>Надо отметить, что <span>await</span> нельзя использовать вне асинхронной функции. Например, этот код приведет к ошибке:</p> <p><img class='question__img' src='img/14.2proglibPart1.png' alt=''></p> <p>Чтобы решить эту проблему, можно обернуть вызов в другую асинхронную функцию:</p> <p><img class='question__img' src='img/14.3proglibPart1.png' alt=''></p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3936,12 +3962,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 83,
+    question: "Объясните разницу между синхронными и асинхронными функциями",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>JavaScript - это однопоточный язык, то-есть функции выполняются в синхронном порядке. Приложение блокируется на время выполнения каждой конкретной функции. Так происходит по той причине, что JavaScript имеет только один стек вызовов.</p> <p>С другой стороны, есть асинхронный способ выполнения функций, когда мы не блокируем весь интерфейс благодаря тому, что не дожидаемся выполнения функции, а подписываемся на событие с передачей обратного вызова. Ну, или мы можем иметь дело с обещанием или с прочими внешними API вроде setTimeout.</p> <p>В таком случае браузер помещает обработчик события в очередь задач, а когда наступает время его вызвать, он перемещает его в стек вызовов.</p>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3954,12 +3980,12 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
+    id: 84,
+    question: "Что такое AJAX?",
     answer: {
       href: "",
       linkName: "",
-      answer1: "",
+      answer1: "<p>Подробнее тут: <a class='question__link' href='https://learn.javascript.ru/fetch' target='_blank' rel='noopener noreferrer'>Fetch,</a> <a class='question__link' href='https://learn.javascript.ru/network' target='_blank' rel='noopener noreferrer'>Сетевые запросы</a></p> <p><span>AJAX или Asyncronous JavaScript and XML</span> — это набор взаимосвязанных технологий, которые позволяют работать с данными в асинхронном режиме. Это означает, что мы можем отправлять данные на сервер и получать данные с него без перезагрузки веб-страницы.</p> <ul><span>AJAX</span> использует следующие технологии: <li><span>HTML</span> — структура веб-страницы.</li> <li><span>CSS</span> — стили веб-страницы.</li> <li><span>JavaScript</span> — поведение страницы и работа с DOM.</li> <li><span>XMLHttpRequest API</span> — отправка и получение данных с сервера.</li> <li>PHP, Python, Nodejs — какой-нибудь <span>серверный язык</span>.</li> </ul>",
       image1: "",
       href2: "",
       linkName2: "",
@@ -3972,26 +3998,8 @@ const sortedQuestionsJS = [
     },
   },
   {
-    id: 1,
-    question: "",
-    answer: {
-      href: "",
-      linkName: "",
-      answer1: "",
-      image1: "",
-      href2: "",
-      linkName2: "",
-      answer2: "",
-      image2: "",
-      href3: "",
-      linkName3: "",
-      answer3: "",
-      image3: "",
-    },
-  },
-  {
-    id: 1,
-    question: "",
+    id: 85,
+    question: "Как работает сборщик мусора в JS?",
     answer: {
       href: "",
       linkName: "",
